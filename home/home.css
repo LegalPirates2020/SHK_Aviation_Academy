@@ -44,12 +44,12 @@ nav {
 }
 
 .contact .phone-icon {
-	width: 15%;
+	width: 1.7rem;
 }
 
 .main-icon {
 	position: relative;
-	width: 26%;
+	width: 8.4rem;
 }
 
 .main-icon img {
@@ -57,7 +57,7 @@ nav {
 }
 
 .social img {
-	width: 40%;
+	width: 2.5rem;
 }
 
 .bottom-nav {
