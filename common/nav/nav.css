@@ -10,24 +10,24 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	height: 300vh;
 }
 
-nav {
+header {
 	width: 100%;
-	height: 8rem;
-	font-family: 'Kanit', sans-serif;
 	position: fixed;
+	z-index: 5;
 }
 
 .top-nav {
 	width: 100%;
-	height: 4rem;
+	height: 4.3rem;
 	display: grid;
 	grid-template-columns: 1fr 0fr 1fr 1fr;
 	background-color: #edbd15;
 	position: relative;
 	z-index: 5;
+	font-family: 'Kanit', sans-serif;
+	transition: all 0.3s ease-in-out;
 }
 
 .social,
@@ -115,8 +115,12 @@ nav {
 	width: 100%;
 }
 
+.social {
+	padding-left: 5rem;
+}
+
 .social img {
-	width: 2.5rem;
+	width: 2.2rem;
 }
 
 .bottom-nav {
@@ -126,9 +130,12 @@ nav {
 	width: 100%;
 	height: 3rem;
 	background-color: #39393a;
-	position: relative;
+	position: absolute;
+	top: 4.3rem;
 	z-index: 4;
 	transition: all 0.3s ease-in-out;
+	font-family: 'Kanit', sans-serif;
+	padding: 0 7rem;
 }
 
 .bottom-nav span a {
@@ -138,7 +145,7 @@ nav {
 
 @media (max-width: 768px) {
 	.top-nav {
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 2fr 1fr;
 	}
 
 	.menu-button {
@@ -151,6 +158,7 @@ nav {
 		height: 100vh;
 		transform: translateX(-100%);
 		transition: all 0.5s ease-in-out;
+		position: fixed;
 	}
 
 	.contact {
