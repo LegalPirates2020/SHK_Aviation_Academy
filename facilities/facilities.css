@@ -1,0 +1,167 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+.header-img {
+	
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: url("https://www.unioncountync.gov/application/files/8315/9432/1864/library-books-for-facebook.jpg")
+		top/cover;
+	/* background-attachment: fixed; */
+	width: 100%;
+	height: 60vh;
+}
+.header-img::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	/* background-color: rgba(46, 115, 204, 0.3); */
+	/* background: -webkit-linear-gradient(rgba(29, 38, 113, 0.4), rgba(195, 55, 100, 0.4)); */
+	background: rgba(0, 0, 0, 0.7);
+
+	z-index: 0;
+}
+
+.title {
+	margin-top: 6.5rem;
+	outline: 5px solid #edbd15;
+	padding: 5rem 10rem 6rem 10rem ;
+	margin-left: 20px;
+	color: #edbd15;
+	font-size: 4rem;
+	z-index: 2;
+}
+.card-bg {
+
+	width: 100%;
+	background-color: var(--theme);
+	position: relative;
+}
+.pagination {
+
+	overflow: hidden;
+	position: relative;
+	height: 40vh;
+ width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+.card-1 {
+	position: absolute;
+	width: 870px;
+	display: flex;
+	left: 340px;
+	justify-content: space-evenly;
+	/* transform: scaleX(0); */
+	transition: all 0.3s ease-in-out;
+
+
+}
+.card-2 {
+	opacity: 0;
+	position: absolute;
+
+	width: 870px;
+	display: flex;
+	justify-content: space-evenly;
+	right: -600px;
+	transition: all 0.3s ease-in-out;
+
+
+}
+.display-none {
+	display: none !important; 
+}
+.display-block {
+	display: block !important; 
+}
+.circle {
+	background-color: #2C394B;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	color: var(--theme);
+	text-align: center;
+	padding: 4rem 0rem 2rem 0rem;
+	margin-left: 1rem;
+} 
+.btn-right {
+	position: relative;
+	left: 100px;
+	z-index: 5;
+	
+}
+.btn-right svg {
+	height: 50px;
+	width: 50px;
+	color: #2C394B;
+
+}
+.btn-left svg {
+	height: 50px;
+	width: 50px;
+	color: #2C394B;
+
+}
+.btn-left {
+	position: relative;
+	right: 100px;
+	z-index: 5;
+}
+/* contents */
+
+.contents {
+	height: 100vh;
+	
+}
+.transport {
+	border-bottom: 5px solid var(--theme);
+}
+.Transport {
+	padding-top: 100px;
+}
+.transport-content-card {
+	margin-top: 4rem;
+	line-height: 3rem;
+}
+.library-content-card {
+	margin-top: 4rem;
+	line-height: 3rem;
+}
+.hostel-content-card {
+	margin-top: 4rem;
+	line-height: 3rem;
+}
+.temple-content-card {
+	margin-top: 4rem;
+	line-height: 3rem;
+}
+.pe-content-card {
+	margin-top: 4rem;
+	line-height: 3rem;
+}
+.wifi-content-card {
+	margin-top: 4rem;
+	line-height: 3rem;
+}
+.internet-content-card {
+	margin-top: 4rem;
+	line-height: 3rem;
+}
+.cafeteria-content-card {
+	margin-top: 4rem;
+	line-height: 3rem;
+}
