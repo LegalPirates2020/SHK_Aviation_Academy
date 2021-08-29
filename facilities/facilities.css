@@ -93,7 +93,7 @@
 	height: 150px;
 	width: 150px;
 	border-radius: 50%;
-	color: var(--theme);
+	color: #edbd15;
 	text-align: center;
 	padding: 4rem 0rem 2rem 0rem;
 	margin-left: 1rem;
@@ -118,7 +118,7 @@
 }
 .btn-left {
 	position: relative;
-	right: 100px;
+	right: 70px;
 	z-index: 5;
 }
 /* contents */

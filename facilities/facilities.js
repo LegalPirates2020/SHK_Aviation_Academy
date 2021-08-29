@@ -39,7 +39,7 @@ btn_left.addEventListener('click', () => {
 })
 btn_right.addEventListener('click', () => {
  card1.style.left = '-600px'
- card2.style.right = '340px'
+ card2.style.right = '320px'
  card2.style.opacity = '1'
  card1.style.opacity = '0'
 
@@ -48,7 +48,7 @@ btn_right.addEventListener('click', () => {
 const scrollToTop = () => {
   const p  =parseInt(pagee)
   console.log(p);
- window.scrollTo(0,p);
+ window.scrollTo(0,p-4.3*16);
 }
 circle.forEach(element => {
  element.addEventListener('click', function content() {
