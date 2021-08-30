@@ -38,22 +38,59 @@ t1.from('.SHK-title', {
 
 const t2 = gsap.timeline({
 	scrollTrigger: {
-		trigger: '.hero',
-		start: 'bottom center'
+		trigger: '.swiper',
+		start: 'top 40%'
 	}
 });
 
-t2.to('.plane-hero', { duration: 0.5, rotate: 90, ease: 'none' })
-	.to('.plane-hero', {
-		duration: 1,
-		x: 800,
-		delay: 0.5,
-		ease: 'none'
+t2.from('.swiper', { duration: 1, width: '100%', height: '100%' }).from(
+	'.slide-h1',
+	{ duration: 1, height: 0 }
+);
+
+const t3 = gsap.timeline({
+	scrollTrigger: {
+		trigger: '.vision-and-mission',
+		start: 'top 40%'
+	}
+});
+
+t3.from('.vision-h1', {
+	duration: 0.5,
+	height: 0
+})
+	.from('.mission-h1', {
+		duration: 0.5,
+		height: 0
 	})
-	.to('.plane-hero', {
-		duration: 1,
-		rotate: 180,
-		delay: 0.5,
-		ease: 'none'
-	})
-	.to('.hero-content', { duration: 1, x: -225 }, '-=2');
+	.from('.vision-p', {
+		duration: 0.5,
+		left: 300,
+		opacity: 0
+	});
+
+// const t2 = gsap.timeline({
+// 	scrollTrigger: {
+// 		trigger: '.hero',
+// 		start: 'bottom top'
+// 	}
+// });
+
+// t2.to('.plane-hero', { duration: 1, rotate: 90, ease: 'power1' })
+// t2.to('.plane-hero', {
+// duration: 0.7,
+// x: 800,
+// delay: 0.5,
+// 	ease: 'none'
+// });
+// .to(
+// 	'.plane-hero',
+// 	{
+// 		duration: 0.5,
+// 		rotate: 180,
+// 		delay: 0.5,
+// 		ease: 'power1'
+// 	},
+// 	'-=.15'
+// )
+// .to('.hero-content', { duration: 1, x: -225, ease: 'power1' }, '-=2');
