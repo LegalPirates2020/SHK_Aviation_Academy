@@ -1,0 +1,264 @@
+*
+{
+    scroll-behavior: smooth;
+}
+
+.titlename
+{
+    margin-top: 13%;
+    /* font-size: 100px; */
+}
+
+.bba , .bscaviation , .mba , .bscair
+{
+    text-decoration: none;
+    color: black;
+}
+
+.legend
+{
+    width: 33%;
+    height: 25%;
+    box-shadow:  2px 2px 25px rgba(0, 0, 0, 0.315),   -2px -2px 25px rgba(0, 0, 0, 0.315);
+    margin-top: 13%;
+    padding: 2%;
+    right: 3%;
+    position: fixed;
+    float: right;
+    border-radius: 20px;
+}
+
+
+
+.coursefour
+{
+    margin: 3%;
+    box-shadow:  2px 2px 25px rgba(0, 0, 0, 0.315),   -2px -2px 25px rgba(0, 0, 0, 0.315);
+    border-radius: 20px;
+    padding: 3%;
+    margin-top: 13%;
+    line-height: 2rem;
+    font-size: 20px;
+    width: 55%;
+    float: left;
+    background-color: rgb(255, 255, 255);
+}
+
+.coursefour h2 
+{
+    text-align: center;
+    margin: 30px;
+}
+
+.paragraph
+{
+    background-color: #cccc;
+}
+
+
+.flexdiv
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 5px 5px black;
+}
+.flexdiv h4{
+    padding: 0%;
+}
+.para
+{
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    padding: 0rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.para1
+{
+    overflow: hidden;
+}
+.contentdiv
+{
+    overflow: hidden;
+}
+.ul1
+{
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    padding: 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.ul2 , .ul3, .ul4
+{
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    padding: 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* java script */
+
+.para2.js2
+{
+    height: 8rem;
+}
+.para3.js3
+{
+    height: 12rem;
+}
+.para4.js4
+{
+    height: 5rem;
+}
+.para5.js5
+{
+    height: 5rem;
+}
+.para6.js6
+{
+    height: 8rem;
+}
+.ul1.js6
+{
+    height: 10rem;
+}
+
+
+.para22.js2
+{
+    height: 8rem;
+}
+.para23.js3
+{
+    height: 12rem;
+}
+.para24.js4
+{
+    height: 5rem;
+}
+.para25.js5
+{
+    height: 6rem;
+}
+.para26.js6
+{
+    height: 8rem;
+}
+.ul2.js6
+{
+    height: 14rem;
+}
+
+
+
+
+.para32.js2
+{
+    height: 9rem;
+}
+.para33.js3
+{
+    height: 13rem;
+}
+.para34.js4
+{
+    height: 5rem;
+}
+.para35.js5
+{
+    height: 5rem;
+}
+.para36.js6
+{
+    height: 8rem;
+}
+.ul3.js6
+{
+    height: 28rem;
+}
+
+
+
+
+.para1.js1
+{
+    height: 18rem;
+}
+.para42.js2
+{
+    height: 15rem;
+}
+.para43.js3
+{
+    height: 11rem;
+}
+.para44.js4
+{
+    height: 5rem;
+}
+.para45.js5
+{
+    height: 5rem;
+}
+.para46.js6
+{
+    height: 8rem;
+}
+.ul4.js6
+{
+    height: 30rem;
+}
+
+.button1
+{
+    background-color: transparent;
+    color: rgb(228, 7, 7);
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+
+
+
+.watch
+{
+    padding: 1%;
+    background-color: rgb(21, 85, 223);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.span1
+{
+    display: none;
+}
+
+.span1.readmore
+{
+    display: inline;
+}
