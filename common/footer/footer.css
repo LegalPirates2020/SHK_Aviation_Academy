@@ -47,7 +47,7 @@
   justify-content: center;
   align-items: center;
   transform: translateY(-100px);
-  -ms-transform: translateX(-100px);
+  -ms-transform: translateY(-100px);
 }
 
 .upper img {
