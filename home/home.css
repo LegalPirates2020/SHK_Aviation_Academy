@@ -51,6 +51,7 @@ body {
 	top: var(--nav-height);
 	padding: 6rem 10rem;
 	transition: all 0.5s ease-in-out;
+	overflow: hidden;
 }
 
 .SHK-aviation div {
