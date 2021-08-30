@@ -45,7 +45,8 @@ const t2 = gsap.timeline({
 
 t2.from('.swiper', { duration: 1, width: '100%', height: '100%' }).from(
 	'.slide-h1',
-	{ duration: 1, height: 0 }
+	{ duration: 1, height: 0 },
+	'-=.5'
 );
 
 const t3 = gsap.timeline({
@@ -59,15 +60,32 @@ t3.from('.vision-h1', {
 	duration: 0.5,
 	height: 0
 })
-	.from('.mission-h1', {
-		duration: 0.5,
-		height: 0
-	})
-	.from('.vision-p', {
-		duration: 0.5,
-		left: 300,
-		opacity: 0
-	});
+	.from(
+		'.vision-p',
+		{
+			duration: 0.5,
+			x: -100,
+			opacity: 0
+		},
+		'-=.5'
+	)
+	.from(
+		'.mission-h1',
+		{
+			duration: 0.5,
+			height: 0
+		},
+		'-=.5'
+	)
+	.from(
+		'.mission-ul',
+		{
+			duration: 0.5,
+			x: 100,
+			opacity: 0
+		},
+		'-=.5'
+	);
 
 // const t2 = gsap.timeline({
 // 	scrollTrigger: {
