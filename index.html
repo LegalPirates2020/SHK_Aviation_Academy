@@ -6,6 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./common/nav/nav.css" />
 		<link rel="stylesheet" href="./home/home.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+		/>
 		<title>Home | SHK</title>
 	</head>
 	<body>
@@ -44,7 +48,7 @@
 		</header>
 		<div class="hero">
 			<img class="plane-hero" src="./home/img/airplane_png.png" alt="" />
-			<video src="./home/img/sky.mp4" autoplay></video>
+			<video src="./home/img/sky.mp4" autoplay loop></video>
 			<div class="hero-content">
 				<span>SHK AVIATION ACADEMY</span><br />
 				<span>The Sky is the limit...</span>
@@ -53,7 +57,7 @@
 		<section class="SHK-aviation">
 			<div>
 				<h1 class="SHK-title">SHK Aviation Academy</h1>
-				<p>
+				<p class="SHK-para">
 					SHK AVIATION ACADEMY is a multidisciplinary institution offering
 					professional courses in the field of aviation. SHK AVIATION ACADEMY
 					was established in 2020 with a great visionary, to revolutionize the
@@ -65,7 +69,80 @@
 				</p>
 			</div>
 		</section>
-		section
+		<section class="quotes-carousel">
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<h1>
+							To most people, the sky is the limit. To those who love aviation,
+							the sky is home. - Jerry Crawford
+						</h1>
+						<img
+							class="carousel-img-1"
+							src="./home/img/carousel_img_1.jpg"
+							alt="Image 1"
+						/>
+					</div>
+					<div class="swiper-slide">
+						<h1>
+							“Man must rise above the Earth—to the top of the atmosphere and
+							beyond—for only thus will he fully understand the world in which
+							he lives.” – Socrates
+						</h1>
+						<img
+							class="carousel-img-2"
+							src="./home/img/carousel_img_2.jpg"
+							alt="Image 2"
+						/>
+					</div>
+					<div class="swiper-slide">
+						<h1>
+							In the midst of a healthy and intellectual upbringing, he obtained
+							his Bachelor Degree in Production Engineering from Madras
+							University.
+						</h1>
+						<img
+							class="carousel-img-3"
+							src="./home/img/carousel_img_3.jpg"
+							alt="Image 3"
+						/>
+					</div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</section>
+		<section class="vision-and-mission">
+			<div class="vision">
+				<h1>VISION</h1>
+				<p>
+					To be a premier institute that imparts quality Technical & Skill
+					Training Education & Research, to create ethical and responsible
+					employees and entrepreneurs, to address the socioeconomic needs of the
+					mankind.
+				</p>
+			</div>
+			<div class="mission">
+				<h1>MISSION</h1>
+				<ul>
+					<li>
+						To create the state-of-art infrastructure and equipment to instill
+						innovation and best practices in teaching, training and research.
+					</li>
+					<li>
+						To nurture and strengthen entrepreneurial skills among students.
+					</li>
+					<li>
+						To develop ethos of lifelong learning to enrich ethical and
+						professional behavior for a prosperous society.
+					</li>
+				</ul>
+			</div>
+		</section>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 		<script src="./common/nav/nav.js"></script>
 		<script src="./home/home.js"></script>
 	</body>

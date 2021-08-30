@@ -1,10 +1,7 @@
-:root {
-	--nav-height: 4.3rem;
+body {
+	height: 700vh;
 }
 
-body {
-	height: 300vh;
-}
 .hero {
 	width: 100%;
 	height: 60vh;
@@ -39,37 +36,160 @@ body {
 	line-height: 45px;
 	transform: translate(-50%, -50%);
 	transition: all 0.5s ease-in-out;
+	overflow: hidden;
 }
 
 .SHK-aviation {
 	width: 100%;
-	height: 50vh;
+	height: 60vh;
 	background-color: var(--theme);
 	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	z-index: 1;
 	top: var(--nav-height);
 	padding: 6rem 10rem;
 	transition: all 0.5s ease-in-out;
+	overflow: hidden;
 }
 
 .SHK-aviation div {
-    width: 100%;
+	width: 100%;
 }
 
 .SHK-aviation h1 {
-    text-align: center;
+	text-align: center;
 	text-decoration: underline;
 	font-size: 2rem;
 	padding-bottom: 2rem;
 }
 
 .SHK-aviation p {
-    text-align: justify;
+	text-align: justify;
 	line-height: 1.5rem;
 	letter-spacing: 1px;
 }
 
 .SHK-aviation.grid div {
-    width: 65%;
-    transition: all 0.5s ease-in-out;
+	width: 65%;
+	transition: all 0.5s ease-in-out;
+}
+
+.quotes-carousel {
+	top: var(--nav-height);
+	background-color: white;
+	width: 100%;
+	height: 60vh;
+	position: relative;
+}
+
+.swiper {
+	width: 70%;
+	height: 80%;
+	border-radius: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	background-size: cover;
+}
+
+.swiper-slide::after {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: '';
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.swiper-slide h1 {
+	position: absolute;
+	z-index: 1;
+	color: white;
+	width: 65%;
+	letter-spacing: 1px;
+	line-height: 2.5rem;
+}
+
+.swiper-slide img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.carousel-img-1 {
+	object-position: 0 -110px;
+}
+
+.carousel-img-2 {
+	object-position: 0 -110px;
+}
+
+.carousel-img-3 {
+	object-position: 0 -570px;
+}
+
+.swiper-button-next {
+	color: white !important;
+}
+
+.swiper-button-prev {
+	color: white !important;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: white !important;
+}
+
+.vision-and-mission {
+	position: relative;
+	top: var(--nav-height);
+	width: 100%;
+	text-align: justify;
+	background: linear-gradient(-25deg, var(--theme) 50%, grey 50%);
+	height: 70vh;
+	padding: 5rem 11rem;
+	line-height: 2rem;
+	letter-spacing: 1px;
+	display: flex;
+	align-items: center;
+}
+
+.vision-and-mission h1 {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.vision-and-mission p {
+	margin-bottom: 2rem;
+}
+
+.vision {
+	position: absolute;
+	left: 6rem;
+	width: 30%;
+}
+
+.mission {
+	position: absolute;
+	right: 6rem;
+	width: 30%;
+	margin-top: 3rem;
 }
