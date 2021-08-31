@@ -5,20 +5,20 @@
 	scroll-behavior: smooth;
 }
 .header-img {
-	
 	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
-	background: url("https://www.unioncountync.gov/application/files/8315/9432/1864/library-books-for-facebook.jpg")
+	background: url('https://www.unioncountync.gov/application/files/8315/9432/1864/library-books-for-facebook.jpg')
 		top/cover;
-	/* background-attachment: fixed; */
+	background-attachment: fixed;
 	width: 100%;
 	height: 60vh;
+	min-height: 386px;
 }
 .header-img::after {
-	content: "";
+	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -34,30 +34,27 @@
 .title {
 	margin-top: 6.5rem;
 	outline: 5px solid #edbd15;
-	padding: 5rem 10rem 6rem 10rem ;
-	margin-left: 20px;
+	padding: 5rem 8rem 5rem 8rem;
+
 	color: #edbd15;
 	font-size: 4rem;
 	z-index: 2;
 }
 .card-bg {
-
 	width: 100%;
-	background-color: var(--theme);
+	background-color: rgb(255, 255, 255);
 	position: relative;
 }
 .pagination {
-
 	overflow: hidden;
 	position: relative;
 	height: 40vh;
- width: 80%;
+	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-
 }
 .card-1 {
 	position: absolute;
@@ -67,8 +64,6 @@
 	justify-content: space-evenly;
 	/* transform: scaleX(0); */
 	transition: all 0.3s ease-in-out;
-
-
 }
 .card-2 {
 	opacity: 0;
@@ -79,16 +74,164 @@
 	justify-content: space-evenly;
 	right: -600px;
 	transition: all 0.3s ease-in-out;
-
-
 }
 .display-none {
-	display: none !important; 
+	display: none !important;
 }
 .display-block {
-	display: block !important; 
+	display: block !important;
 }
 .circle {
+	background-color: #2c394b;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	color: #edbd15;
+	text-align: center;
+	box-shadow: 5px 5px 10px 10px black !important;
+	padding: 4rem 0rem 2rem 0rem;
+	margin-left: 1rem;
+}
+.color {
+	background-color: #edbd15 !important;
+	color: #2c394b !important;
+}
+.btn-right {
+	position: relative;
+	left: 100px;
+	z-index: 5;
+}
+.btn-right svg {
+	height: 50px;
+	width: 50px;
+	color: #2c394b;
+}
+.btn-left svg {
+	height: 50px;
+	width: 50px;
+	color: #2c394b;
+}
+.btn-left {
+	position: relative;
+	right: 70px;
+	z-index: 5;
+}
+/* contents */
+.content {
+	animation-name: cardanimation;
+	animation-duration: 700ms;
+}
+
+.contents {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	animation-name: cardanimation;
+	animation-duration: 700ms;
+	background-color: rgb(240, 240, 240);
+}
+.border {
+	font-size: 36px;
+	font-weight: 600;
+	border-bottom: 5px solid var(--theme);
+}
+.header {
+	margin-bottom: 3rem;
+	padding-top: 50px;
+}
+.transport-content-card,
+.library-content-card,
+.hostel-content-card,
+.temple-content-card,
+.pe-content-card,
+.wifi-content-card,
+.internet-content-card,
+.cafeteria-content-card {
+	line-height: 3rem;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+
+	font-size: 20px;
+}
+.container-card {
+	position: relative;
+	height: 40vh;
+	background-color: rgb(240, 240, 240);
+	max-height: 562px;
+}
+.swiper {
+	position: absolute;
+	/* padding-top: 5rem; */
+	left: 35% !important;
+	top: 20%;
+	width: 30%;
+
+	border-radius: 5%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	width: 150px !important;
+	border-radius: 50%;
+	height: 150px !important;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	background-color: #2c394b;
+	color: #edbd15;
+	font-weight: bold;
+	margin: 20px;
+	transition: all 0.2s ease-in-out;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.swiper-button-next {
+	color: #2c394b;
+	right: 30%;
+	top: 45%;
+}
+.swiper-button-prev {
+	color: #2c394b;
+	left: 30%;
+	top: 45%;
+}
+.swiper-button-prev,
+.swiper-button-next {
+	height: 50px;
+	width: 50px;
+	color: #2c394b;
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+	content: '';
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+	content: '';
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	/* font-family: swiper-icons; */
+	font-size: var(--swiper-navigation-size);
+	text-transform: none !important;
+	letter-spacing: 0;
+	text-transform: none;
+	font-variant: initial;
+	line-height: 1;
+}
+/* .swiper-slide {
 	background-color: #2C394B;
 	height: 150px;
 	width: 150px;
@@ -97,71 +240,932 @@
 	text-align: center;
 	padding: 4rem 0rem 2rem 0rem;
 	margin-left: 1rem;
-} 
-.btn-right {
-	position: relative;
-	left: 100px;
-	z-index: 5;
+
+} */
+@keyframes cardanimation {
+	0% {
+		transform: translateY(80px);
+		opacity: 0.2;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+@media (max-height: 768px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 36.5% !important;
+		width: 27%;
+		height: 30vh;
+	}
+
+	.swiper-slide {
+		width: 130px !important;
+		height: 130px !important;
+	}
+	.swiper-button-next {
+		top: 47%;
+	}
+	.swiper-button-prev {
+		top: 47%;
+	}
+}
+@media (max-width: 1880px) {
+	.swiper {
+position: absolute;
+		/* padding-top: 5rem; */
+		left: 35.5% !important;
+		width: 29% ;
+		height: 30vh;
+		right: 35.5% !important;
+	 margin-right: .5rem; 
+	}
+	.swiper-slide {
+		width: 140px !important;
+		height: 140px !important;
+	}
+}
+@media (max-width: 1855px) {
+	.swiper {
+position: absolute;
+		/* padding-top: 5rem; */
+		left: 35% !important;
+		width: 30% ;
+		height: 30vh;
+		margin-left: 1.5rem; 
+
+	}
+	.swiper-slide {
+		width: 140px !important;
+		height: 140px !important;
+	}
+}
+@media (max-width: 1820px) {
+	.swiper {
+position: absolute;
+		/* padding-top: 5rem; */
+		margin-left: 0rem !important; 
+		margin-right: 7rem !important; 
+
+	}
+	.swiper-slide {
+		width: 140px !important;
+		height: 140px !important;
+	}
+}
+@media (max-width: 1780px) {
+	.swiper {
+	position: absolute;
+		/* padding-top: 5rem; */
+		left: 34.5 !important;
+		width: 31%;
+		height: 30vh;
+	}
+	.swiper-button-next {
+		top: 47%;
+		right: 25%;
+	}
+	.swiper-button-prev {
+		top: 47%;
+		left: 25%;
+	}
+}
+@media (max-width: 1755px) {
+	.swiper {
+	position: absolute;
+		/* padding-top: 5rem; */
+	margin-left: -1rem !important;
+	}
+
+}
+
+@media (max-width: 1735px) {
+	.swiper {
+	position: absolute;
+		/* padding-top: 5rem; */
+		left: 34% !important;
+		width: 32%;
+		height: 30vh;
+		margin-left: 1.5rem !important;
+	}
+	.swiper-button-next {
+		top: 47%;
+		right: 25%;
+	}
+	.swiper-button-prev {
+		top: 47%;
+		left: 25%;
+	}
+}
+@media (max-width: 1710px) {
+	.swiper {
+	position: absolute;
+		/* padding-top: 5rem; */
+		left: 34% !important;
+		width: 32%;
+		height: 30vh;
+		margin-left: 0rem !important;
+	}
+	.swiper-button-next {
+		top: 47%;
+		right: 25%;
+	}
+	.swiper-button-prev {
+		top: 47%;
+		left: 25%;
+	}
+}
+@media (max-width: 1680px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 33.5% !important;
+		width: 33%;
+		height: 30vh;
+	}
+}
+@media (max-width: 1630px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 33% !important;
+		width: 34%;
+		height: 30vh;
+	}
+}
+@media (max-width: 1580px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 32.5 !important;
+		width: 35%;
+		height: 30vh;
+		margin-left: -1.8rem !important;
+	}
+	.swiper-slide {
+		width: 140px !important;
+		height: 140px !important;
+	}
+}
+@media (max-width: 1540px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 32% !important;
+		margin-left: 0rem !important;
+		width: 36%;
+		height: 30vh;
+	}
+	.swiper-slide {
+		width: 140px !important;
+		height: 140px !important;
+	}
+}
+@media (max-width: 1500px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		 left: 31.5% !important; 
+		width: 37%;
+		height: 30vh;
+	}
+}
+
+@media (max-width: 1460px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		 left: 31% !important; 
+		width: 38%;
+		height: 30vh;
+	}
+}
+@media (max-width: 1420px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		 left: 30.5% !important; 
+		width: 39%;
+		height: 30vh;
+	}
+}
+
+@media (max-width: 1380px) {
+	.container-card {
+		max-height: 280px;
+	}
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 30% !important; 
+		width: 38%;
+		height: 30vh;
+	}
+	.swiper-button-next {
+		top: 49%;
+		right: 22%;
+	}
+	.swiper-button-prev {
+		top: 49%;
+		left: 22%;
+	}
+	.swiper-slide {
+		width: 130px !important;
+		height: 130px !important;
+	}
+	.header-img {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		background: url('https://www.unioncountync.gov/application/files/8315/9432/1864/library-books-for-facebook.jpg')
+			top/cover;
+		background-attachment: fixed;
+		width: 100%;
+		height: 60vh;
+	}
+	.title {
+		margin-top: 6.5rem;
+		outline: 5px solid #edbd15;
+		padding: 4rem 7rem 4rem 7rem;
+
+		color: #edbd15;
+		font-size: 3rem;
+		z-index: 2;
+	}
+}
+@media (max-width: 1340px) {
+	.container-card {
+		max-height: 280px;
+	}
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 30% !important; 
+		width: 39%;
+		height: 30vh;
+	}
+	.swiper-button-next {
+		top: 49%;
+		right: 22%;
+	}
+	.swiper-button-prev {
+		top: 49%;
+		left: 22%;
+	}
+	.swiper-slide {
+		width: 130px !important;
+		height: 130px !important;
+	}
+	.header-img {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		background: url('https://www.unioncountync.gov/application/files/8315/9432/1864/library-books-for-facebook.jpg')
+			top/cover;
+		background-attachment: fixed;
+		width: 100%;
+		height: 60vh;
+	}
+	.title {
+		margin-top: 6.5rem;
+		outline: 5px solid #edbd15;
+		padding: 4rem 7rem 4rem 7rem;
+
+		color: #edbd15;
+		font-size: 3rem;
+		z-index: 2;
+	}
+}
+@media (max-width: 1310px) {
+	.header-img {
+		height: 100vh;
+	}
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 31% !important;
+		width: 40%;
+		height: 30vh;
+	}
+}
+@media (max-width: 1275px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 30.5 !important;
+		width: 41%;
+		height: 30vh;
+	}
+}
+@media (max-width: 1245px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 31.5% !important;
+		width: 42%;
+		height: 30vh;
+	}
+
+
+}
+@media (max-width: 1220px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 31.5% !important;
+		width: 43%;
+		height: 30vh;
+	}
+
+
+}
+@media (max-width: 1200px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 31% !important;
+		width: 44%;
+		height: 30vh;
+	}
+}
+@media (max-width: 1185px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 30.5% !important;
+		width: 44.5%;
+	}
+}
+@media (max-width: 1150px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 30% !important;
+		width: 46%;
+		height: 30vh;
+	}
+}
+@media (max-width: 1125px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 29.5% !important;
+		width: 47%;
+		height: 30vh;
+	}
+}
+
+@media (max-width: 1095px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 29% !important; 
+		width: 48%;
+		height: 30vh;
+	}
+
+	@media (max-width: 1075px) {
+		.swiper {
+			position: absolute;
+			/* padding-top: 5rem; */
+			left: 28.5% !important;
+			width: 49%;
+			height: 30vh;
+		}
+
+	@media (max-width: 1050px) {
+			.swiper {
+				position: absolute;
+				/* padding-top: 5rem; */
+				left: 28% !important;
+				width: 47% !important;
+				height: 30vh;
+			}
+			.swiper-button-next {
+				right: 18%;
+			}
+			.swiper-button-prev {
+				left: 18%;
+			}
+			.swiper-slide {
+				height: 120px !important;
+				width: 120px !important;
+			}
+		}
+		@media (max-width: 1020px) {
+			.swiper {
+				position: absolute;
+				/* padding-top: 5rem; */
+				left:27.5% !important;
+				width: 49% !important;
+				height: 30vh;
+			}
+			.swiper-button-next {
+				right: 18%;
+			}
+			.swiper-button-prev {
+				left: 18%;
+			}
+		}
+		@media (max-width: 1000px) {
+			.swiper {
+				position: absolute;
+				/* padding-top: 5rem; */
+				left:  27% !important;
+				width: 50% !important;
+				height: 30vh;
+			}
+			.swiper-slide {
+				font-size: 14px;
+			}
+		}
+		@media (max-width: 980px) {
+			.swiper {
+				position: absolute;
+				/* padding-top: 5rem; */
+				left: 26.5% !important;
+				width: 51% !important;
+				height: 30vh;
+			}
+		}
+		@media (max-width: 960px) {
+			.swiper {
+				position: absolute;
+				/* padding-top: 5rem; */
+				left: 25.5% !important;
+				width: 52% !important;
+				height: 30vh;
+			}
+		}
+		@media (max-width: 925px) {
+			.swiper {
+				position: absolute;
+				/* padding-top: 5rem; */
+				left: 24.5% !important;
+				width: 53% !important;
+				height: 30vh;
+			}
+			.swiper-button-next {
+				right: 16%;
+			}
+			.swiper-button-prev {
+				left: 16%;
+			}
+		}
+		@media (max-width: 910px) {
+			.swiper {
+				position: absolute;
+				/* padding-top: 5rem; */
+				left: 24.5% !important;
+				width: 54% !important;
+				height: 30vh;
+			}
+			.swiper-button-next {
+				right: 16%;
+			}
+			.swiper-button-prev {
+				left: 16%;
+			}
+		}
+		@media (max-width: 890px) {
+			.swiper {
+				position: absolute;
+				/* padding-top: 5rem; */
+				left: 24% !important;
+				width: 55% !important;
+				height: 30vh;
+			}
+		}
+		@media (max-width: 875px) {
+			.swiper {
+				position: absolute;
+				/* padding-top: 5rem; */
+				left: 23% !important;
+				width: 56% !important;
+				height: 30vh;
+			}
+			.swiper-button-next {
+				right: 12%;
+			}
+			.swiper-button-prev {
+				left: 12%;
+			}
+		}
+		@media (max-width: 860px) {
+			.swiper {
+				position: absolute;
+				/* padding-top: 5rem; */
+				left: 22% !important;
+				width: 58% !important;
+				height: 30vh;
+			}
+		}
+		@media (max-width: 835px) {
+			.swiper {
+				position: absolute;
+				/* padding-top: 5rem; */
+				/* left: 5px !important; */
+				width: 60% !important;
+				height: 30vh;
+			}
+		}
+		@media (max-width: 805px) {
+			.swiper {
+				position: absolute;
+				/* padding-top: 5rem; */
+				/* left: 5px !important; */
+				width: 62% !important;
+				height: 30vh;
+			}
+		}
+		@media (max-width: 780px) {
+			.swiper {
+				position: absolute;
+				/* padding-top: 5rem; */
+				 left: 20% !important; 
+				width: 64% !important;
+				height: 30vh;
+			}
+			.swiper-button-next {
+				right: 10%;
+			}
+			.swiper-button-prev {
+				left: 10%;
+			}
+		}
+		@media (max-width: 768px) {
+			.swiper {
+				position: absolute;
+				/* padding-top: 5rem; */
+				left: 19.5% !important;
+				width: 61% !important;
+				height: 30vh;
+			}
+			.swiper-slide {
+				height: 110px !important;
+				width: 110px !important;
+			}
+		}
+		@media (max-width: 745px) {
+			.swiper {
+				position: absolute;
+				/* padding-top: 5rem; */
+				left: 18.5% !important;
+				width: 63% !important;
+				height: 30vh;
+			}
+			@media (max-width: 720px) {
+				.swiper {
+					position: absolute;
+					/* padding-top: 5rem; */
+					left: 17.5% !important;
+					width: 65% !important;
+					height: 30vh;
+				}
+				.swiper-button-next {
+					right: 5%;
+				}
+				.swiper-button-prev {
+					left: 5%;
+				}
+			}
+		}
+		@media (max-width: 700px) {
+			.swiper {
+				position: absolute;
+				/* padding-top: 5rem; */
+				left: 16.5% !important;
+				width: 67% !important;
+				height: 30vh;
+			}
+		}
+
+		@media (max-width: 680px) {
+			.swiper {
+				position:absolute;
+				/* padding-top: 5rem; */
+				left: 20% !important;
+				width: 60% !important;
+				height: 30vh;
+			}
+			.swiper-slide {
+				width: 90px !important;
+				height: 90px !important;
+			}
+		}
 	
-}
-.btn-right svg {
-	height: 50px;
-	width: 50px;
-	color: #2C394B;
+		@media (max-width: 655px) {
+			.swiper {
+				position: absolute;
+				/* padding-top: 5rem; */
+				left: 19% !important;
+				width: 62% !important;
+				height: 30vh;
+			}
+			.swiper-slide {
+				width: 90px !important;
+				height: 90px !important;
+			}
+			@media (max-width: 635px) {
+				.swiper {
+					position: absolute;
+					/* padding-top: 5rem; */
+					left: 19% !important;
+					width: 64% !important;
+					height: 30vh;
+				}
+				.swiper-slide {
+					width: 90px !important;
+					height: 90px !important;
+				}
 
-}
-.btn-left svg {
-	height: 50px;
-	width: 50px;
-	color: #2C394B;
+			@media (max-width: 615px) {
+				.swiper {
+					position: absolute;
+					/* padding-top: 5rem; */
+					left: 17.5% !important;
+					width: 66% !important;
+					height: 30vh;
+				}
 
-}
-.btn-left {
-	position: relative;
-	right: 70px;
-	z-index: 5;
-}
-/* contents */
+				.swiper-slide {
+					width: 90px !important;
+					height: 90px !important;
+				}
+			}
 
-.contents {
-	height: 100vh;
+	 @media (max-width: 600px) {
+		.swiper {
+			position: absolute;
+			/* padding-top: 5rem; */
+			left: 16.5% !important;
+			width: 67% !important;
+			height: 30vh;
+		}
+		.title {
+			margin-top: 6.5rem;
+			outline: 5px solid #edbd15;
+			padding: 4rem 6rem 4rem 6rem;
+
+			color: #edbd15;
+			font-size: 3rem;
+			z-index: 2;
+		}
+		.swiper-button-next {
+			top: 50%;
+			right: 1%;
+		}
+		.swiper-button-prev {
+			top: 50%;
+			left: 1%;
+		}
+	}
+	@media (max-width: 590px) {
+		.swiper {
+			position: absolute;
+			/* padding-top: 5rem; */
+			left: 16.5% !important;
+			width: 69% !important;
+			height: 30vh;
+		}
+		.title {
+			margin-top: 6.5rem;
+			outline: 5px solid #edbd15;
+			padding: 4rem 5rem 4rem 5rem;
+
+			color: #edbd15;
+			font-size: 3rem;
+			z-index: 2;
+		}
+		.swiper-button-next {
+			top: 50%;
+			right: 1%;
+		}
+		.swiper-button-prev {
+			top: 50%;
+			left: 1%;
+		}
+	}
+
+	@media (max-width: 560px) {
+		.swiper {
+			position: absolute;
+			/* padding-top: 5rem; */
+			left: 15% !important;
+			width: 71% !important;
+			height: 30vh;
+		}
+	}
+	@media (max-width: 550px) {
+		.swiper {
+			position: absolute;
+			/* padding-top: 5rem; */
+			left: 14% !important;
+			width: 73% !important;
+			height: 30vh;
+		}
+	}
+	@media (max-width: 535px) {
+		.swiper {
+			position: absolute;
+			/* padding-top: 5rem; */
+			left: 19% !important;
+			width: 63% !important;
+			height: 30vh;
+		}
+		.swiper-slide {
+			margin: 10px;
+		}
+	}
+	@media (max-width: 525px) {
+		.swiper {
+			position: absolute;
+			/* padding-top: 5rem; */
+			left: 18% !important;
+			width: 66% !important;
+			height: 30vh;
+		}
+	}
+	@media (max-width: 515px) {
+		.swiper {
+			position: absolute;
+			/* padding-top: 5rem; */
+			left: 17.5% !important;
+			width: 67% !important;
+			height: 30vh;
+		}
+	}
 	
-}
-.transport {
-	border-bottom: 5px solid var(--theme);
-}
-.Transport {
-	padding-top: 100px;
-}
-.transport-content-card {
-	margin-top: 4rem;
-	line-height: 3rem;
-}
-.library-content-card {
-	margin-top: 4rem;
-	line-height: 3rem;
-}
-.hostel-content-card {
-	margin-top: 4rem;
-	line-height: 3rem;
-}
-.temple-content-card {
-	margin-top: 4rem;
-	line-height: 3rem;
-}
-.pe-content-card {
-	margin-top: 4rem;
-	line-height: 3rem;
-}
-.wifi-content-card {
-	margin-top: 4rem;
-	line-height: 3rem;
-}
-.internet-content-card {
-	margin-top: 4rem;
-	line-height: 3rem;
-}
-.cafeteria-content-card {
-	margin-top: 4rem;
-	line-height: 3rem;
-}
+	@media (max-width: 505px) {
+		.swiper {
+			position: absolute;
+			/* padding-top: 5rem; */
+			left: 20% !important;
+			width: 63% !important;
+			height: 30vh;
+		}
+		.swiper-slide {
+			width: 80px !important;
+			height: 80px !important;
+		}
+	}
+		
+	@media (max-width: 492px) {
+		.swiper {
+			position: absolute;
+			/* padding-top: 5rem; */
+			left: 19% !important;
+			width: 62% !important;
+			height: 30vh;
+		}
+
+	}
+	@media (max-width: 478px) {
+		.swiper {
+			position: absolute;
+			/* padding-top: 5rem; */
+			left: 18% !important;
+			width: 64% !important;
+			height: 30vh;
+		}
+
+	}
+	@media (max-width: 462px) {
+		.swiper {
+			position: absolute;
+			/* padding-top: 5rem; */
+			left: 17% !important;
+			width: 66% !important;
+			height: 30vh;
+		}
+
+	}
+	@media (max-width: 441px) {
+		.swiper {
+			position: absolute;
+			/* padding-top: 5rem; */
+			left: 15.5% !important;
+			width: 69%;
+			height: 30vh;
+		}
+
+	}
+	@media (max-width: 448px) {
+		.swiper {
+			position:absolute;
+			/* padding-top: 5rem; */
+			left: 16% !important;
+			width: 68% !important;
+			height: 30vh;
+		}
+
+	}
+	@media (max-width: 436px) {
+		.swiper {
+			position: absolute;
+			/* padding-top: 5rem; */
+			left: 18.5% !important;
+			width: 63% !important;
+			height: 30vh;
+		}
+		.swiper-slide {
+			width: 70px !important;
+			height: 70px !important;
+		}
+
+	}
+	
+	@media (max-width: 422px) {
+		.swiper {
+			position: absolute;
+			/* padding-top: 5rem; */
+			left: 17.5% !important;
+			width: 65% !important;
+			height: 30vh;
+		}
+		.swiper-slide {
+			width: 70px !important;
+			height: 70px !important;
+		}
+
+	}
+	@media (max-width: 410px) {
+		.swiper {
+			position: absolute;
+			/* padding-top: 5rem; */
+			left: 20%  !important;
+			width: 60% !important;
+			height: 30vh;
+		}
+		.swiper-slide {
+			width: 60px !important;
+			height: 60px !important;
+		}
+	}
+	@media (max-width: 394px) {
+		.swiper {
+			position: absolute;
+			/* padding-top: 5rem; */
+			left: 19% !important;
+			width: 62% !important;
+			height: 30vh;
+		}
+		.swiper-slide {
+			width: 60px !important;
+			height: 60px !important;
+		}
+	}
+
+	@media (max-width: 382px) {
+		.swiper {
+			position: relative;
+			/* padding-top: 5rem; */
+			left: 18% !important;
+			width: 64% !important;
+			height: 30vh;
+		}
+		.swiper-slide {
+			width: 60px !important;
+			height: 60px !important;
+		}
+	}
+	@media (max-width: 370px) {
+		.swiper {
+			position: relative;
+			/* padding-top: 5rem; */
+			left: 17% !important;
+			width: 66% !important;
+			height: 30vh;
+		}
+		.swiper-slide {
+			width: 60px !important;
+			height: 60px !important;
+		}
+	}
+	@media (max-width: 358px) {
+		.swiper {
+			position: relative;
+			/* padding-top: 5rem; */
+			left: 16% !important;
+			width: 68% !important;
+			height: 30vh;
+		}
+		.swiper-slide {
+			width: 60px !important;
+			height: 60px !important;
+		}
+	}
+
+	
+	
+	
+	
+	
+	
