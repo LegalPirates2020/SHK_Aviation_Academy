@@ -1,5 +1,5 @@
-body {
-	height: 700vh;
+* {
+	scroll-behavior: smooth;
 }
 
 .hero {
@@ -175,6 +175,7 @@ body {
 	letter-spacing: 1px;
 	display: flex;
 	align-items: center;
+	overflow: hidden;
 }
 
 .vision-and-mission h1 {
@@ -202,4 +203,309 @@ body {
 
 .mission h1 {
 	overflow: hidden;
+}
+
+.SHK-heads {
+	width: 100%;
+	height: 70vh;
+	background-color: white;
+	position: relative;
+	top: var(--nav-height);
+	background: linear-gradient(40deg, #cccccc 50%, var(--theme) 50%);
+	overflow: hidden;
+	padding: 4rem 6rem;
+}
+
+.SHK-heads > div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.heads {
+	display: flex;
+	box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3), -2px, -2px, 15px,
+		rgba(0, 0, 0, 0.3);
+	width: 20rem;
+	border: 2px solid black;
+	padding: 0;
+	background-color: aqua;
+	text-align: center;
+	transform-origin: center;
+	border-radius: 20px;
+}
+/* 
+.heads-num {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.heads-num div {
+	width: 3rem;
+	height: 3rem;
+	background-color: aquamarine;
+	padding: 1rem;
+	margin: 0.5rem 1rem;
+	border-radius: 10px;
+} */
+
+.heads-pos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	margin: 0.5rem;
+	width: 100%;
+}
+
+.heads-pos div {
+	padding: 1rem;
+	background-color: antiquewhite;
+	height: 3rem;
+	width: 100%;
+	margin-bottom: 0.5rem;
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.heads-pos div:nth-of-type(7) {
+	margin-bottom: 0;
+}
+
+.heads + div {
+	width: 35%;
+	letter-spacing: 1px;
+	line-height: 2rem;
+	text-align: justify;
+}
+
+.heads-pos div::after {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	text-align: end;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 4px;
+	height: 100%;
+	background: rgb(241, 120, 21);
+	transition: 0.5s ease-in-out;
+	transform: scale(0);
+	cursor: pointer;
+}
+
+.heads-pos div::before {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	text-align: end;
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	width: 4px;
+	height: 100%;
+	background: rgb(241, 120, 21);
+	transition: 0.5s ease-in-out;
+	transform: scale(0);
+	cursor: pointer;
+}
+
+.heads-pos div:hover::after,
+.heads-pos div:hover::before {
+	width: 50%;
+	transform: scale(1);
+	transition: 0.5s;
+}
+
+.heads-pos div:nth-of-type(1):after {
+	content: 'Mr. B.';
+}
+
+.heads-pos div:nth-of-type(1)::before {
+	content: 'Haribabu';
+}
+
+.heads-pos div:nth-of-type(2):after {
+	content: 'Dr. H.';
+}
+
+.heads-pos div:nth-of-type(2)::before {
+	content: 'Srinivasan';
+}
+
+.heads-pos div:nth-of-type(3):after {
+	content: 'Mrs. H.';
+}
+
+.heads-pos div:nth-of-type(3)::before {
+	content: 'Pushpalatha';
+}
+
+.heads-pos div:nth-of-type(4):after {
+	content: 'Mrs. H.';
+}
+
+.heads-pos div:nth-of-type(4)::before {
+	content: 'Sujithra';
+}
+
+.heads-pos div:nth-of-type(5):after {
+	content: 'Mr. V.';
+}
+
+.heads-pos div:nth-of-type(5)::before {
+	content: 'Karthick';
+}
+
+.heads-pos div:nth-of-type(6):after {
+	content: 'Mr. J.N';
+}
+
+.heads-pos div:nth-of-type(6)::before {
+	content: 'Senthilkanna';
+}
+
+.heads-pos div:nth-of-type(7)::after {
+	content: 'Dr.N.';
+}
+
+.heads-pos div:nth-of-type(7)::before {
+	content: 'Janaki Manohar';
+}
+
+.head-content-title {
+	margin-bottom: 2rem;
+	text-align: center;
+	overflow: hidden;
+}
+
+.contact-sec {
+	width: 100%;
+	height: 70vh;
+	background-color: wheat;
+	position: relative;
+	top: var(--nav-height);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+
+.contact-title {
+	position: relative;
+	text-align: center;
+	top: -3rem;
+}
+
+.contact-aside {
+	position: absolute;
+    /* clip-path: polygon(50% 0%, 0 100%, 100% 100%); */
+    background-color: blue;
+    width: 100%;
+    top: 0;
+    left: -34rem;
+    box-shadow: 2px 2px 15px black;
+    transform: rotate(
+48deg
+);
+    height: 152%;
+    z-index: 1;
+}
+
+.input {
+	width: 40%;
+	height: 3rem;
+	resize: none;
+	position: relative;
+	margin: 2rem 0;
+	border-radius: 5px;
+	margin: 1.5rem 10rem;
+	outline: none;
+	border: none;
+	padding: 0 1.5rem 0 0;
+	transition: all 0.5s ease-in-out;
+	box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3), -1px -1px 20px rgba(0, 0, 0, 0.3);
+}
+
+.input:nth-of-type(1) {
+	left: 14rem;
+	padding-left: 11rem;
+}
+
+.input:nth-of-type(1):hover,
+.input:nth-of-type(1):focus {
+	left: 25rem;
+	padding-left: 2rem;
+}
+
+.input:nth-of-type(2) {
+	left: 21rem;
+	padding-left: 10rem;
+}
+
+.input:nth-of-type(2):hover,
+.input:nth-of-type(2):focus {
+	left: 30rem;
+	padding-left: 2rem;
+}
+
+.input:nth-of-type(3) {
+	left: 27rem;
+	padding-left: 9rem;
+}
+
+.input:nth-of-type(3):hover,
+.input:nth-of-type(3):focus {
+	left: 36rem;
+	padding-left: 3rem;
+	width: 35%;
+}
+
+.text-area {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 13rem;
+	padding: 2rem;
+	width: 40%;
+	resize: none;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	transition: all 0.5s ease-in-out;
+	box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3), -1px -1px 20px rgba(0, 0, 0, 0.3);
+	left: -10rem;
+}
+
+.submit,
+.next-submit {
+	position: relative;
+	left: 0rem;
+	border-radius: 10px;
+	width: 10rem;
+	height: 2.5rem;
+	top: 25px;
+	text-align: center;
+	outline: none;
+	border: none;
+	box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3), -1px -1px 20px rgba(0, 0, 0, 0.3);
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+	color: var(--theme);
+	background-color: white;
+}
+
+.next-submit {
+	padding: 0.7rem 4rem;
+}
+
+.submit:hover,
+.next-submit:hover {
+	background-color: var(--theme);
+	color: white;
 }
