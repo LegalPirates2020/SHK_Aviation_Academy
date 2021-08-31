@@ -1,18 +1,16 @@
-const span1 = document.querySelectorAll(".span1")
-const button1 = document.querySelectorAll(".button1")
+const span1 = document.querySelectorAll(".span1");
+const button1 = document.querySelectorAll(".button1");
 
-button1.forEach(element => {
-	element.addEventListener("click" , () => {
-		element.parentElement.children[0].classList.toggle("readmore")
-		if (element.innerHTML === "Watch This") {
-			element.innerHTML = "Watch Less"
+button1.forEach((element) => {
+	element.addEventListener("click", () => {
+		element.parentElement.children[0].classList.toggle("readmore");
+		if (element.innerHTML === "Read More") {
+			element.innerHTML = "Read Less";
+		} else {
+			element.innerHTML = "Read More";
 		}
-		else{
-			element.innerHTML = "Watch This"
-		}
-	})
+	});
 });
-
 
 const watch = document.querySelectorAll(".watch");
 const watch1 = document.querySelector(".watch1");
@@ -79,11 +77,55 @@ const ul4 = document.querySelector(".ul4");
 const ul5 = document.querySelector(".ul5");
 const ul6 = document.querySelector(".ul6");
 
-const watchra = [	watch1,	watch2,	watch3,	watch4,	watch5,	watch6,	watch22,	watch23,	watch24,	watch25,	watch26,	watch32,	watch33,	watch34,	watch35,	watch36,	watch42,	watch43,	watch44,	watch45,	watch46];
+const watchra = [
+	watch1,
+	watch2,
+	watch3,
+	watch4,
+	watch5,
+	watch6,
+	watch22,
+	watch23,
+	watch24,
+	watch25,
+	watch26,
+	watch32,
+	watch33,
+	watch34,
+	watch35,
+	watch36,
+	watch42,
+	watch43,
+	watch44,
+	watch45,
+	watch46,
+];
 
 // const watchra = [watch1, watch2, watch3, watch4, watch5, watch6];
 
-const parara = [	para1,	para2,	para3,	para4,	para5,	para6,	para22,	para23,	para24,	para25,	para26,	para32,	para33,	para34,	para35,	para36,	para42,	para43,	para44,	para45,	para46];
+const parara = [
+	para1,
+	para2,
+	para3,
+	para4,
+	para5,
+	para6,
+	para22,
+	para23,
+	para24,
+	para25,
+	para26,
+	para32,
+	para33,
+	para34,
+	para35,
+	para36,
+	para42,
+	para43,
+	para44,
+	para45,
+	para46,
+];
 // const parara = [para1, para2, para3, para4, para5, para6];
 
 for (let i = 0; i < watchra.length; i++) {
@@ -171,6 +213,57 @@ for (let i = 0; i < watchra.length; i++) {
 		}
 	});
 }
+
+const bba = document.querySelector(".bba");
+const bscaviation = document.querySelector(".bscaviation");
+const mba = document.querySelector(".mba");
+const bscair = document.querySelector(".bscair");
+
+const clicking = [bba, bscaviation, mba, bscair];
+
+clicking.forEach((element) => {
+	element.addEventListener("click", () => {
+		switch (element.getAttribute("class")) {
+			case "bba":
+				window.location.href = "./academics.html#course1";
+				break;
+			case "bscaviation":
+				window.location.href = "./academics.html#course2";
+				break;
+			case "mba":
+				window.location.href = "./academics.html#course3";
+				break;
+			case "bscair":
+				window.location.href = "./academics.html#course4";
+				break;
+		}
+	});
+});
+
+
+
+const arrow = document.querySelector(".arrow");
+const arrowl = document.querySelector(".arrowl");
+const arrowr = document.querySelector(".arrowr");
+const table = document.querySelector(".table");
+const mobileclick = document.querySelector(".mobileclick");
+const firstdiv = document.querySelector(".firstdiv");
+const again = document.querySelector(".again");
+
+
+mobileclick.addEventListener("click" , () => {
+	again.classList.toggle("clicking10");
+	again.classList.toggle("colorchanging");
+})
+mobileclick.addEventListener("click" , () => {
+	arrowr.classList.toggle("arrowright");
+})
+mobileclick.addEventListener("click" , () => {
+	arrowl.classList.toggle("arrowleft");
+})
+
+
+
 
 
 
