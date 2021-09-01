@@ -166,7 +166,7 @@
 	left: 35% !important;
 	top: 20%;
 	width: 28%;
-	margin-left: 1.5rem ;
+	margin-left: 1.5rem;
 
 	border-radius: 5%;
 }
@@ -276,13 +276,13 @@
 }
 @media (max-width: 1880px) {
 	.swiper {
-position: absolute;
+		position: absolute;
 		/* padding-top: 5rem; */
 		left: 35.5% !important;
-		width: 29% ;
+		width: 29%;
 		height: 30vh;
 		right: 35.5% !important;
-	 margin-right: .5rem; 
+		margin-right: 0.5rem;
 	}
 	.swiper-slide {
 		width: 140px !important;
@@ -291,13 +291,12 @@ position: absolute;
 }
 @media (max-width: 1855px) {
 	.swiper {
-position: absolute;
+		position: absolute;
 		/* padding-top: 5rem; */
 		left: 35% !important;
-		width: 30% ;
+		width: 30%;
 		height: 30vh;
-		margin-left: 1.5rem; 
-
+		margin-left: 1.5rem;
 	}
 	.swiper-slide {
 		width: 140px !important;
@@ -306,11 +305,10 @@ position: absolute;
 }
 @media (max-width: 1820px) {
 	.swiper {
-position: absolute;
+		position: absolute;
 		/* padding-top: 5rem; */
-		margin-left: 0rem !important; 
-		margin-right: 7rem !important; 
-
+		margin-left: 0rem !important;
+		margin-right: 7rem !important;
 	}
 	.swiper-slide {
 		width: 140px !important;
@@ -319,7 +317,7 @@ position: absolute;
 }
 @media (max-width: 1780px) {
 	.swiper {
-	position: absolute;
+		position: absolute;
 		/* padding-top: 5rem; */
 		left: 34.5 !important;
 		width: 31%;
@@ -336,21 +334,20 @@ position: absolute;
 }
 @media (max-width: 1755px) {
 	.swiper {
-	position: absolute;
+		position: absolute;
 		/* padding-top: 5rem; */
-	margin-left: -1rem !important;
+		margin-left: -1rem !important;
 	}
-
 }
 
 @media (max-width: 1735px) {
 	.swiper {
-	position: absolute;
+		position: absolute;
 		/* padding-top: 5rem; */
 		left: 34% !important;
 		width: 32%;
 		height: 30vh;
-		margin-left: .5rem !important;
+		margin-left: 0.5rem !important;
 	}
 	.swiper-button-next {
 		top: 47%;
@@ -363,7 +360,7 @@ position: absolute;
 }
 @media (max-width: 1710px) {
 	.swiper {
-	position: absolute;
+		position: absolute;
 		/* padding-top: 5rem; */
 		left: 34% !important;
 		width: 32%;
@@ -413,7 +410,6 @@ position: absolute;
 }
 @media (max-width: 1540px) {
 	.swiper {
-
 		position: absolute;
 		/* padding-top: 5rem; */
 		left: 32% !important;
@@ -430,7 +426,7 @@ position: absolute;
 	.swiper {
 		position: absolute;
 		/* padding-top: 5rem; */
-		 left: 31.5% !important; 
+		left: 31.5% !important;
 		width: 37%;
 		height: 30vh;
 	}
@@ -440,7 +436,7 @@ position: absolute;
 	.swiper {
 		position: absolute;
 		/* padding-top: 5rem; */
-		 left: 31% !important; 
+		left: 31% !important;
 		width: 38%;
 		height: 30vh;
 	}
@@ -449,7 +445,7 @@ position: absolute;
 	.swiper {
 		position: absolute;
 		/* padding-top: 5rem; */
-		 left: 30.5% !important; 
+		left: 30.5% !important;
 		width: 39%;
 		height: 30vh;
 	}
@@ -469,9 +465,7 @@ position: absolute;
 		width: 40px;
 		color: #2c394b;
 	}
-
 }
-
 
 @media (max-width: 1380px) {
 	.container-card {
@@ -480,7 +474,7 @@ position: absolute;
 	.swiper {
 		position: absolute;
 		/* padding-top: 5rem; */
-		left: 30% !important; 
+		left: 30% !important;
 		margin-left: 1rem !important;
 		width: 38%;
 		height: 30vh;
@@ -526,7 +520,7 @@ position: absolute;
 	.swiper {
 		position: absolute;
 		/* padding-top: 5rem; */
-		left: 30% !important; 
+		left: 30% !important;
 		width: 39%;
 		height: 30vh;
 	}
@@ -558,7 +552,6 @@ position: absolute;
 	}
 }
 @media (max-width: 1310px) {
-
 	.swiper {
 		position: absolute;
 		/* padding-top: 5rem; */
@@ -595,8 +588,6 @@ position: absolute;
 		height: 30vh;
 		margin-left: -2rem !important;
 	}
-
-
 }
 @media (max-width: 1220px) {
 	.swiper {
@@ -606,8 +597,6 @@ position: absolute;
 		width: 43%;
 		height: 30vh;
 	}
-
-
 }
 @media (max-width: 1200px) {
 	.swiper {
@@ -649,7 +638,7 @@ position: absolute;
 	.swiper {
 		position: absolute;
 		/* padding-top: 5rem; */
-		left: 29% !important; 
+		left: 29% !important;
 		width: 48%;
 		height: 30vh;
 	}
@@ -659,289 +648,284 @@ position: absolute;
 	.swiper-button-next {
 		right: 16%;
 	}
+}
+@media (max-width: 1075px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 28.5% !important;
+		width: 49%;
+		height: 30vh;
+	}
+}
 
-	@media (max-width: 1075px) {
+@media (max-width: 1050px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 28% !important;
+		width: 47% !important;
+		height: 30vh;
+		margin-left: -1rem !important;
+	}
+	.swiper-button-next {
+		right: 18%;
+	}
+	.swiper-button-prev {
+		left: 18%;
+	}
+	.swiper-slide {
+		height: 120px !important;
+		width: 120px !important;
+	}
+}
+@media (max-width: 1025px) and (min-width: 1020px) {
+	.swiper {
+		margin-left: -2.5rem !important;
+	}
+}
+@media (max-width: 1020px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 27.5% !important;
+		width: 49% !important;
+		height: 30vh;
+	}
+}
+@media (max-width: 1000px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 27% !important;
+		width: 50% !important;
+		height: 30vh;
+		margin-left: -1rem !important;
+	}
+	.swiper-slide {
+		font-size: 14px;
+	}
+}
+@media (max-width: 980px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 26.5% !important;
+		width: 51% !important;
+		height: 30vh;
+	}
+}
+@media (max-width: 960px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 25.5% !important;
+		width: 52% !important;
+		height: 30vh;
+		margin-left: -1rem !important;
+	}
+	.swiper-button-next {
+		right: 14%;
+	}
+	.swiper-button-prev {
+		left: 14%;
+	}
+}
+@media (max-width: 925px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 24.5% !important;
+		width: 53% !important;
+		height: 30vh;
+	}
+}
+@media (max-width: 910px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 24.5% !important;
+		width: 54% !important;
+		height: 30vh;
+	}
+}
+@media (max-width: 890px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 24% !important;
+		width: 55% !important;
+		height: 30vh;
+		margin-left: -1.8rem !important;
+	}
+}
+@media (max-width: 875px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 23% !important;
+		width: 56% !important;
+		height: 30vh;
+		margin-left: -1.5rem !important;
+	}
+	.swiper-button-next {
+		right: 12% !important;
+	}
+	.swiper-button-prev {
+		left: 10% !important;
+	}
+}
+@media (max-width: 860px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 22% !important;
+		width: 58% !important;
+		height: 30vh;
+		margin-left: -0.5rem !important;
+	}
+}
+@media (max-width: 835px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		/* left: 5px !important; */
+		width: 60% !important;
+		height: 30vh;
+	}
+}
+@media (max-width: 805px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		/* left: 5px !important; */
+		width: 62% !important;
+		height: 30vh;
+		margin-left: -1.5rem !important;
+	}
+	.swiper-button-next {
+		right: 8% !important;
+	}
+	.swiper-button-prev {
+		left: 8% !important;
+	}
+}
+@media (max-width: 780px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 20% !important;
+		width: 64% !important;
+		height: 30vh;
+	}
+}
+@media (max-width: 768px) {
+	.title {
+		padding: 4rem 6rem 4rem 6rem;
+	}
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 19.5% !important;
+		width: 61% !important;
+		height: 30vh;
+		margin-left: 0rem !important;
+	}
+	.swiper-slide {
+		height: 110px !important;
+		width: 110px !important;
+	}
+	.swiper-button-next,
+	.swiper-button-prev {
+		/* top: 52%;
+				height: 30px;
+				width: 30px; */
+		display: none;
+	}
+}
+@media (max-width: 745px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 18.5% !important;
+		width: 63% !important;
+		height: 30vh;
+	}
+}
+@media (max-width: 720px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 17.5% !important;
+		width: 65% !important;
+		height: 30vh;
+	}
+}
+
+@media (max-width: 700px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 16.5% !important;
+		width: 67% !important;
+		height: 30vh;
+	}
+}
+
+@media (max-width: 680px) {
+	.title {
+		padding: 4rem 6rem 4rem 6rem;
+		font-size: 2.5rem;
+	}
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 20% !important;
+		width: 60% !important;
+		height: 30vh;
+		margin-left: 0rem !important;
+	}
+	.swiper-slide {
+		width: 90px !important;
+		height: 90px !important;
+	}
+	.swiper-button-next,
+	.swiper-button-prev {
+		top: 46%;
+	}
+}
+
+@media (max-width: 655px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 19% !important;
+		width: 62% !important;
+		height: 30vh;
+	}
+}
+
+@media (max-width: 635px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 19% !important;
+		width: 64% !important;
+		height: 30vh;
+		margin-left: -0.5rem !important;
+	}
+
+	@media (max-width: 615px) {
 		.swiper {
 			position: absolute;
 			/* padding-top: 5rem; */
-			left: 28.5% !important;
-			width: 49%;
+			left: 17.5% !important;
+			width: 66% !important;
 			height: 30vh;
 		}
+	}
 
-	@media (max-width: 1050px) {
-			.swiper {
-				position: absolute;
-				/* padding-top: 5rem; */
-				left: 28% !important;
-				width: 47% !important;
-				height: 30vh;
-				margin-left: -1rem !important;
-			}
-			.swiper-button-next {
-				right: 18%;
-			}
-			.swiper-button-prev {
-				left: 18%;
-			}
-			.swiper-slide {
-				height: 120px !important;
-				width: 120px !important;
-			}
-		}
-		@media (max-width: 1025px) and (min-width: 1020px) {
-			.swiper {
-				margin-left: -2.5rem !important;
-			}
-		}
-		@media (max-width: 1020px) {
-			.swiper {
-				position: absolute;
-				/* padding-top: 5rem; */
-				left:27.5% !important;
-				width: 49% !important;
-				height: 30vh;
-			}
-
-		}
-		@media (max-width: 1000px) {
-			.swiper {
-				position: absolute;
-				/* padding-top: 5rem; */
-				left:  27% !important;
-				width: 50% !important;
-				height: 30vh;
-				margin-left: -1rem !important;
-			}
-			.swiper-slide {
-				font-size: 14px;
-			}
-		}
-		@media (max-width: 980px) {
-			.swiper {
-				position: absolute;
-				/* padding-top: 5rem; */
-				left: 26.5% !important;
-				width: 51% !important;
-				height: 30vh;
-			}
-		}
-		@media (max-width: 960px) {
-			.swiper {
-				position: absolute;
-				/* padding-top: 5rem; */
-				left: 25.5% !important;
-				width: 52% !important;
-				height: 30vh;
-				margin-left: -1rem !important;
-			}
-			.swiper-button-next {
-				right: 14%;
-			}
-			.swiper-button-prev {
-				left: 14%;
-			}
-		
-		}
-		@media (max-width: 925px) {
-			.swiper {
-				position: absolute;
-				/* padding-top: 5rem; */
-				left: 24.5% !important;
-				width: 53% !important;
-				height: 30vh;
-			}
-	
-		}
-		@media (max-width: 910px) {
-			.swiper {
-				position: absolute;
-				/* padding-top: 5rem; */
-				left: 24.5% !important;
-				width: 54% !important;
-				height: 30vh;
-			}
-
-		}
-		@media (max-width: 890px) {
-			.swiper {
-				position: absolute;
-				/* padding-top: 5rem; */
-				left: 24% !important;
-				width: 55% !important;
-				height: 30vh;
-				margin-left: -1.8rem !important;
-			}
-		}
-		@media (max-width: 875px) {
-			.swiper {
-				position: absolute;
-				/* padding-top: 5rem; */
-				left: 23% !important;
-				width: 56% !important;
-				height: 30vh;
-				margin-left: -1.5rem !important;
-			}
-			.swiper-button-next {
-				right: 12% !important;
-			}
-			.swiper-button-prev {
-				left: 10% !important;
-			}
-		}
-		@media (max-width: 860px) {
-			.swiper {
-				position: absolute;
-				/* padding-top: 5rem; */
-				left: 22% !important;
-				width: 58% !important;
-				height: 30vh;
-				margin-left: -.5rem !important;
-			}
-		}
-		@media (max-width: 835px) {
-			.swiper {
-				position: absolute;
-				/* padding-top: 5rem; */
-				/* left: 5px !important; */
-				width: 60% !important;
-				height: 30vh;
-			}
-		}
-		@media (max-width: 805px) {
-			.swiper {
-				position: absolute;
-				/* padding-top: 5rem; */
-				/* left: 5px !important; */
-				width: 62% !important;
-				height: 30vh;
-				margin-left: -1.5rem !important;
-			}
-			.swiper-button-next {
-				right: 8% !important;
-			}
-			.swiper-button-prev {
-				left: 8% !important; 
-			}
-		}
-		@media (max-width: 780px) {
-			.swiper {
-				position: absolute;
-				/* padding-top: 5rem; */
-				 left: 20% !important; 
-				width: 64% !important;
-				height: 30vh;
-			}
-
-		}
-		@media (max-width: 768px) {
-			.title {
-				padding: 4rem 6rem 4rem 6rem;
-			}
-			.swiper {
-				position: absolute;
-				/* padding-top: 5rem; */
-				left: 19.5% !important;
-				width: 61% !important;
-				height: 30vh;
-				margin-left: 0rem !important;
-			}
-			.swiper-slide {
-				height: 110px !important;
-				width: 110px !important;
-			}
-			.swiper-button-next , 
-			.swiper-button-prev {
-				/* top: 52%;
-				height: 30px;
-				width: 30px; */
-				display: none ;
-			}
-
-		}
-		@media (max-width: 745px) {
-			.swiper {
-				position: absolute;
-				/* padding-top: 5rem; */
-				left: 18.5% !important;
-				width: 63% !important;
-				height: 30vh;
-			}
-			@media (max-width: 720px) {
-				.swiper {
-					position: absolute;
-					/* padding-top: 5rem; */
-					left: 17.5% !important;
-					width: 65% !important;
-					height: 30vh;
-				}
-		
-			}
-		}
-		@media (max-width: 700px) {
-			.swiper {
-				position: absolute;
-				/* padding-top: 5rem; */
-				left: 16.5% !important;
-				width: 67% !important;
-				height: 30vh;
-			}
-		}
-
-		@media (max-width: 680px) {
-			.title {
-				padding: 4rem 6rem 4rem 6rem;
-				font-size: 2.5rem;
-			}
-			.swiper {
-				position:absolute;
-				/* padding-top: 5rem; */
-				left: 20% !important;
-				width: 60% !important;
-				height: 30vh;
-				margin-left: 0rem !important;
-			}
-			.swiper-slide {
-				width: 90px !important;
-				height: 90px !important;
-			}
-			.swiper-button-next ,
-			.swiper-button-prev {
-				top: 46%;
-			}
-		}
-	
-		@media (max-width: 655px) {
-			.swiper {
-				position: absolute;
-				/* padding-top: 5rem; */
-				left: 19% !important;
-				width: 62% !important;
-				height: 30vh;
-			}
-
-			@media (max-width: 635px) {
-				.swiper {
-					position: absolute;
-					/* padding-top: 5rem; */
-					left: 19% !important;
-					width: 64% !important;
-					height: 30vh;
-					margin-left: -.5rem !important;
-				}
-	
-			@media (max-width: 615px) {
-				.swiper {
-					position: absolute;
-					/* padding-top: 5rem; */
-					left: 17.5% !important;
-					width: 66% !important;
-					height: 30vh;
-				}
-
-			}
-
-	 @media (max-width: 600px) {
+	@media (max-width: 600px) {
 		.swiper {
 			position: absolute;
 			/* padding-top: 5rem; */
@@ -949,8 +933,6 @@ position: absolute;
 			width: 67% !important;
 			height: 30vh;
 		}
-	
-
 	}
 	@media (max-width: 590px) {
 		.swiper {
@@ -967,7 +949,6 @@ position: absolute;
 			color: #edbd15;
 			z-index: 2;
 		}
-
 	}
 
 	@media (max-width: 560px) {
@@ -1005,9 +986,10 @@ position: absolute;
 		.swiper-slide {
 			margin: 10px;
 		}
-		.swiper-button-next ,
+		.swiper-button-next,
 		.swiper-button-prev {
-  top: 43%;		
+			top: 43%;
+		}
 	}
 	@media (max-width: 525px) {
 		.swiper {
@@ -1027,10 +1009,10 @@ position: absolute;
 			height: 30vh;
 		}
 	}
-	
+
 	@media (max-width: 505px) {
 		.title {
-			padding: 4rem 7rem 4rem 7rem ;
+			padding: 4rem 7rem 4rem 7rem;
 			/* margin-left: 1rem; */
 			font-size: 2rem;
 		}
@@ -1045,14 +1027,12 @@ position: absolute;
 		.swiper-slide {
 			font-size: 12px;
 		}
-		.swiper-button-next ,
+		.swiper-button-next,
 		.swiper-button-prev {
 			top: 40%;
-		
 		}
 	}
 	@media (max-width: 495px) {
-
 		.swiper {
 			position: absolute;
 			/* padding-top: 5rem; */
@@ -1061,10 +1041,8 @@ position: absolute;
 			height: 30vh;
 			margin-left: -1.8rem !important;
 		}
-
 	}
 	@media (max-width: 490px) {
-
 		.swiper {
 			position: absolute;
 			/* padding-top: 5rem; */
@@ -1073,204 +1051,184 @@ position: absolute;
 			height: 30vh;
 			margin-left: -2rem !important;
 		}
-
 	}
-		
-	@media (max-width: 480px) {
 
+	@media (max-width: 480px) {
 		.swiper {
 			position: absolute;
 			/* padding-top: 5rem; */
 			left: 19% !important;
 			width: 70% !important;
 			height: 30vh;
-			 margin-left: -1.5rem !important; 
-		}
-
-
-	}
-	@media (max-width: 470px) {
-		.swiper {
-			position: absolute;
-			/* padding-top: 5rem; */
-			left: 18% !important;
-			width: 71% !important;
-			height: 30vh;
-			margin-left: -1.8rem !important;
-		}
-
-	}
-	@media (max-width: 460px) {
-		.title {
-			padding: 4rem 6rem 4rem 6rem ;
-		
-			font-size: 2rem;
-		}
-		.swiper {
-			position: absolute;
-			/* padding-top: 5rem; */
-			left: 17% !important;
-			width: 73% !important;
-			height: 30vh;
-			margin-left: -1rem !important;
-		}
-
-	}
-	@media (max-width: 448px) {
-		.swiper {
-			position: absolute;
-			/* padding-top: 5rem; */
-			left: 15.5% !important;
-			width: 75% !important;
-			height: 30vh;
-			margin-left: -.8rem !important;
-		}
-
-	}
-	@media (max-width: 440px) {
-		.swiper {
-			position:absolute;
-			/* padding-top: 5rem; */
-			left: 16% !important;
-			width: 76% !important;
-			height: 30vh;
-			margin-left: -1.2rem !important;
-		}
-
-	}
-	@media (max-width: 435px) {
-		.swiper {
-			position: absolute;
-			/* padding-top: 5rem; */
-			left: 18.5% !important;
-			width: 77% !important;
-			height: 30vh;
-			margin-left: -1.85rem !important;
-		}
-		.title {
-			padding: 4rem 5.5rem 4rem 5.5rem ;
-			font-size: 2rem;
-		}
-
-
-	}
-	
-	@media (max-width: 425px) {
-		.swiper {
-			position: absolute;
-			/* padding-top: 5rem; */
-			left: 17.5% !important;
-			width: 78% !important;
-			height: 30vh;
-			margin-left: -2rem !important;
-		}
-
-
-	}
-	@media (max-width: 420px) {
-		.swiper {
-			position: absolute;
-			/* padding-top: 5rem; */
-			left: 20%  !important;
-			width: 80% !important;
-			height: 30vh;
-			margin-left: -2.8rem !important;
-
-		}
-		.swiper-slide {
-			width: 90px !important;
-			height: 90px !important;
+			margin-left: -1.5rem !important;
 		}
 	}
-	@media (max-width: 408px) {
-		.swiper {
-			position: absolute;
-			/* padding-top: 5rem; */
-			left: 19% !important;
-			width: 82% !important;
-			height: 30vh;
-		}
+}
+@media (max-width: 470px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 18% !important;
+		width: 71% !important;
+		height: 30vh;
+		margin-left: -1.8rem !important;
 	}
+}
 
-	@media (max-width: 400px) {
-		.swiper {
-			position: absolute;
-			/* padding-top: 5rem; */
-			left: 18% !important;
-			width: 80% !important;
-			height: 30vh;
-			margin-left: -2.2rem !important;
-		}
-		.swiper-slide {
-			width: 85px !important;
-			height: 85px !important;
-		}
-		.title {
-			padding: 4rem 5rem 4rem 5rem ;
-			/* margin-left: 1rem; */
-			font-size: 1.8rem;
-		}
-	}
-	@media (max-width: 390px) {
-		.swiper {
-			position: absolute;
-			/* padding-top: 5rem; */
-			left: 17% !important;
-			width: 82% !important;
-			height: 30vh;
-		}
+@media (max-width: 460px) {
+	.title {
+		padding: 4rem 6rem 4rem 6rem;
 
+		font-size: 2rem;
 	}
-	@media (max-width: 380px) {
-		.swiper {
-			position: absolute;
-			/* padding-top: 5rem; */
-			left: 16% !important;
-			width: 84% !important;
-			height: 30vh;
-			margin-left: -2.05rem !important;
-		}
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 17% !important;
+		width: 73% !important;
+		height: 30vh;
+		margin-left: -1rem !important;
+	}
+}
+@media (max-width: 448px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 15.5% !important;
+		width: 75% !important;
+		height: 30vh;
+		margin-left: -0.8rem !important;
+	}
+}
+@media (max-width: 440px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 16% !important;
+		width: 76% !important;
+		height: 30vh;
+		margin-left: -1.2rem !important;
+	}
+}
+@media (max-width: 435px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 18.5% !important;
+		width: 77% !important;
+		height: 30vh;
+		margin-left: -1.85rem !important;
+	}
+	.title {
+		padding: 4rem 5.5rem 4rem 5.5rem;
+		font-size: 2rem;
+	}
+}
 
+@media (max-width: 425px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 17.5% !important;
+		width: 78% !important;
+		height: 30vh;
+		margin-left: -2rem !important;
 	}
-	@media (max-width: 375px) {
-		.swiper {
-			position: absolute;
-			/* padding-top: 5rem; */
-			left: 16% !important;
-			width: 85% !important;
-			height: 30vh;
-			margin-left: -2rem !important;
-		}
+}
+@media (max-width: 420px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 20% !important;
+		width: 80% !important;
+		height: 30vh;
+		margin-left: -2.8rem !important;
 	}
-	@media (max-width: 370px) {
-		.swiper {
-			position: absolute;
-			/* padding-top: 5rem; */
-			left: 16% !important;
-			width: 86% !important;
-			height: 30vh;
-			margin-left: -2.1rem !important;
-		}
-		.title {
-			padding: 4rem 5rem 4rem 5rem ;
-			/* margin-left: 1rem; */
-			font-size: 1.5rem;
-		}
+	.swiper-slide {
+		width: 90px !important;
+		height: 90px !important;
 	}
-	@media (max-width: 365px) {
-		.swiper {
-			position: absolute;
-			/* padding-top: 5rem; */
-			left: 16% !important;
-			width: 87% !important;
-			height: 30vh;
-			margin-left: -2.4rem !important;
-		}
+}
+@media (max-width: 408px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 19% !important;
+		width: 82% !important;
+		height: 30vh;
 	}
+}
 
-	
-	
-	
-	
-	
-	
+@media (max-width: 400px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 18% !important;
+		width: 80% !important;
+		height: 30vh;
+		margin-left: -2.2rem !important;
+	}
+	.swiper-slide {
+		width: 85px !important;
+		height: 85px !important;
+	}
+	.title {
+		padding: 4rem 5rem 4rem 5rem;
+		/* margin-left: 1rem; */
+		font-size: 1.8rem;
+	}
+}
+@media (max-width: 390px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 17% !important;
+		width: 82% !important;
+		height: 30vh;
+	}
+}
+@media (max-width: 380px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 16% !important;
+		width: 84% !important;
+		height: 30vh;
+		margin-left: -2.05rem !important;
+	}
+}
+@media (max-width: 375px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 16% !important;
+		width: 85% !important;
+		height: 30vh;
+		margin-left: -2rem !important;
+	}
+}
+@media (max-width: 370px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 16% !important;
+		width: 86% !important;
+		height: 30vh;
+		margin-left: -2.1rem !important;
+	}
+	.title {
+		padding: 4rem 5rem 4rem 5rem;
+		/* margin-left: 1rem; */
+		font-size: 1.5rem;
+	}
+}
+@media (max-width: 365px) {
+	.swiper {
+		position: absolute;
+		/* padding-top: 5rem; */
+		left: 16% !important;
+		width: 87% !important;
+		height: 30vh;
+		margin-left: -2.4rem !important;
+	}
+}
