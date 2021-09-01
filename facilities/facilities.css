@@ -852,9 +852,10 @@ position: absolute;
 			}
 			.swiper-button-next , 
 			.swiper-button-prev {
-				top: 52%;
+				/* top: 52%;
 				height: 30px;
-				width: 30px;
+				width: 30px; */
+				display: none ;
 			}
 
 		}
@@ -1013,7 +1014,7 @@ position: absolute;
 			position: absolute;
 			/* padding-top: 5rem; */
 			left: 18% !important;
-			width: 63% !important;
+			width: 65% !important;
 			height: 30vh;
 		}
 	}
@@ -1022,26 +1023,27 @@ position: absolute;
 			position: absolute;
 			/* padding-top: 5rem; */
 			left: 17.5% !important;
-			width: 65% !important;
+			width: 66% !important;
 			height: 30vh;
 		}
 	}
 	
 	@media (max-width: 505px) {
 		.title {
-			padding: 4rem 5rem 4rem 5rem;
-			font-size: ;
+			padding: 4rem 7rem 4rem 7rem ;
+			/* margin-left: 1rem; */
+			font-size: 2rem;
 		}
 		.swiper {
 			position: absolute;
 			/* padding-top: 5rem; */
 			left: 20% !important;
-			width: 66% !important;
+			width: 66.5% !important;
 			height: 30vh;
+			margin-left: -1.4rem !important;
 		}
 		.swiper-slide {
-			width: 80px !important;
-			height: 80px !important;
+			font-size: 12px;
 		}
 		.swiper-button-next ,
 		.swiper-button-prev {
@@ -1049,150 +1051,220 @@ position: absolute;
 		
 		}
 	}
+	@media (max-width: 495px) {
+
+		.swiper {
+			position: absolute;
+			/* padding-top: 5rem; */
+			left: 20% !important;
+			width: 67% !important;
+			height: 30vh;
+			margin-left: -1.8rem !important;
+		}
+
+	}
+	@media (max-width: 490px) {
+
+		.swiper {
+			position: absolute;
+			/* padding-top: 5rem; */
+			left: 20% !important;
+			width: 68% !important;
+			height: 30vh;
+			margin-left: -2rem !important;
+		}
+
+	}
 		
-	@media (max-width: 492px) {
+	@media (max-width: 480px) {
+
 		.swiper {
 			position: absolute;
 			/* padding-top: 5rem; */
 			left: 19% !important;
-			width: 62% !important;
+			width: 70% !important;
 			height: 30vh;
+			 margin-left: -1.5rem !important; 
 		}
 
+
 	}
-	@media (max-width: 478px) {
+	@media (max-width: 470px) {
 		.swiper {
 			position: absolute;
 			/* padding-top: 5rem; */
 			left: 18% !important;
-			width: 64% !important;
+			width: 71% !important;
 			height: 30vh;
+			margin-left: -1.8rem !important;
 		}
 
 	}
-	@media (max-width: 462px) {
+	@media (max-width: 460px) {
+		.title {
+			padding: 4rem 6rem 4rem 6rem ;
+		
+			font-size: 2rem;
+		}
 		.swiper {
 			position: absolute;
 			/* padding-top: 5rem; */
 			left: 17% !important;
-			width: 66% !important;
+			width: 73% !important;
 			height: 30vh;
-		}
-
-	}
-	@media (max-width: 441px) {
-		.swiper {
-			position: absolute;
-			/* padding-top: 5rem; */
-			left: 15.5% !important;
-			width: 69%;
-			height: 30vh;
+			margin-left: -1rem !important;
 		}
 
 	}
 	@media (max-width: 448px) {
 		.swiper {
-			position:absolute;
+			position: absolute;
 			/* padding-top: 5rem; */
-			left: 16% !important;
-			width: 68% !important;
+			left: 15.5% !important;
+			width: 75% !important;
 			height: 30vh;
+			margin-left: -.8rem !important;
 		}
 
 	}
-	@media (max-width: 436px) {
+	@media (max-width: 440px) {
+		.swiper {
+			position:absolute;
+			/* padding-top: 5rem; */
+			left: 16% !important;
+			width: 76% !important;
+			height: 30vh;
+			margin-left: -1.2rem !important;
+		}
+
+	}
+	@media (max-width: 435px) {
 		.swiper {
 			position: absolute;
 			/* padding-top: 5rem; */
 			left: 18.5% !important;
-			width: 63% !important;
+			width: 77% !important;
 			height: 30vh;
+			margin-left: -1.85rem !important;
 		}
-		.swiper-slide {
-			width: 70px !important;
-			height: 70px !important;
+		.title {
+			padding: 4rem 5.5rem 4rem 5.5rem ;
+			font-size: 2rem;
 		}
+
 
 	}
 	
-	@media (max-width: 422px) {
+	@media (max-width: 425px) {
 		.swiper {
 			position: absolute;
 			/* padding-top: 5rem; */
 			left: 17.5% !important;
-			width: 65% !important;
+			width: 78% !important;
 			height: 30vh;
-		}
-		.swiper-slide {
-			width: 70px !important;
-			height: 70px !important;
+			margin-left: -2rem !important;
 		}
 
+
 	}
-	@media (max-width: 410px) {
+	@media (max-width: 420px) {
 		.swiper {
 			position: absolute;
 			/* padding-top: 5rem; */
 			left: 20%  !important;
-			width: 60% !important;
+			width: 80% !important;
 			height: 30vh;
+			margin-left: -2.8rem !important;
+
 		}
 		.swiper-slide {
-			width: 60px !important;
-			height: 60px !important;
+			width: 90px !important;
+			height: 90px !important;
 		}
 	}
-	@media (max-width: 394px) {
+	@media (max-width: 408px) {
 		.swiper {
 			position: absolute;
 			/* padding-top: 5rem; */
 			left: 19% !important;
-			width: 62% !important;
+			width: 82% !important;
 			height: 30vh;
-		}
-		.swiper-slide {
-			width: 60px !important;
-			height: 60px !important;
 		}
 	}
 
-	@media (max-width: 382px) {
+	@media (max-width: 400px) {
 		.swiper {
-			position: relative;
+			position: absolute;
 			/* padding-top: 5rem; */
 			left: 18% !important;
-			width: 64% !important;
+			width: 80% !important;
 			height: 30vh;
+			margin-left: -2.2rem !important;
 		}
 		.swiper-slide {
-			width: 60px !important;
-			height: 60px !important;
+			width: 85px !important;
+			height: 85px !important;
+		}
+		.title {
+			padding: 4rem 5rem 4rem 5rem ;
+			/* margin-left: 1rem; */
+			font-size: 1.8rem;
+		}
+	}
+	@media (max-width: 390px) {
+		.swiper {
+			position: absolute;
+			/* padding-top: 5rem; */
+			left: 17% !important;
+			width: 82% !important;
+			height: 30vh;
+		}
+
+	}
+	@media (max-width: 380px) {
+		.swiper {
+			position: absolute;
+			/* padding-top: 5rem; */
+			left: 16% !important;
+			width: 84% !important;
+			height: 30vh;
+			margin-left: -2.05rem !important;
+		}
+
+	}
+	@media (max-width: 375px) {
+		.swiper {
+			position: absolute;
+			/* padding-top: 5rem; */
+			left: 16% !important;
+			width: 85% !important;
+			height: 30vh;
+			margin-left: -2rem !important;
 		}
 	}
 	@media (max-width: 370px) {
 		.swiper {
-			position: relative;
-			/* padding-top: 5rem; */
-			left: 17% !important;
-			width: 66% !important;
-			height: 30vh;
-		}
-		.swiper-slide {
-			width: 60px !important;
-			height: 60px !important;
-		}
-	}
-	@media (max-width: 358px) {
-		.swiper {
-			position: relative;
+			position: absolute;
 			/* padding-top: 5rem; */
 			left: 16% !important;
-			width: 68% !important;
+			width: 86% !important;
 			height: 30vh;
+			margin-left: -2.1rem !important;
 		}
-		.swiper-slide {
-			width: 60px !important;
-			height: 60px !important;
+		.title {
+			padding: 4rem 5rem 4rem 5rem ;
+			/* margin-left: 1rem; */
+			font-size: 1.5rem;
+		}
+	}
+	@media (max-width: 365px) {
+		.swiper {
+			position: absolute;
+			/* padding-top: 5rem; */
+			left: 16% !important;
+			width: 87% !important;
+			height: 30vh;
+			margin-left: -2.4rem !important;
 		}
 	}
 
