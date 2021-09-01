@@ -374,7 +374,7 @@
 
 .contact-sec {
 	width: 100%;
-	background-color: wheat;
+	background-color: #e5e5e5;
 	position: relative;
 	padding: 7% 0;
 	top: var(--nav-height);
@@ -393,14 +393,25 @@
 
 .contact-aside {
 	position: absolute;
-	/* clip-path: polygon(50% 0%, 0 100%, 100% 100%); */
-	background-color: blue;
 	width: 100%;
 	top: 0;
 	left: -29%;
 	box-shadow: 2px 2px 15px black;
 	transform: rotate(48deg);
 	height: 152%;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.contact-aside::after {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: '';
+	background: url(https://jooinn.com/images/airplane-37.jpg);
+	background-size: cover;
+	background-position: -42rem -9rem;
+	transform: rotate(312deg);
 	z-index: 1;
 }
 
@@ -420,8 +431,8 @@
 }
 
 .input:nth-of-type(1) {
-	left: 15rem;
-	padding-left: 21rem;
+	left: 18rem;
+	padding-left: 17rem;
 }
 
 .input:nth-of-type(1):hover,
@@ -431,8 +442,8 @@
 }
 
 .input:nth-of-type(2) {
-	left: 20rem;
-	padding-left: 22rem;
+	left: 23rem;
+	padding-left: 17rem;
 }
 
 .input:nth-of-type(2):hover,
@@ -442,8 +453,8 @@
 }
 
 .input:nth-of-type(3) {
-	left: 26rem;
-	padding-left: 21rem;
+	left: 28rem;
+	padding-left: 17rem;
 }
 
 .input:nth-of-type(3):hover,
@@ -518,10 +529,6 @@
 	.hero-content {
 		font-size: 29px;
 	}
-
-	.vision-and-mission {
-		background: linear-gradient(305deg, var(--theme) 50%, #8ecae6 50%);
-	}
 }
 
 @media (max-width: 1350px) {
@@ -533,7 +540,7 @@
 	}
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 	.hero .plane-hero {
 		display: none;
 	}
@@ -676,5 +683,11 @@
 @media (max-width: 400px) {
 	.SHK-heads {
 		padding: 4rem 2rem;
+	}
+}
+
+@media (max-width: 1500px) {
+	.vision-and-mission {
+		background: linear-gradient(226.5deg, var(--theme) 50%, #8ecae6 50%);
 	}
 }

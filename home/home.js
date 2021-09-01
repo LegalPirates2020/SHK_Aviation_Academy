@@ -139,7 +139,7 @@ gsap
 			start: 'top 40%'
 		}
 	})
-	.from('.heads', { duration: 0.5, scaleY: 0 })
+	.from('.heads', { duration: .5, scaleY: 0 })
 	.from(
 		'.head-content-title',
 		{
