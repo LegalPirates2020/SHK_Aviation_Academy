@@ -178,5 +178,6 @@ header {
 
 	header.side-bar .bottom-nav {
 		transform: translateX(0);
+		overflow: hidden;
 	}
 }
