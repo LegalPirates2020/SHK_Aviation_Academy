@@ -30,6 +30,7 @@
 	position: absolute;
 	top: 43%;
 	left: 65%;
+	width: fit-content;
 	font-size: 33px;
 	font-weight: 600;
 	letter-spacing: 1px;
@@ -79,7 +80,7 @@
 
 .quotes-carousel {
 	top: var(--nav-height);
-	background-color: white;
+	background-color: #e5e5e5;
 	width: 100%;
 	height: 60vh;
 	position: relative;
@@ -168,7 +169,7 @@
 	top: var(--nav-height);
 	width: 100%;
 	text-align: justify;
-	background: linear-gradient(320deg, var(--theme) 50%, grey 50%);
+	background: linear-gradient(320deg, var(--theme) 50%, #8ecae6 50%);
 	height: 70vh;
 	padding: 5rem 11rem;
 	line-height: 2rem;
@@ -211,7 +212,7 @@
 	background-color: white;
 	position: relative;
 	top: var(--nav-height);
-	background: linear-gradient(40deg, #cccccc 50%, var(--theme) 50%);
+	background: linear-gradient(40deg, #ade8f4 50%, #f1faee 50%);
 	overflow: hidden;
 	padding: 4rem 6rem;
 }
@@ -222,34 +223,21 @@
 	justify-content: space-between;
 }
 
+.SHK-heads h1 {
+	margin-bottom: 1rem;
+}
+
 .heads {
 	display: flex;
 	box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3), -2px, -2px, 15px,
 		rgba(0, 0, 0, 0.3);
-	width: 20rem;
-	border: 2px solid black;
+	width: 24rem;
+	flex-direction: column;
 	padding: 0;
-	background-color: aqua;
 	text-align: center;
 	transform-origin: center;
 	border-radius: 20px;
 }
-/* 
-.heads-num {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
-}
-
-.heads-num div {
-	width: 3rem;
-	height: 3rem;
-	background-color: aquamarine;
-	padding: 1rem;
-	margin: 0.5rem 1rem;
-	border-radius: 10px;
-} */
 
 .heads-pos {
 	display: flex;
@@ -262,7 +250,7 @@
 
 .heads-pos div {
 	padding: 1rem;
-	background-color: antiquewhite;
+	background-color: #f8edeb;
 	height: 3rem;
 	width: 100%;
 	margin-bottom: 0.5rem;
@@ -404,17 +392,15 @@
 
 .contact-aside {
 	position: absolute;
-    /* clip-path: polygon(50% 0%, 0 100%, 100% 100%); */
-    background-color: blue;
-    width: 100%;
-    top: 0;
-    left: -34rem;
-    box-shadow: 2px 2px 15px black;
-    transform: rotate(
-48deg
-);
-    height: 152%;
-    z-index: 1;
+	/* clip-path: polygon(50% 0%, 0 100%, 100% 100%); */
+	background-color: blue;
+	width: 100%;
+	top: 0;
+	left: -34rem;
+	box-shadow: 2px 2px 15px black;
+	transform: rotate(48deg);
+	height: 152%;
+	z-index: 1;
 }
 
 .input {
@@ -508,4 +494,10 @@
 .next-submit:hover {
 	background-color: var(--theme);
 	color: white;
+}
+
+@media (max-width:1050px) {
+	.plane-hero{
+		left: 10%;
+	}
 }
