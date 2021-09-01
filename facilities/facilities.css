@@ -1013,7 +1013,7 @@ position: absolute;
 			position: absolute;
 			/* padding-top: 5rem; */
 			left: 18% !important;
-			width: 66% !important;
+			width: 63% !important;
 			height: 30vh;
 		}
 	}
@@ -1022,17 +1022,21 @@ position: absolute;
 			position: absolute;
 			/* padding-top: 5rem; */
 			left: 17.5% !important;
-			width: 67% !important;
+			width: 65% !important;
 			height: 30vh;
 		}
 	}
 	
 	@media (max-width: 505px) {
+		.title {
+			padding: 4rem 5rem 4rem 5rem;
+			font-size: ;
+		}
 		.swiper {
 			position: absolute;
 			/* padding-top: 5rem; */
 			left: 20% !important;
-			width: 63% !important;
+			width: 66% !important;
 			height: 30vh;
 		}
 		.swiper-slide {
