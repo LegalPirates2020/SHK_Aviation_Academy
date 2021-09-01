@@ -165,7 +165,6 @@ header {
 		transform: translateX(-100%);
 		transition: all 0.5s ease-in-out;
 		position: fixed;
-		overflow: hidden;
 	}
 
 	.contact {
@@ -178,6 +177,5 @@ header {
 
 	header.side-bar .bottom-nav {
 		transform: translateX(0);
-		overflow: hidden;
 	}
 }
