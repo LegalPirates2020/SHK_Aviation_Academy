@@ -262,8 +262,3 @@ mobileclick.addEventListener("click" , () => {
 	arrowl.classList.toggle("arrowleft");
 })
 
-
-
-
-
-
