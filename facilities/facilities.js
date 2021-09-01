@@ -3,7 +3,7 @@ const card2  = document.querySelector('.card-2')
 const btn_right = document.querySelector('.btn-right')
 const btn_left  = document.querySelector('.btn-left')
 const cardTop = document.querySelector('.card-bg')
-const circle = document.querySelectorAll('.circle')
+const circle = document.querySelectorAll('.swiper-slide')
 const transportContentCard = document.querySelector('#transport-content')
 const libraryContentCard = document.querySelector('#library-content')
 const hostelContentCard = document.querySelector('#hostel-content')
@@ -18,6 +18,7 @@ const page = document.getElementById('header')
 const pagee = window.getComputedStyle(page).getPropertyValue('height')
 
 
+
 // btn_right.addEventListener('click',()=> {
 //  card1.classList.add('display-none')
 //  card2.classList.add('display-flex')
@@ -28,23 +29,23 @@ const pagee = window.getComputedStyle(page).getPropertyValue('height')
 // })
 
 
-btn_left.addEventListener('click', () => {
- card1.style.left = '340px'
- card2.style.right = '-600px'
- card2.style.opacity = '0'
- card1.style.opacity = '1'
+// btn_left.addEventListener('click', () => {
+//  card1.style.left = '340px'
+//  card2.style.right = '-600px'
+//  card2.style.opacity = '0'
+//  card1.style.opacity = '1'
 
 
  
-})
-btn_right.addEventListener('click', () => {
- card1.style.left = '-600px'
- card2.style.right = '320px'
- card2.style.opacity = '1'
- card1.style.opacity = '0'
+// })
+// btn_right.addEventListener('click', () => {
+//  card1.style.left = '-600px'
+//  card2.style.right = '320px'
+//  card2.style.opacity = '1'
+//  card1.style.opacity = '0'
 
 
-})
+// })
 const scrollToTop = () => {
   const p  =parseInt(pagee)
   console.log(p);
@@ -52,19 +53,45 @@ const scrollToTop = () => {
 }
 circle.forEach(element => {
  element.addEventListener('click', function content() {
+  circle.forEach(content => content.classList.remove('color'));
   scrollToTop()
-
    contents.forEach(c => {
     c.classList.remove('display-block')
   });
-      
+  console.log(this);
    const contentitem = document.querySelector(`.${this.id}-card`);
- 
-   //his.classList.add('color');
+  
+   this.classList.add('color')
+   
     contentitem.classList.add('display-block');
  })
-
-});
+ });
 // card click 
  
+
+var swiper = new Swiper('.swiper', {
+  slidesPerView: 3,
+  direction: getDirection(),
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  on: {
+    resize: function () {
+      swiper.changeDirection(getDirection());
+    },
+  },
+});
+
+function getDirection() {
+  var windowWidth = window.innerWidth;
+  var direction = window.innerWidth <= 760 ? 'horizontal' : 'horizontal';
+
+  return direction;
+}
+
+
+
+// carosel
+
 

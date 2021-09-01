@@ -226,15 +226,23 @@ clicking.forEach((element) => {
 		switch (element.getAttribute("class")) {
 			case "bba":
 				window.location.href = "./academics.html#course1";
+				again.classList.remove("colorchanging")
+				again.classList.remove("clicking10")
 				break;
 			case "bscaviation":
 				window.location.href = "./academics.html#course2";
+				again.classList.remove("colorchanging")
+				again.classList.remove("clicking10")
 				break;
 			case "mba":
 				window.location.href = "./academics.html#course3";
+				again.classList.remove("colorchanging")
+				again.classList.remove("clicking10")
 				break;
 			case "bscair":
 				window.location.href = "./academics.html#course4";
+				again.classList.remove("colorchanging")
+				again.classList.remove("clicking10")
 				break;
 		}
 	});
@@ -250,6 +258,7 @@ const mobileclick = document.querySelector(".mobileclick");
 const firstdiv = document.querySelector(".firstdiv");
 const again = document.querySelector(".again");
 
+// const clicking = [bba, bscaviation, mba, bscair];
 
 mobileclick.addEventListener("click" , () => {
 	again.classList.toggle("clicking10");
@@ -259,6 +268,9 @@ mobileclick.addEventListener("click" , () => {
 	arrowr.classList.toggle("arrowright");
 })
 mobileclick.addEventListener("click" , () => {
-	arrowl.classList.toggle("arrowleft");
+	arrowr.classList.toggle("arrowright");
+})
+mobileclick.addEventListener("click" , () => {
+	arrowl.classList.toggle("rotate");
 })
 

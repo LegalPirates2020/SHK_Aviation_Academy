@@ -1,16 +1,7 @@
-* {
-  padding: 0%;
-  margin: 0%;
-  box-sizing: border-box;
-}
-
-.waste {
-  height: 100vh;
-}
-
 .footer {
   position: relative;
   background: rgb(61, 61, 61);
+  z-index: 2;
   bottom: 0%;
   top: var(--nav-height);
   height: 50vh;
@@ -20,6 +11,7 @@
   justify-content: center;
   align-items: center;
   letter-spacing: 1px ;
+  top: var(--nav-height);
 }
 
 .top {
@@ -47,8 +39,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(-100px);
-  -ms-transform: translateY(-100px);
 }
 
 .upper img {
