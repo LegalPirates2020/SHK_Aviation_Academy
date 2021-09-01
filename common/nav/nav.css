@@ -141,7 +141,7 @@ header {
 	z-index: 4;
 	transition: all 0.3s ease-in-out;
 	font-family: 'Kanit', sans-serif;
-	padding: 0 7rem;
+	padding: 0 8%;
 }
 
 .bottom-nav span a {
