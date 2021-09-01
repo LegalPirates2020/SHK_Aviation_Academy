@@ -22,7 +22,7 @@ inputs.forEach((input) => {
 	input.addEventListener('input', (e) => {
 		if (inputs[2].value == e.data) {
 			if (inputs[0].value.length && inputs[1].value.length) {
-				nextSubmit.style.left = '55.5rem';
+				nextSubmit.style.left = '64rem';
 			} else {
 				nextSubmit.style.left = '0';
 			}
@@ -39,7 +39,7 @@ nextSubmit.addEventListener('click', () => {
 		input.style.left = '-100%';
 		nextSubmit.style.left = '0';
 	});
-	textArea.style.left = '44rem';
+	textArea.style.left = '50rem';
 });
 
 textArea.addEventListener('keydown', (e) => {
