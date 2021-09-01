@@ -16,6 +16,7 @@ if (window.innerWidth >= 764) {
 		}
 		lastScroll = currentScroll;
 	});
+}
 
 	menuButton.addEventListener('click', () => {
 		menuButton.classList.toggle('aeroplane');
@@ -23,4 +24,3 @@ if (window.innerWidth >= 764) {
 		nav.classList.toggle('side-bar');
 		body.style.overflow = 'hidden';
 	});
-}
