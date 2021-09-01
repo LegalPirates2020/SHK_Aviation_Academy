@@ -49,6 +49,11 @@ textArea.addEventListener('keydown', (e) => {
 	}
 });
 
+const li3 = document.getElementById('li-3');
+if (window.innerWidth <= 1250 && window.innerWidth >= 800) {
+	li3.parentElement.removeChild(li3);
+}
+
 gsap.from('.hero-content', {
 	duration: 1,
 	height: 0,
