@@ -16,11 +16,19 @@ if (window.innerWidth >= 764) {
 		}
 		lastScroll = currentScroll;
 	});
+} else {
+	bottomNav.style.height = window.innerHeight + 'px';
 }
 
-	menuButton.addEventListener('click', () => {
-		menuButton.classList.toggle('aeroplane');
-		menuButton.classList.toggle('cross');
-		nav.classList.toggle('side-bar');
-		body.style.overflow = 'hidden';
-	});
+menuButton.addEventListener('click', () => {
+	menuButton.classList.toggle('aeroplane');
+	menuButton.classList.toggle('cross');
+	nav.classList.toggle('side-bar');
+	let clicked = false;
+	if (clicked) {
+		body.style.overflow = 'scroll';
+		clicked = false;
+	} else {
+		clicked = true;
+	}
+});
