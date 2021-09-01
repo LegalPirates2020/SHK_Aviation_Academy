@@ -16,11 +16,11 @@ if (window.innerWidth >= 764) {
 		}
 		lastScroll = currentScroll;
 	});
-}
 
-menuButton.addEventListener('click', () => {
-	menuButton.classList.toggle('aeroplane');
-	menuButton.classList.toggle('cross');
-	nav.classList.toggle('side-bar');
-	body.style.overflow = 'hidden';
-});
+	menuButton.addEventListener('click', () => {
+		menuButton.classList.toggle('aeroplane');
+		menuButton.classList.toggle('cross');
+		nav.classList.toggle('side-bar');
+		body.style.overflow = 'hidden';
+	});
+}
