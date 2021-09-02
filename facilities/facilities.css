@@ -275,7 +275,7 @@
 }
 @media (max-width: 1880px) {
 	.swiper {
-position: absolute;
+	position: absolute;
 		/* padding-top: 5rem; */
 		left: 35.5% !important;
 		width: 29% ;
@@ -1162,10 +1162,3 @@ position: absolute;
 			height: 60px !important;
 		}
 	}
-
-	
-	
-	
-	
-	
-	
