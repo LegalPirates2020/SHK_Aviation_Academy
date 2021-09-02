@@ -12,6 +12,12 @@ const swiper = new Swiper('.mySwiper', {
 	}
 });
 
+const carouselButton = document.querySelector('.swiper-button-next');
+
+setInterval(() => {
+	carouselButton.click();
+}, 5000);
+
 const inputs = document.querySelectorAll('.input');
 const button = document.querySelector('.submit');
 const form = document.querySelector('form');
@@ -22,7 +28,7 @@ inputs.forEach((input) => {
 	input.addEventListener('input', (e) => {
 		if (inputs[2].value == e.data) {
 			if (inputs[0].value.length && inputs[1].value.length) {
-				nextSubmit.style.left = '55.5rem';
+				nextSubmit.style.left = '64rem';
 			} else {
 				nextSubmit.style.left = '0';
 			}
@@ -39,7 +45,7 @@ nextSubmit.addEventListener('click', () => {
 		input.style.left = '-100%';
 		nextSubmit.style.left = '0';
 	});
-	textArea.style.left = '44rem';
+	textArea.style.left = '50rem';
 });
 
 textArea.addEventListener('keydown', (e) => {
@@ -48,6 +54,11 @@ textArea.addEventListener('keydown', (e) => {
 		button.removeAttribute('disabled');
 	}
 });
+
+const li3 = document.getElementById('li-3');
+if (window.innerWidth <= 1250 && window.innerWidth >= 800) {
+	li3.parentElement.removeChild(li3);
+}
 
 gsap.from('.hero-content', {
 	duration: 1,

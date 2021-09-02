@@ -5,7 +5,7 @@
 .hero {
 	position: relative;
 	width: 100%;
-	height: 70vh;
+	height: 60vh;
 	top: var(--nav-height);
 	align-content: center;
 }
@@ -14,8 +14,8 @@
 	position: absolute;
 	z-index: 4;
 	left: 17%;
-	margin-top: 8rem;
-	height: 60%;
+	margin-top: 5rem;
+	height: 70%;
 	transition: all 0.5s ease-in-out;
 }
 
@@ -29,7 +29,7 @@
 
 .hero-content {
 	position: absolute;
-	top: 50%;
+	top: 55%;
 	left: 65%;
 	width: fit-content;
 	font-size: 33px;
@@ -46,7 +46,6 @@
 
 .SHK-aviation {
 	width: 100%;
-	height: fit-content;
 	background-color: var(--theme);
 	position: relative;
 	display: flex;
@@ -54,7 +53,7 @@
 	justify-content: center;
 	z-index: 1;
 	top: var(--nav-height);
-	padding: 6rem 10rem;
+	padding: 8% 9%;
 	transition: all 0.5s ease-in-out;
 	overflow: hidden;
 }
@@ -71,8 +70,8 @@
 }
 
 .SHK-aviation p {
+	line-height: 2rem;
 	text-align: justify;
-	line-height: 1.5rem;
 	letter-spacing: 1px;
 }
 
@@ -85,12 +84,12 @@
 	top: var(--nav-height);
 	background-color: #e5e5e5;
 	width: 100%;
-	height: 60vh;
+	height: 80vh;
 	position: relative;
 }
 
 .swiper {
-	width: 70%;
+	width: 80%;
 	height: 80%;
 	border-radius: 20px;
 	top: 50%;
@@ -113,6 +112,7 @@
 	-ms-flex-align: center;
 	-webkit-align-items: center;
 	align-items: center;
+	width: 100% !important;
 	background-size: cover;
 }
 
@@ -135,6 +135,7 @@
 
 .swiper-slide img {
 	object-fit: cover;
+	object-position: center;
 	width: 100%;
 	height: 100%;
 }
@@ -171,10 +172,9 @@
 	position: relative;
 	top: var(--nav-height);
 	width: 100%;
+	height: 80vh;
 	text-align: justify;
-	background: linear-gradient(320deg, var(--theme) 50%, #8ecae6 50%);
-	height: 70vh;
-	padding: 5rem 11rem;
+	background: linear-gradient(230deg, var(--theme) 50%, #8ecae6 50%);
 	line-height: 2rem;
 	letter-spacing: 1px;
 	display: flex;
@@ -194,15 +194,14 @@
 
 .vision {
 	position: absolute;
-	left: 6rem;
+	left: 10%;
 	width: 30%;
 }
 
 .mission {
 	position: absolute;
-	right: 6rem;
+	right: 10%;
 	width: 30%;
-	margin-top: 3rem;
 }
 
 .mission h1 {
@@ -211,11 +210,10 @@
 
 .SHK-heads {
 	width: 100%;
-	height: 70vh;
 	background-color: white;
 	position: relative;
 	top: var(--nav-height);
-	background: linear-gradient(40deg, #ade8f4 50%, #f1faee 50%);
+	background: linear-gradient(130.5deg, #ade8f4 50%, #f1faee 50%);
 	overflow: hidden;
 	padding: 4rem 6rem;
 }
@@ -252,7 +250,7 @@
 }
 
 .heads-pos div {
-	padding: 1rem;
+	padding: 1rem 0;
 	background-color: #f8edeb;
 	height: 3rem;
 	width: 100%;
@@ -376,9 +374,9 @@
 
 .contact-sec {
 	width: 100%;
-	height: 70vh;
-	background-color: wheat;
+	background-color: #e5e5e5;
 	position: relative;
+	padding: 7% 0;
 	top: var(--nav-height);
 	overflow: hidden;
 	display: flex;
@@ -395,14 +393,25 @@
 
 .contact-aside {
 	position: absolute;
-	/* clip-path: polygon(50% 0%, 0 100%, 100% 100%); */
-	background-color: blue;
 	width: 100%;
 	top: 0;
-	left: -34rem;
+	left: -29%;
 	box-shadow: 2px 2px 15px black;
 	transform: rotate(48deg);
 	height: 152%;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.contact-aside::after {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: '';
+	background: url(https://jooinn.com/images/airplane-37.jpg);
+	background-size: cover;
+	background-position: -42rem -9rem;
+	transform: rotate(312deg);
 	z-index: 1;
 }
 
@@ -422,36 +431,36 @@
 }
 
 .input:nth-of-type(1) {
-	left: 14rem;
-	padding-left: 11rem;
+	left: 18rem;
+	padding-left: 17rem;
 }
 
 .input:nth-of-type(1):hover,
 .input:nth-of-type(1):focus {
-	left: 25rem;
-	padding-left: 2rem;
+	left: 30rem;
+	padding-left: 5rem;
 }
 
 .input:nth-of-type(2) {
-	left: 21rem;
-	padding-left: 10rem;
+	left: 23rem;
+	padding-left: 17rem;
 }
 
 .input:nth-of-type(2):hover,
 .input:nth-of-type(2):focus {
 	left: 30rem;
-	padding-left: 2rem;
+	padding-left: 11rem;
 }
 
 .input:nth-of-type(3) {
-	left: 27rem;
-	padding-left: 9rem;
+	left: 28rem;
+	padding-left: 17rem;
 }
 
 .input:nth-of-type(3):hover,
 .input:nth-of-type(3):focus {
 	left: 36rem;
-	padding-left: 3rem;
+	padding-left: 10rem;
 	width: 35%;
 }
 
@@ -503,12 +512,18 @@
 	.hero .plane-hero {
 		left: 9%;
 	}
+	.mission {
+		right: 5% !important;
+	}
+
+	.vision {
+		left: 5% !important;
+	}
 }
 
 @media (max-width: 950px) {
 	.hero .plane-hero {
 		left: 9%;
-		height: 40%;
 	}
 
 	.hero-content {
@@ -516,7 +531,16 @@
 	}
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1350px) {
+	.vision {
+		left: 9%;
+	}
+	.mission {
+		right: 9%;
+	}
+}
+
+@media (max-width: 900px) {
 	.hero .plane-hero {
 		display: none;
 	}
@@ -546,5 +570,124 @@
 		color: white;
 		position: relative;
 		z-index: 4;
+	}
+
+	.vision-and-mission {
+		flex-direction: column;
+		justify-content: space-around;
+		padding: 10% !important;
+		height: fit-content !important;
+		background: linear-gradient(0, var(--theme) 50%, #8ecae6 50%) !important;
+	}
+
+	.vision {
+		width: 100%;
+		left: 0 !important;
+		position: relative;
+		padding-bottom: 25%;
+	}
+
+	.mission {
+		right: 0 !important;
+		position: relative;
+		width: 100%;
+		padding: 7% 0 0 0;
+	}
+
+	.mission-ul li {
+		margin-bottom: 2%;
+	}
+
+	.SHK-heads {
+		background: linear-gradient(0deg, #ade8f4 45%, #f1faee 0%) !important;
+		height: 125vh;
+		display: flex;
+		justify-content: space-between;
+		padding: 4rem;
+	}
+
+	.SHK-heads > div {
+		flex-direction: column;
+	}
+
+	.heads + div {
+		width: 100%;
+		margin: 5% 0;
+	}
+
+	.heads {
+		width: 100%;
+	}
+
+	.heads-pos {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		row-gap: 5%;
+		column-gap: 5%;
+	}
+
+	.heads-pos div {
+		height: fit-content;
+	}
+
+	.contact-aside {
+		display: none;
+	}
+
+	.text-area {
+		left: -100%;
+	}
+
+	.contact-title {
+		margin-top: 10%;
+	}
+
+	.content-sec {
+		padding: 0;
+	}
+
+	.input {
+		left: 50% !important;
+		transform: translateX(-50%) !important;
+		margin: 2rem 0 !important;
+		padding: 1rem !important;
+		width: 25rem !important;
+	}
+
+	.submit,
+	.next-submit {
+		left: -100%;
+	}
+}
+
+@media (max-width: 500px) {
+	.SHK-heads {
+		height: 145vh;
+		background: linear-gradient(0deg, #ade8f4 53%, #f1faee 0%) !important;
+	}
+	.input {
+		left: 50% !important;
+		transform: translateX(-50%) !important;
+		margin: 2rem 0 !important;
+		padding: 1rem !important;
+		width: 20rem !important;
+	}
+}
+
+@media (max-width: 750px) {
+	.heads-pos {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 400px) {
+	.SHK-heads {
+		padding: 4rem 2rem;
+	}
+}
+
+@media (max-width: 1500px) {
+	.vision-and-mission {
+		background: linear-gradient(226.5deg, var(--theme) 50%, #8ecae6 50%);
 	}
 }
