@@ -508,6 +508,52 @@
 	color: white;
 }
 
+@media (max-width: 1350px) {
+	.vision {
+		left: 9%;
+	}
+	.mission {
+		right: 9%;
+	}
+	.contact-aside {
+		left: -27rem;
+	}
+
+	.input:nth-of-type(1) {
+		left: 18rem;
+		padding-left: 11rem;
+	}
+
+	.input:nth-of-type(1):hover,
+	.input:nth-of-type(1):focus {
+		left: 30rem;
+		padding-left: 5rem;
+	}
+
+	.input:nth-of-type(2) {
+		left: 23rem;
+		padding-left: 11rem;
+	}
+
+	.input:nth-of-type(2):hover,
+	.input:nth-of-type(2):focus {
+		left: 30rem;
+		padding-left: 11rem;
+	}
+
+	.input:nth-of-type(3) {
+		left: 28rem;
+		padding-left: 11rem;
+	}
+
+	.input:nth-of-type(3):hover,
+	.input:nth-of-type(3):focus {
+		left: 36rem;
+		padding-left: 10rem;
+		width: 35%;
+	}
+}
+
 @media (max-width: 1050px) {
 	.hero .plane-hero {
 		left: 9%;
@@ -522,6 +568,39 @@
 	.contact-aside {
 		left: -26rem !important;
 	}
+	.input:nth-of-type(1) {
+		left: 13rem !important;
+		padding-left: 5rem !important;
+	}
+
+	.input:nth-of-type(1):hover,
+	.input:nth-of-type(1):focus {
+		left: 30rem;
+		padding-left: 5rem;
+	}
+
+	.input:nth-of-type(2) {
+		left: 17rem !important;
+		padding-left: 6rem !important;
+	}
+
+	.input:nth-of-type(2):hover,
+	.input:nth-of-type(2):focus {
+		left: 30rem;
+		padding-left: 11rem;
+	}
+
+	.input:nth-of-type(3) {
+		left: 22rem !important;
+		padding-left: 7rem !important;
+	}
+
+	.input:nth-of-type(3):hover,
+	.input:nth-of-type(3):focus {
+		left: 36rem;
+		padding-left: 10rem;
+		width: 40% !important;
+	}
 }
 
 @media (max-width: 950px) {
@@ -534,17 +613,36 @@
 	}
 }
 
-@media (max-width: 1350px) {
-	.vision {
-		left: 9%;
+@media (max-width: 500px) {
+	.SHK-heads {
+		height: 145vh;
+		background: linear-gradient(0deg, #ade8f4 53%, #f1faee 0%) !important;
 	}
-	.mission {
-		right: 9%;
+	.input {
+		left: 50% !important;
+		transform: translateX(-50%) !important;
+		margin: 2rem 0 !important;
+		padding: 1rem !important;
+		width: 20rem !important;
 	}
-	.contact-aside {
-		left: -27rem;
+}
+
+@media (max-width: 750px) {
+	.heads-pos {
+		grid-template-columns: 1fr 1fr;
 	}
-	
+}
+
+@media (max-width: 400px) {
+	.SHK-heads {
+		padding: 4rem 2rem;
+	}
+}
+
+@media (max-width: 1500px) {
+	.vision-and-mission {
+		background: linear-gradient(226.5deg, var(--theme) 50%, #8ecae6 50%);
+	}
 }
 
 @media (max-width: 900px) {
@@ -556,7 +654,7 @@
 	}
 	.hero {
 		background: url('https://media.architecturaldigest.com/photos/5988e603298aae66974b2d0d/2:1/w_3000,h_1500,c_limit/Pilotless%20Airplanes%201.jpg')
-			center/cover;
+			right/cover;
 	}
 
 	.hero::after {
@@ -654,11 +752,45 @@
 	}
 
 	.input {
+		position: relative !important;
 		left: 50% !important;
 		transform: translateX(-50%) !important;
 		margin: 2rem 0 !important;
 		padding: 1rem !important;
-		width: 25rem !important;
+		width: 20rem !important;
+	}
+	.input:nth-of-type(1) {
+		left: 50% !important;
+		padding-left: 1rem !important;
+	}
+
+	.input:nth-of-type(1):hover,
+	.input:nth-of-type(1):focus {
+		left: 50%;
+		padding-left: 1rem;
+	}
+
+	.input:nth-of-type(2) {
+		left: 50% !important;
+		padding-left: 1rem !important;
+	}
+
+	.input:nth-of-type(2):hover,
+	.input:nth-of-type(2):focus {
+		left: 50% !important;
+		padding-left: 1rem;
+	}
+
+	.input:nth-of-type(3) {
+		left: 50% !important;
+		padding-left: 1rem !important;
+	}
+
+	.input:nth-of-type(3):hover,
+	.input:nth-of-type(3):focus {
+		left: 50%;
+		padding-left: 1rem;
+		width: 40% !important;
 	}
 
 	.submit,
@@ -667,34 +799,5 @@
 	}
 }
 
-@media (max-width: 500px) {
-	.SHK-heads {
-		height: 145vh;
-		background: linear-gradient(0deg, #ade8f4 53%, #f1faee 0%) !important;
-	}
-	.input {
-		left: 50% !important;
-		transform: translateX(-50%) !important;
-		margin: 2rem 0 !important;
-		padding: 1rem !important;
-		width: 20rem !important;
-	}
-}
-
-@media (max-width: 750px) {
-	.heads-pos {
-		grid-template-columns: 1fr 1fr;
-	}
-}
-
-@media (max-width: 400px) {
-	.SHK-heads {
-		padding: 4rem 2rem;
-	}
-}
-
-@media (max-width: 1500px) {
-	.vision-and-mission {
-		background: linear-gradient(226.5deg, var(--theme) 50%, #8ecae6 50%);
-	}
+@media (max-width: 450px) {
 }
