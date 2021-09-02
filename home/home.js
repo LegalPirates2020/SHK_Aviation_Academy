@@ -24,7 +24,7 @@ window.addEventListener('load', () => {
 		body.style.overflow = 'hidden';
 		gsap
 			.timeline()
-			.to('.preload img', { duration: .5, y: 0, autoAlpha: 1, delay: 0.5 })
+			.to('.preload img', { duration: 0.5, y: 0, autoAlpha: 1, delay: 0.5 })
 			.to('.preload img', { duration: 0.5, y: '-100%', autoAlpha: 0 }, '+=1')
 			.to('.preload', { duration: 1, autoAlpha: 0 })
 			.set('body', { overflow: 'auto' })
@@ -171,11 +171,11 @@ gsap
 		'-=.5'
 	)
 	.from(
-		'.SHK-heads-aside',
+		'.head-content-para',
 		{
-			duration: 1,
+			duration: .5,
 			x: 200,
-			opacity: 0
+			autoAlpha: 0
 		},
 		'-=.5'
 	)

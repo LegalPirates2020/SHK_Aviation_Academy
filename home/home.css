@@ -50,6 +50,14 @@
 	opacity: 0;
 }
 
+
+.home {
+	background-color: white !important;
+}
+.home a {
+	color: #39393a !important;
+}
+
 .hero {
 	position: relative;
 	width: 100%;
