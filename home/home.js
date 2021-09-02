@@ -161,7 +161,7 @@ gsap
 			start: 'top 40%'
 		}
 	})
-	.from('.heads .heads-pos div', { duration: 1, x: '150%', stagger: 0.1 })
+	.from('.heads .heads-pos div', { duration: 1, x: '210%', stagger: 0.1 })
 	.from(
 		'.head-content-title',
 		{
@@ -173,7 +173,7 @@ gsap
 	.from(
 		'.head-content-para',
 		{
-			duration: .5,
+			duration: 0.5,
 			x: 200,
 			autoAlpha: 0
 		},
