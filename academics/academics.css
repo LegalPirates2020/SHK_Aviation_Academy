@@ -2,13 +2,43 @@
 	scroll-behavior: smooth;
 }
 
-body
-{
+body {
 	background-color: rgba(107, 107, 107, 0.301);
 }
 
-section
-{
+.section1 {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url("https://charaklive.b-cdn.net/wp-content/uploads/2021/07/Academics.jpg") center/cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 65vh;
+	min-height: 386px;
+}
+.section1::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.048);
+
+	z-index: 0;
+}
+
+.title {
+	margin-top: 6.5rem;
+	outline: 5px solid #af7737;
+	padding: 4rem 6rem 4rem 6rem;
+	color: #af7737;
+	font-size: 2rem;
+	z-index: 2;
+}
+
+section {
 	position: relative;
 }
 
@@ -31,7 +61,6 @@ section
 	text-align: center;
 	border-collapse: collapse;
 }
-
 
 td {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.295);
@@ -83,7 +112,6 @@ h3:hover {
 }
 
 .table {
-
 	position: fixed;
 	height: 49%;
 	width: 30%;
@@ -114,20 +142,14 @@ h3:hover {
 .clicking10 {
 	transform: translateX(0px);
 }
-.arrowr
-{
+.arrowr {
 	display: none;
 }
-.arrowright
-{
+.arrowright {
 	display: block;
 }
 
-
-
-
-.span1
-{
+.span1 {
 	z-index: 2;
 	position: relative;
 }
@@ -158,9 +180,10 @@ h3:hover {
 	color: black;
 }
 
-
-.courseone , .coursetwo , .coursethree , .coursefour
-{
+.courseone,
+.coursetwo,
+.coursethree,
+.coursefour {
 	margin: 5%;
 	box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.315),
 		-2px -2px 25px rgba(0, 0, 0, 0.315);
@@ -176,25 +199,33 @@ h3:hover {
 	position: relative;
 	background: url(https://wallpaperaccess.com/full/254381.jpg) center/cover;
 }
-.coursetwo
-{
-	background: url(https://www.wallpapertip.com/wmimgs/11-110183_airplane-hd-desktop-wallpapers-for-widescreen-data-src.jpg) center/cover;
+.coursetwo {
+	background: url(https://www.wallpapertip.com/wmimgs/11-110183_airplane-hd-desktop-wallpapers-for-widescreen-data-src.jpg)
+		center/cover;
 }
-.coursethree
-{
-	background: url(https://vidooly.com/blog/wp-content/uploads/2020/12/703232.jpg) center/cover;
+.coursethree {
+	background: url(https://vidooly.com/blog/wp-content/uploads/2020/12/703232.jpg)
+		center/cover;
 }
-.coursefour
-{
-	background: url(https://wallsdesk.com/wp-content/uploads/2018/04/Plane-Computer-Wallpaper.jpg) center/cover;
+.coursefour {
+	background: url(https://wallsdesk.com/wp-content/uploads/2018/04/Plane-Computer-Wallpaper.jpg)
+		center/cover;
 }
-.coursefour p , .coursefour h2 , .courseone p , .courseone h2 , .coursetwo p , .coursetwo h2 , .coursethree p , .coursethree h2
-{
+.coursefour p,
+.coursefour h2,
+.courseone p,
+.courseone h2,
+.coursetwo p,
+.coursetwo h2,
+.coursethree p,
+.coursethree h2 {
 	position: relative;
 	z-index: 2;
 }
-.courseone::before , .coursetwo::before , .coursethree::before , .coursefour::before
-{
+.courseone::before,
+.coursetwo::before,
+.coursethree::before,
+.coursefour::before {
 	position: absolute;
 	top: 0;
 	left: 0%;
@@ -205,13 +236,14 @@ h3:hover {
 	z-index: 1;
 }
 
-
 .topcss {
 	padding-bottom: 2rem;
 }
 
-.courseone h2 ,.coursetwo h2  , .coursethree h2 , .coursefour h2
-{
+.courseone h2,
+.coursetwo h2,
+.coursethree h2,
+.coursefour h2 {
 	text-align: center;
 	margin: 30px;
 }
@@ -230,7 +262,6 @@ h3:hover {
 	background-color: transparent;
 	z-index: 2;
 	position: relative;
-
 }
 .flexdiv h4 {
 	padding: 0%;
@@ -385,8 +416,7 @@ h3:hover {
 	font-weight: bolder;
 }
 
-.watch:hover
-{
+.watch:hover {
 	color: var(--theme);
 	background-color: white;
 }
@@ -400,7 +430,10 @@ h3:hover {
 }
 
 @media (max-width: 768px) {
-	.coursefour , .courseone , .coursetwo, .coursethree {
+	.coursefour,
+	.courseone,
+	.coursetwo,
+	.coursethree {
 		margin: 8%;
 		padding: 3% 10%;
 		width: 84%;
@@ -422,14 +455,12 @@ h3:hover {
 		height: 40px;
 		cursor: pointer;
 	}
-	.watch:hover
-	{
+	.watch:hover {
 		border-radius: 10px;
 		color: #fff;
 		background-color: rgb(21, 85, 223);
 	}
 
-	
 	/* java script */
 
 	.para2.js2 {
@@ -450,7 +481,7 @@ h3:hover {
 	.ul1.js6 {
 		height: 24rem;
 	}
-	
+
 	.para22.js2 {
 		height: 20rem;
 	}
@@ -523,8 +554,7 @@ h3:hover {
 	}
 	.ul2,
 	.ul3,
-	.ul4
-	{
+	.ul4 {
 		display: block;
 	}
 
@@ -571,7 +601,6 @@ h3:hover {
 	}
 
 	.table {
-	
 		position: fixed;
 		height: 41%;
 		width: 88%;
@@ -602,24 +631,19 @@ h3:hover {
 	.clicking10 {
 		transform: translateX(0px);
 	}
-	.arrowr
-    {
+	.arrowr {
 		display: none;
-    }
-    .arrowright
-    {
-        display: block;
-    }
-	.arrowl
-    {
-        display: block;
-    }
-    .arrowleft
-    {
-        display: none;
-    }
-	.flexdiv
-	{
+	}
+	.arrowright {
+		display: block;
+	}
+	.arrowl {
+		display: block;
+	}
+	.arrowleft {
+		display: none;
+	}
+	.flexdiv {
 		text-align: start;
 	}
 }
