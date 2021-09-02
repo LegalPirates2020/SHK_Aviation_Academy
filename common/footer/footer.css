@@ -44,6 +44,8 @@
 .upper img {
 	height: 90%;
 	width: 90%;
+	object-fit: contain;
+	object-position: center;
 }
 
 .footerRight {
@@ -118,6 +120,7 @@
 		height: 70%;
 		width: 70%;
 	}
+	
 }
 
 @media only screen and (max-width: 810px) {

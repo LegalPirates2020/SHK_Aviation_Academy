@@ -34,9 +34,8 @@
 
 .preload div {
 	position: absolute;
-	width: 30%;
+	width: max-content;
 	height: 30%;
-	overflow: hidden;
 	z-index: 9;
 }
 
@@ -49,7 +48,6 @@
 	transform: translateY(100%);
 	opacity: 0;
 }
-
 
 .home {
 	background-color: white !important;
@@ -719,6 +717,14 @@
 	.SHK-heads {
 		padding: 4rem 2rem;
 	}
+
+	.preload div {
+		height: 20%;
+	}
+
+	.preload img {
+		height: 100% !important;
+	}
 }
 
 @media (max-width: 1500px) {
@@ -824,6 +830,10 @@
 		display: flex;
 		justify-content: space-between;
 		padding: 4rem;
+	}
+
+	.SHK-heads-aside {
+		display: none !important;
 	}
 
 	.SHK-heads > div {
