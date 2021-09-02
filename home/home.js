@@ -12,6 +12,12 @@ const swiper = new Swiper('.mySwiper', {
 	}
 });
 
+const carouselButton = document.querySelector('.swiper-button-next');
+
+setInterval(() => {
+	carouselButton.click();
+}, 5000);
+
 const inputs = document.querySelectorAll('.input');
 const button = document.querySelector('.submit');
 const form = document.querySelector('form');
@@ -139,7 +145,7 @@ gsap
 			start: 'top 40%'
 		}
 	})
-	.from('.heads', { duration: .5, scaleY: 0 })
+	.from('.heads', { duration: 0.5, scaleY: 0 })
 	.from(
 		'.head-content-title',
 		{
