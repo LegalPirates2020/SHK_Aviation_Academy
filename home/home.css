@@ -194,18 +194,24 @@
 
 .vision {
 	position: absolute;
-	left: 10%;
+	right: 6%;
 	width: 30%;
 }
 
+
 .mission {
 	position: absolute;
-	right: 10%;
+	left: 6%;
 	width: 30%;
 }
 
 .mission h1 {
 	overflow: hidden;
+}
+
+.mission-ul
+{
+	list-style-type: none;
 }
 
 .SHK-heads {
@@ -508,6 +514,11 @@
 	color: white;
 }
 
+
+
+
+
+
 @media (max-width: 1350px) {
 	.vision {
 		left: 9%;
@@ -642,6 +653,39 @@
 @media (max-width: 1500px) {
 	.vision-and-mission {
 		background: linear-gradient(226.5deg, var(--theme) 50%, #8ecae6 50%);
+	}
+	.input:nth-of-type(1) {
+		left: 13rem !important;
+		padding-left: 15rem !important;
+	}
+
+	.input:nth-of-type(1):hover,
+	.input:nth-of-type(1):focus {
+		left: 30rem;
+		padding-left: 5rem;
+	}
+
+	.input:nth-of-type(2) {
+		left: 17rem !important;
+		padding-left: 16rem !important;
+	}
+
+	.input:nth-of-type(2):hover,
+	.input:nth-of-type(2):focus {
+		left: 30rem;
+		padding-left: 11rem;
+	}
+
+	.input:nth-of-type(3) {
+		left: 22rem !important;
+		padding-left: 17rem !important;
+	}
+
+	.input:nth-of-type(3):hover,
+	.input:nth-of-type(3):focus {
+		left: 36rem;
+		padding-left: 10rem;
+		width: 40% !important;
 	}
 }
 
