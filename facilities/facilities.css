@@ -808,7 +808,7 @@
 		content: '>';
 		font-size: 30px;
 		font-weight: bold;
-		background-color: rgb(255, 255, 255);
+		
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
@@ -824,11 +824,11 @@
 		content: '<';
 		font-size: 30px;
 		font-weight: bold;
-		background-color: rgb(255, 255, 255);
+		
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
-		left: 2rem;
+		left: 1rem;
 		width: 2rem;
 		height: 2rem;
 		z-index: 3;
