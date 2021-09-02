@@ -19,6 +19,21 @@ setTimeout(() => {
 	}, 5000);
 }, 2000);
 
+window.addEventListener('load', () => {
+	if (body.children[0]) {
+		body.style.overflow = 'hidden';
+		gsap
+			.timeline()
+			.to('.preload img', { duration: 0.5, y: 0, autoAlpha: 1, delay: 0.5 })
+			.to('.preload img', { duration: 0.5, y: '-100%', autoAlpha: 0 }, '+=1')
+			.to('.preload', { duration: 1, autoAlpha: 0 })
+			.set('body', { overflow: 'auto' })
+			.add(() => {
+				document.querySelector('.preload').remove();
+			});
+	}
+});
+
 const inputs = document.querySelectorAll('.input');
 const button = document.querySelector('.submit');
 const form = document.querySelector('form');
@@ -146,7 +161,7 @@ gsap
 			start: 'top 40%'
 		}
 	})
-	.from('.heads', { duration: 0.5, x: "-150%" })
+	.from('.heads .heads-pos div', { duration: 1, x: '210%', stagger: 0.1 })
 	.from(
 		'.head-content-title',
 		{
@@ -160,9 +175,18 @@ gsap
 		{
 			duration: 0.5,
 			x: 200,
-			opacity: 0
+			autoAlpha: 0
 		},
 		'-=.5'
+	)
+	.from(
+		'.head-content-para',
+		{
+			duration: 1,
+			x: 200,
+			opacity: 0
+		},
+		'-=1'
 	);
 
 gsap.from('.input', {
