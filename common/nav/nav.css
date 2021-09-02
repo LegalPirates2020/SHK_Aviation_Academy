@@ -141,12 +141,34 @@ header {
 	z-index: 4;
 	transition: all 0.3s ease-in-out;
 	font-family: 'Kanit', sans-serif;
-	padding: 0 7rem;
+	padding: 0 8%;
+	list-style-type: none;
 }
 
-.bottom-nav span a {
+.bottom-nav li a {
 	text-decoration: none;
 	color: white;
+	text-align: center;
+	width: 100%;
+	transition: all .3s ease-in-out;
+}
+
+.bottom-nav li {
+	position: relative;
+	width: 100%;
+	transition: all 0.3s ease-in-out;
+	text-align: center;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.bottom-nav li:hover {
+	background-color: white;
+}
+
+.bottom-nav li:hover a {
+	color: #39393a;
 }
 
 @media (max-width: 768px) {
@@ -161,7 +183,6 @@ header {
 	.bottom-nav {
 		flex-direction: column;
 		width: 60%;
-		height: 100vh;
 		transform: translateX(-100%);
 		transition: all 0.5s ease-in-out;
 		position: fixed;
@@ -175,7 +196,7 @@ header {
 		visibility: visible;
 	}
 
-	nav.side-bar .bottom-nav {
+	header.side-bar .bottom-nav {
 		transform: translateX(0);
 	}
 }
