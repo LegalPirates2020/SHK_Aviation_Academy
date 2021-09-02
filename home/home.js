@@ -19,6 +19,21 @@ setTimeout(() => {
 	}, 5000);
 }, 2000);
 
+window.addEventListener('load', () => {
+	if (body.children[0]) {
+		body.style.overflow = 'hidden';
+		gsap
+			.timeline()
+			.to('.preload img', { duration: .5, y: 0, autoAlpha: 1, delay: 0.5 })
+			.to('.preload img', { duration: 0.5, y: '-100%', autoAlpha: 0 }, '+=1')
+			.to('.preload', { duration: 1, autoAlpha: 0 })
+			.set('body', { overflow: 'auto' })
+			.add(() => {
+				document.querySelector('.preload').remove();
+			});
+	}
+});
+
 const inputs = document.querySelectorAll('.input');
 const button = document.querySelector('.submit');
 const form = document.querySelector('form');
@@ -172,7 +187,7 @@ gsap
 			opacity: 0
 		},
 		'-=1'
-	)
+	);
 
 gsap.from('.input', {
 	scrollTrigger: { trigger: '.contact-sec', start: 'top 40%' },

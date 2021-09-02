@@ -2,6 +2,54 @@
 	scroll-behavior: smooth;
 }
 
+.preload {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	z-index: 7;
+}
+
+.preload::after {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 7;
+	background: url('https://free4kwallpapers.com/uploads/originals/2015/07/15/airplanes-sunset-with-aircraft-jet-hq-background-nice-hd.jpg')
+		center/cover;
+	content: '';
+}
+
+.preload::before {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 8;
+	content: '';
+	backdrop-filter: blur(20px);
+}
+
+.preload div {
+	position: absolute;
+	width: 30%;
+	height: 30%;
+	overflow: hidden;
+	z-index: 9;
+}
+
+.preload img {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	transform: translateY(100%);
+	opacity: 0;
+}
+
 .hero {
 	position: relative;
 	width: 100%;
@@ -198,7 +246,6 @@
 	width: 30%;
 }
 
-
 .mission {
 	position: absolute;
 	left: 6%;
@@ -209,8 +256,7 @@
 	overflow: hidden;
 }
 
-.mission-ul
-{
+.mission-ul {
 	list-style-type: none;
 }
 
@@ -535,11 +581,6 @@
 	background-color: var(--theme);
 	color: white;
 }
-
-
-
-
-
 
 @media (max-width: 1350px) {
 	.vision {
