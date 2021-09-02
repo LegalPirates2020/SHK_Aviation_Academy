@@ -257,7 +257,7 @@ h3:hover {
 }
 .ul1 {
 	height: 0px;
-	overflow: hidden;
+	overflow: auto;
 	transition: all 0.5s ease-in-out;
 	overflow: hidden;
 	padding: 0rem 2rem;
@@ -271,9 +271,8 @@ h3:hover {
 .ul3,
 .ul4 {
 	height: 0px;
-	overflow: hidden;
+	overflow: auto;
 	transition: all 0.5s ease-in-out;
-	overflow: hidden;
 	padding: 0rem 2rem;
 	display: flex;
 	flex-direction: column;
@@ -465,7 +464,7 @@ h3:hover {
 		height: 14rem;
 	}
 	.para26.js6 {
-		height: 19rem;
+		height: 22rem;
 	}
 	.ul2.js6 {
 		height: 19rem;
@@ -521,6 +520,12 @@ h3:hover {
 		display: block;
 		text-align: center;
 		border-radius: 30px;
+	}
+	.ul2,
+	.ul3,
+	.ul4
+	{
+		display: block;
 	}
 
 	.again.colorchanging {
