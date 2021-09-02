@@ -1128,6 +1128,13 @@
 		width: 90px !important;
 		height: 90px !important;
 	}
+	.container-card::before {
+		left: 0rem !important;
+
+	}
+	.container-card::after {
+		right: -.6rem !important;
+	}
 }
 @media (max-width: 408px) {
 	.swiper {
