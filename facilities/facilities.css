@@ -32,8 +32,7 @@
 	left: 0;
 	height: 100%;
 	width: 100%;
-	/* background-color: rgba(46, 115, 204, 0.3); */
-	/* background: -webkit-linear-gradient(rgba(29, 38, 113, 0.4), rgba(195, 55, 100, 0.4)); */
+
 	background: rgba(0, 0, 0, 0.7);
 
 	z-index: 0;
