@@ -4,6 +4,15 @@
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
+
+
+.facilities {
+	background-color: white !important;
+}
+.facilities a {
+	color: #39393a !important;
+}
+
 .header-img {
 	position: relative;
 	display: flex;
