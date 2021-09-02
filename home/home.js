@@ -146,7 +146,7 @@ gsap
 			start: 'top 40%'
 		}
 	})
-	.from('.heads', { duration: 0.5, x: "-150%" })
+	.from('.heads .heads-pos div', { duration: 1, x: '150%', stagger: 0.1 })
 	.from(
 		'.head-content-title',
 		{
@@ -156,14 +156,23 @@ gsap
 		'-=.5'
 	)
 	.from(
-		'.head-content-para',
+		'.SHK-heads-aside',
 		{
-			duration: 0.5,
+			duration: 1,
 			x: 200,
 			opacity: 0
 		},
 		'-=.5'
-	);
+	)
+	.from(
+		'.head-content-para',
+		{
+			duration: 1,
+			x: 200,
+			opacity: 0
+		},
+		'-=1'
+	)
 
 gsap.from('.input', {
 	scrollTrigger: { trigger: '.contact-sec', start: 'top 40%' },
