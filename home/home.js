@@ -171,3 +171,13 @@ gsap.from('.input', {
 	x: -700,
 	stagger: 0.2
 });
+
+// const controller =z new ScrollMagic.Controller()
+
+// const scene = new ScrollMagic.scene({triggerElement:''})
+
+// gsap
+// 	.timeline({ scrollTrigger: { trigger: '.hero', start: 'top top' } })
+// 	.to('.plane-hero', { duration: 1, rotate: 90 })
+// 	.to('.plane-hero', { duration: 1, x: 800 }, '>1')
+// 	.set('.plane-hero', { duration: 1, rotate: 180 }, '>1');

@@ -6,6 +6,14 @@ body {
 	background-color: rgba(107, 107, 107, 0.301);
 }
 
+
+.academics {
+	background-color: white !important;
+}
+.academics a {
+	color: #39393a !important;
+}
+
 .section1 {
 	position: relative;
 	display: flex;
