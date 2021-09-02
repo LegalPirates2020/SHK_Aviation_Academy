@@ -13,10 +13,11 @@ const swiper = new Swiper('.mySwiper', {
 });
 
 const carouselButton = document.querySelector('.swiper-button-next');
-
-setInterval(() => {
-	carouselButton.click();
-}, 5000);
+setTimeout(() => {
+	setInterval(() => {
+		carouselButton.click();
+	}, 5000);
+}, 2000);
 
 const inputs = document.querySelectorAll('.input');
 const button = document.querySelector('.submit');

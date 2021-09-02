@@ -395,7 +395,7 @@
 	position: absolute;
 	width: 100%;
 	top: 0;
-	left: -29%;
+	left: -27.5rem;
 	box-shadow: 2px 2px 15px black;
 	transform: rotate(48deg);
 	height: 152%;
@@ -519,6 +519,9 @@
 	.vision {
 		left: 5% !important;
 	}
+	.contact-aside {
+		left: -26rem !important;
+	}
 }
 
 @media (max-width: 950px) {
@@ -538,6 +541,10 @@
 	.mission {
 		right: 9%;
 	}
+	.contact-aside {
+		left: -27rem;
+	}
+	
 }
 
 @media (max-width: 900px) {
