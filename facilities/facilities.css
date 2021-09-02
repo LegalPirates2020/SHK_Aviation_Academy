@@ -179,6 +179,9 @@
 }
 .swiper {
 	position: absolute;
+	/* height: 35vh !important; */
+	top: 50% !important;
+	transform: translateY(-50%);
 	/* left: 35% !important; */
 	width: 28%;
 	/* margin-left: 1rem; */
@@ -812,8 +815,8 @@
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
-		right: .5rem;
-		width: 2rem;
+		right: 1rem;
+		
 		height: 2rem;
 		z-index: 3;
 		opacity: .5;
@@ -829,7 +832,7 @@
 		top: 50%;
 		transform: translateY(-50%);
 		left: 1rem;
-		width: 2rem;
+		
 		height: 2rem;
 		z-index: 3;
 		opacity: .5;
@@ -1133,7 +1136,9 @@
 
 	}
 	.container-card::after {
-		right: -.6rem !important;
+		right: 0rem !important;
+
+		
 	}
 }
 @media (max-width: 408px) {
