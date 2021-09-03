@@ -17,7 +17,7 @@ setTimeout(() => {
 	setInterval(() => {
 		carouselButton.click();
 	}, 5000);
-}, 2000);
+}, 5000);
 
 window.addEventListener('load', () => {
 	if (body.children[0]) {
@@ -30,7 +30,10 @@ window.addEventListener('load', () => {
 			.set('body', { overflow: 'auto' })
 			.add(() => {
 				document.querySelector('.preload').remove();
-			});
+			})
+			.add(() => {
+				document.querySelector('.hero video').play();
+			}, '-=.8');
 	}
 });
 
@@ -161,32 +164,28 @@ gsap
 			start: 'top 40%'
 		}
 	})
-	.from('.heads .heads-pos div', { duration: 1, x: '210%', stagger: 0.1 })
+	.from('.heads h1', { duration: 0.5, height: 0 })
+	.from(
+		'.heads .heads-pos div',
+		{ duration: 0.5, x: '250%', stagger: 0.1 },
+		'-=.5'
+	)
 	.from(
 		'.head-content-title',
 		{
 			duration: 0.5,
 			height: 0
 		},
-		'-=.5'
-	)
-	.from(
-		'.head-content-para',
-		{
-			duration: 0.5,
-			x: 200,
-			autoAlpha: 0
-		},
-		'-=.5'
+		'-=1.5'
 	)
 	.from(
 		'.head-content-para',
 		{
 			duration: 1,
 			x: 200,
-			opacity: 0
+			autoAlpha: 0
 		},
-		'-=1'
+		'-=2'
 	);
 
 gsap.from('.input', {
