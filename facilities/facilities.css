@@ -799,8 +799,17 @@
 	}
 	.swiper {
 		top: 50% !important;
-		transform: translateY(-60%) !important;
+		transform: translateY(-65%) !important;
 		
+	}
+	.container-card::after {
+		top: 40% !important;
+		transform: translateY(-130) !important;
+	}
+	.container-card::before {
+		top: 40% !important;
+		transform: translateY(-130) !important;
+
 	}
 	.swiper {
 		position: absolute;
@@ -818,7 +827,7 @@
 		
 		position: absolute;
 		top: 50%;
-		transform: translateY(-110%) !important;
+		transform: translateY(-50%) !important;
 		right: 1rem;
 		
 		height: 2rem;
@@ -834,7 +843,7 @@
 		
 		position: absolute;
 		top: 50%;
-		transform: translateY(-110%) !important;
+		transform: translateY(-50%) !important;
 		left: 1rem;
 		
 		height: 2rem;
