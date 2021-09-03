@@ -19,7 +19,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: url("https://charaklive.b-cdn.net/wp-content/uploads/2021/07/Academics.jpg") center/cover;
+	background: url(./img/front.jpg) center/cover;
 	background-attachment: fixed;
 	width: 100%;
 	height: 65vh;
@@ -39,9 +39,9 @@ body {
 
 .title {
 	margin-top: 6.5rem;
-	outline: 5px solid #af7737;
+	outline: 5px solid #3882be;
 	padding: 4rem 6rem 4rem 6rem;
-	color: #af7737;
+	color: #3882be;
 	font-size: 2rem;
 	z-index: 2;
 }
@@ -205,18 +205,18 @@ h3:hover {
 	color: #fff;
 	background-color: rgb(255, 255, 255);
 	position: relative;
-	background: url(https://wallpaperaccess.com/full/254381.jpg) center/cover;
+	background: url(./img/one.jpg) center/cover;
 }
 .coursetwo {
-	background: url(https://www.wallpapertip.com/wmimgs/11-110183_airplane-hd-desktop-wallpapers-for-widescreen-data-src.jpg)
+	background: url(./img/two.jpg)
 		center/cover;
 }
 .coursethree {
-	background: url(https://vidooly.com/blog/wp-content/uploads/2020/12/703232.jpg)
+	background: url(./img/three.jpg)
 		center/cover;
 }
 .coursefour {
-	background: url(https://wallsdesk.com/wp-content/uploads/2018/04/Plane-Computer-Wallpaper.jpg)
+	background: url(./img/four.jpg)
 		center/cover;
 }
 .coursefour p,
