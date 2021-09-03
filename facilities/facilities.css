@@ -818,7 +818,7 @@
 		
 		position: absolute;
 		top: 50%;
-		transform: translateY(-50%);
+		transform: translateY(-110%) !important;
 		right: 1rem;
 		
 		height: 2rem;
@@ -834,7 +834,7 @@
 		
 		position: absolute;
 		top: 50%;
-		transform: translateY(-50%);
+		transform: translateY(-110%) !important;
 		left: 1rem;
 		
 		height: 2rem;
