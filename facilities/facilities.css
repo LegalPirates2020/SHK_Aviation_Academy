@@ -17,7 +17,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
 	background: url('https://www.unioncountync.gov/application/files/8315/9432/1864/library-books-for-facebook.jpg')
 		top/cover;
 	background-attachment: fixed;
@@ -799,6 +798,20 @@
 		margin-top: 3.5rem;
 	}
 	.swiper {
+		top: 50% !important;
+		transform: translateY(-65%) !important;
+		
+	}
+	.container-card::after {
+		top: 40% !important;
+		transform: translateY(-130) !important;
+	}
+	.container-card::before {
+		top: 40% !important;
+		transform: translateY(-130) !important;
+
+	}
+	.swiper {
 		position: absolute;
 
 		/* left: 19.5% !important; */
@@ -814,7 +827,7 @@
 		
 		position: absolute;
 		top: 50%;
-		transform: translateY(-50%);
+		transform: translateY(-50%) !important;
 		right: 1rem;
 		
 		height: 2rem;
@@ -830,7 +843,7 @@
 		
 		position: absolute;
 		top: 50%;
-		transform: translateY(-50%);
+		transform: translateY(-50%) !important;
 		left: 1rem;
 		
 		height: 2rem;
