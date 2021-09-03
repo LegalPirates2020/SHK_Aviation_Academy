@@ -798,6 +798,11 @@
 		margin-top: 3.5rem;
 	}
 	.swiper {
+		top: 50% !important;
+		transform: translateY(-60%) !important;
+		
+	}
+	.swiper {
 		position: absolute;
 
 		/* left: 19.5% !important; */
