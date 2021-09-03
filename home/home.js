@@ -25,8 +25,7 @@ window.addEventListener('load', () => {
 		gsap
 			.timeline()
 			.to('.preload img', { duration: 0.5, y: 0, autoAlpha: 1, delay: 0.5 })
-			.to('.preload img', { duration: 0.5, y: '-100%', autoAlpha: 0 }, '+=1')
-			.to('.preload', { duration: 1, autoAlpha: 0 })
+			.to('.preload', { duration: 1, autoAlpha: 0 },'>.8')
 			.set('body', { overflow: 'auto' })
 			.add(() => {
 				document.querySelector('.preload').remove();
@@ -88,11 +87,6 @@ gsap.from('.hero-content', {
 gsap
 	.timeline({
 		scrollTrigger: { trigger: '.bottom-nav', start: 'bottom top' }
-	})
-	.from('.SHK-title', {
-		x: 250,
-		opacity: 0,
-		duration: 1
 	})
 	.from(
 		'.SHK-para',
