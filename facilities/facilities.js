@@ -19,6 +19,7 @@ const pagee = window.getComputedStyle(page).getPropertyValue('height')
 
 
 
+
 // btn_right.addEventListener('click',()=> {
 //  card1.classList.add('display-none')
 //  card2.classList.add('display-flex')
