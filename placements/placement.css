@@ -14,6 +14,25 @@
 .section0 {
 	height: 70vh;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.section0div{
+	height: 70%;
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: justify;
+}
+
+.section0div h1{
+	font-size: 30px;
 }
 
 .section1 {
@@ -29,6 +48,8 @@
 	height: 60vh;
 	min-height: 386px;
 }
+
+
 .section1::after {
 	content: '';
 	position: absolute;
@@ -39,7 +60,6 @@
 	/* background-color: rgba(46, 115, 204, 0.3); */
 	/* background: -webkit-linear-gradient(rgba(29, 38, 113, 0.4), rgba(195, 55, 100, 0.4)); */
 	background: rgba(0, 0, 0, 0.7);
-
 	z-index: 0;
 }
 
