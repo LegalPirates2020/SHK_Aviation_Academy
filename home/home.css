@@ -779,7 +779,7 @@
 
 	.input:nth-of-type(3) {
 		left: 22rem !important;
-		padding-left: 22rem !important;
+		padding-left: 16rem !important;
 	}
 
 	.input:nth-of-type(3):hover,
@@ -790,7 +790,7 @@
 	}
 
 	.vision-mission-aside {
-		left: -24rem;
+		left: -21.5rem;
 	}
 }
 
