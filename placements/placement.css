@@ -7,6 +7,7 @@
 .placements {
 	background-color: white !important;
 }
+
 .placements a {
 	color: #39393a !important;
 }
@@ -19,7 +20,6 @@
 	justify-content: center;
 	align-items: center;
 }
-
 
 .section0div{
 	height: 70%;
@@ -48,7 +48,6 @@
 	height: 60vh;
 	min-height: 386px;
 }
-
 
 .section1::after {
 	content: '';
@@ -107,4 +106,20 @@
 	width: 90vw;
 	background: rgb(82, 81, 81);
 	margin-top: 90px;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: justify;
+}
+
+#div span{
+	height: 70%;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: justify;
 }
