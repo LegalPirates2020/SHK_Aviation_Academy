@@ -27,9 +27,9 @@ window.addEventListener('load', () => {
 			.to('.preload img', { duration: 0.5, y: 0, autoAlpha: 1, delay: 0.5 })
 			.to('.preload', { duration: 1, autoAlpha: 0 }, '>.8')
 			.set('body', { overflow: 'auto' })
-			.add(() => {
-				document.querySelector('.preload').remove();
-			})
+			// .add(() => {
+			// 	document.querySelector('.preload').remove();
+			// })
 			.add(() => {
 				document.querySelector('.hero video').play();
 			}, '-=.8');
@@ -157,7 +157,7 @@ gsap
 			start: 'top 40%'
 		}
 	})
-	.from('.heads h1', { duration: 0.5, height: 0 })
+	.from('.heads h1', { duration: 0.5, height: 0 }, '-=.5')
 	.from(
 		'.heads .heads-pos div',
 		{ duration: 0.5, x: '250%', stagger: 0.1 },
@@ -169,16 +169,16 @@ gsap
 			duration: 0.5,
 			height: 0
 		},
-		'-=1.5'
+		'-=1'
 	)
 	.from(
 		'.head-content-para',
 		{
-			duration: 1,
+			duration: .5,
 			x: 200,
 			autoAlpha: 0
 		},
-		'-=2'
+		'-=.8'
 	);
 
 gsap.from('.input', {
