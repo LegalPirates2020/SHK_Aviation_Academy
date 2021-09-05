@@ -25,7 +25,7 @@ window.addEventListener('load', () => {
 		gsap
 			.timeline()
 			.to('.preload img', { duration: 0.5, y: 0, autoAlpha: 1, delay: 0.5 })
-			.to('.preload', { duration: 1, autoAlpha: 0 },'>.8')
+			.to('.preload', { duration: 1, autoAlpha: 0 }, '>.8')
 			.set('body', { overflow: 'auto' })
 			.add(() => {
 				document.querySelector('.preload').remove();
@@ -80,8 +80,7 @@ if (window.innerWidth <= 1250 && window.innerWidth >= 800) {
 
 gsap.from('.hero-content', {
 	duration: 1,
-	height: 0,
-	ease: 'Power3.easeInOut'
+	height: 0
 });
 
 gsap
@@ -188,13 +187,3 @@ gsap.from('.input', {
 	x: -700,
 	stagger: 0.2
 });
-
-// const controller =z new ScrollMagic.Controller()
-
-// const scene = new ScrollMagic.scene({triggerElement:''})
-
-// gsap
-// 	.timeline({ scrollTrigger: { trigger: '.hero', start: 'top top' } })
-// 	.to('.plane-hero', { duration: 1, rotate: 90 })
-// 	.to('.plane-hero', { duration: 1, x: 800 }, '>1')
-// 	.set('.plane-hero', { duration: 1, rotate: 180 }, '>1');
