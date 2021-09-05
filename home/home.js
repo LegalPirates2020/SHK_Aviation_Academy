@@ -25,11 +25,11 @@ window.addEventListener('load', () => {
 		gsap
 			.timeline()
 			.to('.preload img', { duration: 0.5, y: 0, autoAlpha: 1, delay: 0.5 })
-			.to('.preload', { duration: 1, autoAlpha: 0 },'>.8')
+			.to('.preload', { duration: 1, autoAlpha: 0 }, '>.8')
 			.set('body', { overflow: 'auto' })
-			.add(() => {
-				document.querySelector('.preload').remove();
-			})
+			// .add(() => {
+			// 	document.querySelector('.preload').remove();
+			// })
 			.add(() => {
 				document.querySelector('.hero video').play();
 			}, '-=.8');
@@ -46,7 +46,7 @@ inputs.forEach((input) => {
 	input.addEventListener('input', (e) => {
 		if (inputs[2].value == e.data) {
 			if (inputs[0].value.length && inputs[1].value.length) {
-				nextSubmit.style.left = '64rem';
+				nextSubmit.style.left = '70%';
 			} else {
 				nextSubmit.style.left = '0';
 			}
@@ -63,12 +63,12 @@ nextSubmit.addEventListener('click', () => {
 		input.style.left = '-100%';
 		nextSubmit.style.left = '0';
 	});
-	textArea.style.left = '50rem';
+	textArea.style.left = '50%';
 });
 
 textArea.addEventListener('keydown', (e) => {
 	if (textArea.value.length >= 30) {
-		button.style.left = '60rem';
+		button.style.left = '60%';
 		button.removeAttribute('disabled');
 	}
 });
@@ -80,8 +80,7 @@ if (window.innerWidth <= 1250 && window.innerWidth >= 800) {
 
 gsap.from('.hero-content', {
 	duration: 1,
-	height: 0,
-	ease: 'Power3.easeInOut'
+	height: 0
 });
 
 gsap
@@ -158,7 +157,7 @@ gsap
 			start: 'top 40%'
 		}
 	})
-	.from('.heads h1', { duration: 0.5, height: 0 })
+	.from('.heads h1', { duration: 0.5, height: 0 }, '-=.5')
 	.from(
 		'.heads .heads-pos div',
 		{ duration: 0.5, x: '250%', stagger: 0.1 },
@@ -170,16 +169,16 @@ gsap
 			duration: 0.5,
 			height: 0
 		},
-		'-=1.5'
+		'-=1'
 	)
 	.from(
 		'.head-content-para',
 		{
-			duration: 1,
+			duration: .5,
 			x: 200,
 			autoAlpha: 0
 		},
-		'-=2'
+		'-=.8'
 	);
 
 gsap.from('.input', {
@@ -188,13 +187,3 @@ gsap.from('.input', {
 	x: -700,
 	stagger: 0.2
 });
-
-// const controller =z new ScrollMagic.Controller()
-
-// const scene = new ScrollMagic.scene({triggerElement:''})
-
-// gsap
-// 	.timeline({ scrollTrigger: { trigger: '.hero', start: 'top top' } })
-// 	.to('.plane-hero', { duration: 1, rotate: 90 })
-// 	.to('.plane-hero', { duration: 1, x: 800 }, '>1')
-// 	.set('.plane-hero', { duration: 1, rotate: 180 }, '>1');
