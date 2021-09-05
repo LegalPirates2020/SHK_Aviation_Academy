@@ -46,7 +46,7 @@ inputs.forEach((input) => {
 	input.addEventListener('input', (e) => {
 		if (inputs[2].value == e.data) {
 			if (inputs[0].value.length && inputs[1].value.length) {
-				nextSubmit.style.left = '64rem';
+				nextSubmit.style.left = '70%';
 			} else {
 				nextSubmit.style.left = '0';
 			}
@@ -63,12 +63,12 @@ nextSubmit.addEventListener('click', () => {
 		input.style.left = '-100%';
 		nextSubmit.style.left = '0';
 	});
-	textArea.style.left = '50rem';
+	textArea.style.left = '50%';
 });
 
 textArea.addEventListener('keydown', (e) => {
 	if (textArea.value.length >= 30) {
-		button.style.left = '60rem';
+		button.style.left = '60%';
 		button.removeAttribute('disabled');
 	}
 });
