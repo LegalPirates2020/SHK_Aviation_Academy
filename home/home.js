@@ -46,29 +46,26 @@ inputs.forEach((input) => {
 	input.addEventListener('input', (e) => {
 		if (inputs[2].value == e.data) {
 			if (inputs[0].value.length && inputs[1].value.length) {
-				nextSubmit.style.left = '70%';
+				nextSubmit.style.left = '43%';
 			} else {
-				nextSubmit.style.left = '0';
+				nextSubmit.style.left = '-100%';
 			}
-		} else {
-			nextSubmit.style.left = '0';
-			button.style.left = '0';
 		}
 	});
 });
 
 nextSubmit.addEventListener('click', () => {
 	inputs.forEach((input) => {
+		console.log(input);
 		input.style.left = '-100%';
-		input.style.left = '-100%';
-		nextSubmit.style.left = '0';
+		nextSubmit.style.left = '-100%';
 	});
-	textArea.style.left = '50%';
+	textArea.style.left = '30%';
 });
 
 textArea.addEventListener('keydown', (e) => {
 	if (textArea.value.length >= 30) {
-		button.style.left = '60%';
+		button.style.left = '25%';
 		button.removeAttribute('disabled');
 	}
 });
@@ -160,7 +157,7 @@ gsap
 	.from('.heads h1', { duration: 0.5, height: 0 }, '-=.5')
 	.from(
 		'.heads .heads-pos div',
-		{ duration: 0.5, x: '250%', stagger: 0.1 },
+		{ duration: 0.5, x: '500%', stagger: 0.1 },
 		'-=.5'
 	)
 	.from(
