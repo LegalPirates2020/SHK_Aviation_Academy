@@ -108,7 +108,7 @@ h3:hover {
 	height: 49%;
 	box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.315),
 		-2px -2px 25px rgba(0, 0, 0, 0.315);
-	right: 3%;
+	right: -10%;
 	float: right;
 	position: fixed;
 	transform: translateX(450px);
