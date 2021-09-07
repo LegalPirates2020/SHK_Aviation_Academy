@@ -57,12 +57,12 @@ nextSubmit.addEventListener('click', () => {
 		input.style.left = '-100%';
 		nextSubmit.style.left = '-100%';
 	});
-	textArea.style.left = '30%';
+	textArea.style.left = '50%';
 });
 
 textArea.addEventListener('keydown', (e) => {
 	if (textArea.value.length >= 30) {
-		button.style.left = '25%';
+		button.style.left = '70%';
 		button.removeAttribute('disabled');
 	}
 });
