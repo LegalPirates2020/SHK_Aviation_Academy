@@ -17,36 +17,6 @@ const pagination = document.getElementsByClassName('pagination')
 const page = document.getElementById('header')
 const pagee = window.getComputedStyle(page).getPropertyValue('height')
 
-
-
-
-// btn_right.addEventListener('click',()=> {
-//  card1.classList.add('display-none')
-//  card2.classList.add('display-flex')
-// })
-// btn_right.addEventListener('click',()=> {
-//  card1.classList.add('display-none')
-//  card2.classList.add('display-flex')
-// })
-
-
-// btn_left.addEventListener('click', () => {
-//  card1.style.left = '340px'
-//  card2.style.right = '-600px'
-//  card2.style.opacity = '0'
-//  card1.style.opacity = '1'
-
-
- 
-// })
-// btn_right.addEventListener('click', () => {
-//  card1.style.left = '-600px'
-//  card2.style.right = '320px'
-//  card2.style.opacity = '1'
-//  card1.style.opacity = '0'
-
-
-// })
 const scrollToTop = () => {
   const p  =parseInt(pagee)
   console.log(p);

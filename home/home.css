@@ -86,7 +86,7 @@
 	top: 55%;
 	left: 65%;
 	width: fit-content;
-	height: 115px;
+	height: 5rem;
 	z-index: 3;
 	line-height: 40px;
 	transform: translate(-50%, -50%);
@@ -295,7 +295,7 @@
 	background-color: #ade8f4;
 	overflow: hidden;
 	padding: 4rem 6rem;
-	height: 76vh;
+	height: fit-content;
 }
 
 .SHK-heads > div {
@@ -603,13 +603,13 @@
 	border: none;
 	transition: all 0.5s ease-in-out;
 	box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3), -1px -1px 20px rgba(0, 0, 0, 0.3);
-	left: -10rem;
+	left: -100%;
 }
 
 .submit,
 .next-submit {
 	position: relative;
-	left: 0rem;
+	left: 100%;
 	border-radius: 10px;
 	width: 10rem;
 	height: 2.5rem;
@@ -650,20 +650,6 @@
 	}
 }
 
-@media (max-width: 500px) {
-	.SHK-heads {
-		height: 145vh;
-		background: linear-gradient(0deg, #ade8f4 53%, #f1faee 0%) !important;
-	}
-	.input {
-		left: 50% !important;
-		transform: translateX(-50%) !important;
-		margin: 2rem 0 !important;
-		padding: 1rem !important;
-		width: 20rem !important;
-	}
-}
-
 @media (max-width: 750px) {
 	.heads-pos {
 		grid-template-columns: 1fr 1fr;
@@ -681,6 +667,67 @@
 
 	.preload img {
 		height: 100% !important;
+	}
+}
+
+@media (max-width: 650px) {
+	.vision-and-mission {
+		height: 120vh !important;
+	}
+	.vision {
+		width: 100% !important;
+		height: fit-content !important;
+		left: 0;
+		flex-direction: column;
+		position: absolute;
+		bottom: 0;
+		padding: 4rem;
+	}
+
+	.mission {
+		width: 100% !important;
+		height: fit-content !important;
+		padding: 4rem;
+		left: 0 !important;
+		top: 0;
+		position: absolute;
+		background-color: #ade8f4;
+	}
+
+	.SHK-heads-aside,
+	.vision-mission-aside {
+		display: none !important;
+	}
+
+	.SHK-heads > div {
+		flex-direction: column;
+	}
+
+	.heads + div {
+		width: 100% !important;
+		right: 0% !important;
+		padding: 4rem;
+	}
+
+	.heads {
+		width: 100% !important;
+		border-radius: 0;
+		top: 0;
+		padding: 4rem 0;
+	}
+
+	.heads + div {
+		background-color: var(--theme);
+	}
+
+	.SHK-heads {
+		padding: 0 !important;
+	}
+}
+
+@media (max-width: 550px) {
+	.vision-and-mission {
+		height: 130vh !important;
 	}
 }
 
@@ -724,65 +771,17 @@
 		clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
 	}
 
+	.heads-pos div {
+		width: 80%;
+	}
+
 	.vision-and-mission {
-		flex-direction: column;
-		justify-content: space-around;
-		padding: 10% !important;
-		height: fit-content !important;
-	}
-
-	.vision {
-		width: 100%;
-		position: relative;
-		z-index: 1;
-		right: 0;
-	}
-
-	.mission {
-		position: relative;
-		width: 100%;
-		padding: 7% 0 0 0;
-		left: 0;
-	}
-
-	.mission-ul li {
-		margin-bottom: 2%;
-	}
-
-	.SHK-heads {
-		background: linear-gradient(0deg, #ade8f4 45%, #f1faee 0%) !important;
-		height: 125vh;
-		display: flex;
-		justify-content: space-between;
-		padding: 4rem;
-	}
-
-	.SHK-heads-aside {
-		display: none !important;
-	}
-
-	.SHK-heads > div {
-		flex-direction: column;
-	}
-
-	.heads + div {
-		width: 100%;
-		margin: 5% 0;
+		height: 100vh;
 	}
 
 	.heads {
-		width: 100%;
-	}
-
-	.heads-pos {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		row-gap: 5%;
-		column-gap: 5%;
-	}
-
-	.heads-pos div {
-		height: fit-content;
+		width: 50%;
+		left: 0 !important;
 	}
 
 	.contact-aside {
@@ -849,5 +848,135 @@
 	}
 }
 
-@media (max-width: 1550px) {
+@media (max-width: 1500px) {
+	.SHK-heads-aside {
+		clip-path: polygon(65% 0%, 100% 0%, 100% 100%, 25% 100%);
+	}
+
+	.contact-aside {
+		clip-path: polygon(0 0, 39% 0, 75% 100%, 0 100%);
+	}
+
+	.vision-mission-aside {
+		clip-path: polygon(0 0, 35% 0, 100% 143%, 0px 100%);
+	}
+}
+
+@media (max-width: 1200px) {
+	.vision-mission-aside,
+	.SHK-heads-aside {
+		clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+	}
+
+	.vision {
+		right: 10%;
+	}
+	.mission {
+		left: 10%;
+	}
+
+	.contact-sec {
+		background: url(https://jooinn.com/images/airplane-37.jpg) no-repeat
+			center/cover;
+	}
+
+	form {
+		z-index: 1;
+	}
+
+	.contact-title {
+		z-index: 1;
+		color: white;
+	}
+
+	.heads {
+		z-index: 1;
+		width: 20rem;
+		left: 7%;
+		position: relative;
+	}
+
+	.heads + div {
+		width: 38%;
+		right: 6%;
+	}
+
+	.SHK-heads {
+		padding: 4rem 0rem;
+	}
+
+	.contact-sec::after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		content: '';
+		background-color: rgba(0, 0, 0, 0.2);
+	}
+
+	.contact-aside {
+		display: none;
+	}
+
+	.input {
+		position: relative !important;
+		left: 50%;
+		transform: translateX(-50%) !important;
+		margin: 2rem 0 !important;
+		padding: 1rem !important;
+		width: 50% !important;
+	}
+	.input:nth-of-type(1),
+	.input:nth-of-type(1):hover,
+	.input:nth-of-type(1):focus,
+	.input:nth-of-type(2),
+	.input:nth-of-type(2):hover,
+	.input:nth-of-type(2):focus,
+	.input:nth-of-type(3),
+	.input:nth-of-type(3):hover,
+	.input:nth-of-type(3):focus {
+		left: 50%;
+		padding-left: 1rem !important;
+	}
+}
+
+@media (max-width: 500px) {
+	.vision-and-mission {
+		height: 135vh !important;
+	}
+}
+
+@media (max-width: 450px) {
+	.vision-and-mission {
+		height: 150vh !important;
+	}
+}
+
+@media (max-width: 400px) {
+	.vision-and-mission {
+		height: 180vh !important;
+	}
+	.hero-content span {
+		font-size: 1.5rem;
+	}
+	.SHK-aviation {
+		padding: 15% !important;
+	}
+
+	.input {
+		width: 75% !important;
+	}
+}
+
+@media (max-width: 350px) {
+	.vision-and-mission {
+		height: 190vh !important;
+	}
+}
+
+@media (max-width: 320px) {
+	.vision-and-mission {
+		height: 205vh !important;
+	}
 }
