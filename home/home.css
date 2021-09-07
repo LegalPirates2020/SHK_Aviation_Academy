@@ -295,7 +295,7 @@
 	background-color: #ade8f4;
 	overflow: hidden;
 	padding: 4rem 6rem;
-	height: 76vh;
+	height: fit-content;
 }
 
 .SHK-heads > div {
@@ -650,20 +650,6 @@
 	}
 }
 
-@media (max-width: 500px) {
-	.SHK-heads {
-		height: 145vh;
-		background: linear-gradient(0deg, #ade8f4 53%, #f1faee 0%) !important;
-	}
-	.input {
-		left: 50% !important;
-		transform: translateX(-50%) !important;
-		margin: 2rem 0 !important;
-		padding: 1rem !important;
-		width: 20rem !important;
-	}
-}
-
 @media (max-width: 750px) {
 	.heads-pos {
 		grid-template-columns: 1fr 1fr;
@@ -683,6 +669,69 @@
 		height: 100% !important;
 	}
 }
+
+@media (max-width: 650px) {
+	.vision-and-mission {
+		height: 120vh !important;
+	}
+	.vision {
+		width: 100% !important;
+		height: fit-content !important;
+		left: 0;
+		flex-direction: column;
+		position: absolute;
+		bottom: 0;
+		padding: 4rem;
+	}
+
+	.mission {
+		width: 100% !important;
+		height: fit-content !important;
+		padding: 4rem;
+		left: 0 !important;
+		top: 0;
+		position: absolute;
+		background-color: #ade8f4;
+	}
+
+	.SHK-heads-aside,
+	.vision-mission-aside {
+		display: none !important;
+	}
+
+	.SHK-heads > div {
+		flex-direction: column;
+	}
+
+	.heads + div {
+		width: 100% !important;
+		right: 0% !important;
+		padding: 4rem;
+	}
+
+	.heads {
+		width: 100% !important;
+		border-radius: 0;
+		top: 0;
+		padding: 4rem 0;
+	}
+
+	.heads + div {
+		background-color: var(--theme);
+	}
+
+	.SHK-heads {
+		padding: 0 !important;
+	}
+}
+
+@media (max-width: 550px) {
+	.vision-and-mission {
+		height: 130vh !important;
+	}
+}
+
+
 
 @media (max-width: 900px) {
 	.hero .plane-hero {
@@ -728,8 +777,13 @@
 		width: 80%;
 	}
 
+	.vision-and-mission {
+		height: 100vh;
+	}
+
 	.heads {
-		left: 5%;
+		width: 50%;
+		left: 0 !important;
 	}
 
 	.contact-aside {
@@ -793,15 +847,6 @@
 	.submit,
 	.next-submit {
 		left: -100%;
-	}
-}
-
-@media screen and (max-width: 800px) {
-	.vision-mission-aside {
-		clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
-		transform: rotate(90deg);
-		position: relative;
-		bottom: 0;
 	}
 }
 
@@ -895,5 +940,35 @@
 	.input:nth-of-type(3):focus {
 		left: 50%;
 		padding-left: 1rem !important;
+	}
+}
+
+@media (max-width:500px){
+	.vision-and-mission {
+		height: 135vh !important;
+	}
+}
+
+@media (max-width: 450px) {
+	.vision-and-mission {
+		height: 150vh !important;
+	}
+}
+
+@media (max-width: 400px) {
+	.vision-and-mission {
+		height: 165vh !important;
+	}
+}
+
+@media (max-width: 350px) {
+	.vision-and-mission {
+		height: 190vh !important;
+	}
+}
+
+@media (max-width: 320px) {
+	.vision-and-mission {
+		height: 205vh !important;
 	}
 }
