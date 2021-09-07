@@ -30,9 +30,6 @@ window.addEventListener('load', () => {
 			.add(() => {
 				document.querySelector('.preload').remove();
 			})
-			.add(() => {
-				document.querySelector('.hero video').play();
-			}, '-=.8');
 	}
 });
 
@@ -46,7 +43,7 @@ inputs.forEach((input) => {
 	input.addEventListener('input', (e) => {
 		if (inputs[2].value == e.data) {
 			if (inputs[0].value.length && inputs[1].value.length) {
-				nextSubmit.style.left = '43%';
+				nextSubmit.style.left = '75%';
 			} else {
 				nextSubmit.style.left = '-100%';
 			}
