@@ -27,9 +27,9 @@ window.addEventListener('load', () => {
 			.to('.preload img', { duration: 0.5, y: 0, autoAlpha: 1, delay: 0.5 })
 			.to('.preload', { duration: 1, autoAlpha: 0 }, '>.8')
 			.set('body', { overflow: 'auto' })
-			// .add(() => {
-			// 	document.querySelector('.preload').remove();
-			// })
+			.add(() => {
+				document.querySelector('.preload').remove();
+			})
 			.add(() => {
 				document.querySelector('.hero video').play();
 			}, '-=.8');

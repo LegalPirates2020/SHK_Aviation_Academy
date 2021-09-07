@@ -207,9 +207,3 @@ header {
 		transform: translateX(0);
 	}
 }
-/* 
-@media (max-width: 550px) {
-	.top-nav {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-} */

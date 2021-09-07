@@ -86,7 +86,7 @@
 	top: 55%;
 	left: 65%;
 	width: fit-content;
-	height: 115px;
+	height: 5rem;
 	z-index: 3;
 	line-height: 40px;
 	transform: translate(-50%, -50%);
@@ -731,8 +731,6 @@
 	}
 }
 
-
-
 @media (max-width: 900px) {
 	.hero .plane-hero {
 		display: none;
@@ -943,7 +941,7 @@
 	}
 }
 
-@media (max-width:500px){
+@media (max-width: 500px) {
 	.vision-and-mission {
 		height: 135vh !important;
 	}
@@ -957,7 +955,17 @@
 
 @media (max-width: 400px) {
 	.vision-and-mission {
-		height: 165vh !important;
+		height: 180vh !important;
+	}
+	.hero-content span {
+		font-size: 1.5rem;
+	}
+	.SHK-aviation {
+		padding: 15% !important;
+	}
+
+	.input {
+		width: 75%;
 	}
 }
 

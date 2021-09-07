@@ -101,8 +101,6 @@ const watchra = [
 	watch46,
 ];
 
-// const watchra = [watch1, watch2, watch3, watch4, watch5, watch6];
-
 const parara = [
 	para1,
 	para2,
@@ -126,7 +124,6 @@ const parara = [
 	para45,
 	para46,
 ];
-// const parara = [para1, para2, para3, para4, para5, para6];
 
 for (let i = 0; i < watchra.length; i++) {
 	watchra[i].addEventListener("click", () => {
@@ -258,7 +255,6 @@ const mobileclick = document.querySelector(".mobileclick");
 const firstdiv = document.querySelector(".firstdiv");
 const again = document.querySelector(".again");
 
-// const clicking = [bba, bscaviation, mba, bscair];
 
 mobileclick.addEventListener("click" , () => {
 	again.classList.toggle("clicking10");

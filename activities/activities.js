@@ -7,7 +7,6 @@ gsap
 	})
 	.from('.grid', {
 		duration: 0.4,
-		// boxShadow: '0px 0px 0px 0px white'
 		y: 230,
 		stagger: 0.1,
 	});
