@@ -29,7 +29,7 @@ window.addEventListener('load', () => {
 			.set('body', { overflow: 'auto' })
 			.add(() => {
 				document.querySelector('.preload').remove();
-			})
+			});
 	}
 });
 
@@ -72,112 +72,114 @@ if (window.innerWidth <= 1250 && window.innerWidth >= 800) {
 	li3.parentElement.removeChild(li3);
 }
 
-gsap.from('.hero-content', {
-	duration: 1,
-	height: 0
-});
-
-gsap
-	.timeline({
-		scrollTrigger: { trigger: '.bottom-nav', start: 'bottom top' }
-	})
-	.from(
-		'.SHK-para',
-		{
-			duration: 1,
-			opacity: 0,
-			x: -250
-		},
-		'-=1	'
-	);
-
-gsap
-	.timeline({
-		scrollTrigger: {
-			trigger: '.swiper',
-			start: 'top 40%'
-		}
-	})
-	.from('.swiper', {
+if (window.innerWidth >= 800) {
+	gsap.from('.hero-content', {
 		duration: 1,
-		width: '100%',
-		height: '100%',
-		borderRadius: '0'
-	})
-	.from('.slide-h1', { duration: 1, height: 0 }, '-=.5');
-
-gsap
-	.timeline({
-		scrollTrigger: {
-			trigger: '.vision-and-mission',
-			start: 'top 40%'
-		}
-	})
-	.from('.vision-h1', {
-		duration: 0.5,
 		height: 0
-	})
-	.from(
-		'.vision-p',
-		{
-			duration: 0.5,
-			x: -100,
-			opacity: 0
-		},
-		'-=.5'
-	)
-	.from(
-		'.mission-h1',
-		{
+	});
+
+	gsap
+		.timeline({
+			scrollTrigger: { trigger: '.bottom-nav', start: 'bottom top' }
+		})
+		.from(
+			'.SHK-para',
+			{
+				duration: 1,
+				opacity: 0,
+				x: -250
+			},
+			'-=1	'
+		);
+
+	gsap
+		.timeline({
+			scrollTrigger: {
+				trigger: '.swiper',
+				start: 'top 40%'
+			}
+		})
+		.from('.swiper', {
+			duration: 1,
+			width: '100%',
+			height: '100%',
+			borderRadius: '0'
+		})
+		.from('.slide-h1', { duration: 1, height: 0 }, '-=.5');
+
+	gsap
+		.timeline({
+			scrollTrigger: {
+				trigger: '.vision-and-mission',
+				start: 'top 40%'
+			}
+		})
+		.from('.vision-h1', {
 			duration: 0.5,
 			height: 0
-		},
-		'-=.5'
-	)
-	.from(
-		'.mission-ul',
-		{
-			duration: 0.5,
-			x: 100,
-			opacity: 0
-		},
-		'-=.5'
-	);
+		})
+		.from(
+			'.vision-p',
+			{
+				duration: 0.5,
+				x: -100,
+				opacity: 0
+			},
+			'-=.5'
+		)
+		.from(
+			'.mission-h1',
+			{
+				duration: 0.5,
+				height: 0
+			},
+			'-=.5'
+		)
+		.from(
+			'.mission-ul',
+			{
+				duration: 0.5,
+				x: 100,
+				opacity: 0
+			},
+			'-=.5'
+		);
 
-gsap
-	.timeline({
-		scrollTrigger: {
-			trigger: '.SHK-heads',
-			start: 'top 40%'
-		}
-	})
-	.from('.heads h1', { duration: 0.5, height: 0 }, '-=.5')
-	.from(
-		'.heads .heads-pos div',
-		{ duration: 0.5, x: '500%', stagger: 0.1 },
-		'-=.5'
-	)
-	.from(
-		'.head-content-title',
-		{
-			duration: 0.5,
-			height: 0
-		},
-		'-=1'
-	)
-	.from(
-		'.head-content-para',
-		{
-			duration: .5,
-			x: 200,
-			autoAlpha: 0
-		},
-		'-=.8'
-	);
+	gsap
+		.timeline({
+			scrollTrigger: {
+				trigger: '.SHK-heads',
+				start: 'top 40%'
+			}
+		})
+		.from('.heads h1', { duration: 0.5, height: 0 }, '-=.5')
+		.from(
+			'.heads .heads-pos div',
+			{ duration: 0.5, x: '500%', stagger: 0.1 },
+			'-=.5'
+		)
+		.from(
+			'.head-content-title',
+			{
+				duration: 0.5,
+				height: 0
+			},
+			'-=1'
+		)
+		.from(
+			'.head-content-para',
+			{
+				duration: 0.5,
+				x: 200,
+				autoAlpha: 0
+			},
+			'-=.8'
+		);
 
-gsap.from('.input', {
-	scrollTrigger: { trigger: '.contact-sec', start: 'top 40%' },
-	duration: 0.05,
-	x: -700,
-	stagger: 0.2
-});
+	gsap.from('.input', {
+		scrollTrigger: { trigger: '.contact-sec', start: 'top 40%' },
+		duration: 0.05,
+		x: -700,
+		stagger: 0.2
+	});
+}

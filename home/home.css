@@ -642,7 +642,7 @@
 
 @media (max-width: 650px) {
 	.vision-and-mission {
-		height: 120vh !important;
+		height: 90vh !important;
 	}
 	.vision {
 		width: 100% !important;
@@ -695,12 +695,6 @@
 	}
 }
 
-@media (max-width: 550px) {
-	.vision-and-mission {
-		height: 130vh !important;
-	}
-}
-
 @media (max-width: 900px) {
 	.hero {
 		background: url('https://media.architecturaldigest.com/photos/5988e603298aae66974b2d0d/2:1/w_3000,h_1500,c_limit/Pilotless%20Airplanes%201.jpg')
@@ -737,10 +731,6 @@
 
 	.heads-pos div {
 		width: 80%;
-	}
-
-	.vision-and-mission {
-		height: 100vh;
 	}
 
 	.heads {
@@ -906,12 +896,13 @@
 	.input:nth-of-type(3):focus {
 		left: 50%;
 		padding-left: 1rem !important;
+		width: 70%;
 	}
 }
 
 @media (max-width: 500px) {
 	.vision-and-mission {
-		height: 135vh !important;
+		height: 100vh !important;
 	}
 	.slide-h1 {
 		top: 50%;
@@ -926,7 +917,7 @@
 
 @media (max-width: 450px) {
 	.vision-and-mission {
-		height: 150vh !important;
+		height: 110vh !important;
 	}
 	.hero {
 		background: url(https://media.architecturaldigest.com/photos/5988e603298aae66974b2d0d/2:1/w_3000,h_1500,c_limit/Pilotless%20Airplanes%201.jpg);
@@ -948,7 +939,7 @@
 		height: 100% !important;
 	}
 	.vision-and-mission {
-		height: 160vh !important;
+		height: 120vh !important;
 	}
 	.hero-content span {
 		font-size: 1.5rem;
@@ -964,12 +955,12 @@
 
 @media (max-width: 350px) {
 	.vision-and-mission {
-		height: 190vh !important;
+		height: 135vh !important;
 	}
 }
 
 @media (max-width: 320px) {
-	.vision-and-mission {
+	/* .vision-and-mission {
 		height: 205vh !important;
-	}
+	} */
 }
