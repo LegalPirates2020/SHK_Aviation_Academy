@@ -207,7 +207,6 @@ header {
 		transform: translateX(0);
 	}
 }
-
 @media (max-width:800px){
 	.bottom-nav {
 		padding: 0;
