@@ -598,7 +598,7 @@ h3:hover {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		right: 36px;
+		right: -100%;
 		transform: translateX(450px);
 		float: none;
 		border-radius: 20px;

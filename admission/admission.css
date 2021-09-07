@@ -43,7 +43,7 @@
 	text-align: center;
 }
 
-/* .application-form::after
+.application::after
 {
 	content: "";
 	top: 0;
@@ -51,11 +51,16 @@
 	position: absolute;
 	backdrop-filter: blur(5px);
 	width: 100%;
-	background-color: rgba(219, 213, 213, 0.336);
 	height: 100%;
+	background-color: rgba(219, 213, 213, 0.336);
 	z-index: 0;
-} */
+}
+.application
+{
+	background: url(./img/br1.jpeg);
+	position: relative;
 
+}
 
 .application-form
 {
@@ -148,7 +153,32 @@ option
 {
 	padding: 10px;
 	margin-top: 3%;
-	background-color: rgb(63, 105, 219);
+	background-color: rgb(32, 113, 219);
 	color: #fff;
 
+}
+
+
+.images
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.images h2
+{
+	font-size: 50px;
+	padding: 2%;
+}
+
+
+
+.download
+{
+	padding: 1%;
+	text-decoration: none;
+	color: #fff;
+	background-color: rgb(32, 113, 219);
 }
