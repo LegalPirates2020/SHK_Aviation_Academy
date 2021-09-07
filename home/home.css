@@ -62,9 +62,9 @@
 	height: 60vh;
 	top: var(--nav-height);
 	align-content: center;
-	background: url(./img/hero_image.jpg);
+	background: url(https://cdn.discordapp.com/attachments/843450590763679746/884065536244334592/avel-chuklanov-Ou1eqo29Ums-unsplash.jpg);
 	background-size: cover;
-	background-position: 0 203rem;
+	background-position: center;
 }
 
 .hero::after {
@@ -922,7 +922,7 @@
 	.hero {
 		background: url(https://media.architecturaldigest.com/photos/5988e603298aae66974b2d0d/2:1/w_3000,h_1500,c_limit/Pilotless%20Airplanes%201.jpg);
 		background-size: cover;
-		background-position: -18rem 0;
+		background-position: -29rem 0;
 	}
 }
 
@@ -930,7 +930,9 @@
 	.SHK-heads {
 		padding: 4rem 2rem;
 	}
-
+.hero {
+	background-position: -18rem 0 !important;
+}
 	.preload div {
 		height: 20%;
 	}
