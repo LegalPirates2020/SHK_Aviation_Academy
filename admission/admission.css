@@ -43,7 +43,7 @@
 	text-align: center;
 }
 
-.application-form::after
+/* .application-form::after
 {
 	content: "";
 	top: 0;
@@ -54,7 +54,8 @@
 	background-color: rgba(219, 213, 213, 0.336);
 	height: 100%;
 	z-index: 0;
-}
+} */
+
 
 .application-form
 {
@@ -63,8 +64,8 @@
 	display: flex;
 	padding: 50px;
 	position: relative;
-	background: url(./img/bg1.jpg) center/cover;
-	box-shadow: 2px 2px 50px #46a6da;
+	/* background: url(./img/bg1.jpg) center/cover; */
+	/* box-shadow: 2px 2px 50px #46a6da; */
 	flex-direction: column;
 	border-radius: 1.5%;
 }
