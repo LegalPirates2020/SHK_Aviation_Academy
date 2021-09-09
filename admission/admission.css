@@ -4,6 +4,13 @@
 	box-sizing: border-box;
 }
 
+/* .admission {
+	background-color: white !important;
+}
+.admission a {
+	color: #39393a !important;
+} */
+
 .section1 {
 	position: relative;
 	display: flex;
@@ -17,7 +24,7 @@
 	top: var(--nav-height);
 }
 .section1::after {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -29,10 +36,10 @@
 }
 
 .title {
-	margin-top: 6.5rem;
-	outline: 5px solid rgb(255, 255, 255);
+	margin-top: 1.5rem;
+	outline: 5px solid rgb(37, 154, 233);
 	padding: 4rem 6rem 4rem 6rem;
-	color: #fff;
+	color: rgb(37, 154, 233);
 	font-size: 2rem;
 	z-index: 2;
 }
@@ -41,30 +48,38 @@
 	text-align: center;
 }
 
-.application::after {
-	content: '';
-	top: 0;
-	left: 0;
-	position: absolute;
-	backdrop-filter: blur(5px);
+.application-formdiv
+{
 	width: 100%;
-	height: 100%;
-	background-color: rgba(255, 255, 255, 0.1);
-	z-index: 0;
 }
+
 .application {
-	background: url(./img/br1.jpeg) center/cover;
+	background: url(./img/bg2.jpg) center/cover;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	left: 15%;
+	border-radius: 1%;
+	box-shadow: 5px 5px 10px  black;
+	width: 72%;
+	top: 100px;
+}
+
+.headone {
+	color: #fff;
+	text-align: center;
+	padding: 5% 5% 0% 5%;
+	font-size: 50px;
 }
 
 .application-form {
-	margin: 5% 18%;
+	margin: 0% 10%;
 	overflow: hidden;
 	display: flex;
 	padding: 50px;
 	position: relative;
-	/* background: url(./img/bg1.jpg) center/cover; */
-	/* box-shadow: 2px 2px 50px #46a6da; */
 	flex-direction: column;
 	border-radius: 1.5%;
 }
@@ -79,18 +94,25 @@ label {
 	padding-bottom: 1%;
 	color: rgb(0, 0, 0);
 	font-size: 20px;
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	z-index: 1;
 }
 input {
 	border: 1px solid rgb(143, 140, 140);
-	/* box-shadow: 2px 5px 10px rgb(143, 140, 140); */
 	border-radius: 7px;
 }
 option {
 	border-radius: 7px;
 	background-color: rgb(213, 214, 211);
 	color: rgb(0, 0, 0);
+}
+
+.atagwhite {
+	color: #fff;
+	text-decoration: none;
+}
+.atagwhite:hover {
+	color: orange;
 }
 
 .height {
@@ -103,6 +125,10 @@ option {
 	border: none;
 	border-radius: 7px;
 	height: 40px;
+	background-color: rgba(255, 255, 255, 0.678);
+	color: rgb(0, 0, 0);
+	font-size: 20px;
+	text-align: center;
 }
 
 .checkbox {
@@ -111,9 +137,14 @@ option {
 	padding-top: 3%;
 }
 .flex input {
-    height: 40px;
-    border: none;
-    box-shadow: 2px 2px 10px rgb(255 255 255 / 10%), -2px -2px 10px rgb(255 255 255 / 10%);
+	height: 40px;
+	border: none;
+	box-shadow: 2px 2px 10px rgb(255 255 255 / 10%),
+		-2px -2px 10px rgb(255 255 255 / 10%);
+	background-color: rgba(255, 255, 255, 0.678);
+	color: rgb(0, 0, 0);
+	font-size: 20px;
+	text-align: center;
 }
 
 .form-group input {
@@ -138,6 +169,12 @@ option {
 	margin-top: 3%;
 	background-color: rgb(32, 113, 219);
 	color: #fff;
+	width: 20%;
+	border: none;
+}
+.submit-btn:hover {
+	color: rgb(255, 255, 255);
+	background-color: rgba(32, 113, 219, 0.671);
 }
 
 .images {
@@ -150,6 +187,20 @@ option {
 .images h2 {
 	font-size: 50px;
 	padding: 2%;
+	margin-top: 8%;
+}
+.brimgdiv {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	margin-bottom: 1%;
+}
+
+.brimage {
+	width: 45%;
+	padding: 10px;
 }
 
 .download {
@@ -157,9 +208,14 @@ option {
 	text-decoration: none;
 	color: #fff;
 	background-color: rgb(32, 113, 219);
+	border-radius: 10%;
 }
- 
-.small-input{
+.download:hover {
+	color: rgb(32, 113, 219);
+	background-color: rgba(32, 113, 219, 0.425);
+}
+
+.small-input {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -167,5 +223,84 @@ option {
 }
 
 .small-input input {
-width: 23%;
+	width: 23%;
+}
+
+
+@media (max-width : 800px) {
+	.brimgdiv
+	{
+		flex-direction: column;
+	}
+	.brimage
+	{
+		width: 100%;
+	}
+	.images h2
+	{
+		margin-top: 13%;
+	}
+	.headthreebrochure
+	{
+		font-size: 30px;
+		text-align: center;
+	}
+	.download
+	{
+		font-size: 25px;
+		padding: 2%;
+	}
+}
+
+@media (max-width: 450px) {
+	.application-form
+	{
+		padding: 0;
+	}
+	.application
+	{
+		width: 94%;
+		/* height: 50vh; */
+		display: block;
+		flex-direction: row;
+		left: 10px;
+	}
+	.title
+	{
+		padding: 3rem 5rem 3rem 5rem;
+	}
+	.submit-btn
+	{
+		margin-bottom: 10%;
+		padding: 5% 25% 5% 8%;
+		text-align: center;
+	}
+	.small-input
+	{
+		display: flex;
+		flex-direction: column;
+		margin-top: 1%;
+	}
+	.small-input input
+	{
+		width: 100%;
+		margin: 1% 0%;
+	}
+	.brimgdiv
+	{
+		flex-direction: column;
+	}
+	.brimage
+	{
+		width: 100%;
+	}
+	.images h2
+	{
+		margin-top: 35%;
+		font-size: 45px;
+	}
+	.download
+	{
+		padding: 4%;
+	}
 }

@@ -5,6 +5,13 @@
 	scroll-behavior: smooth;
 }
 
+.activities {
+	background-color: white !important;
+}
+.activities a {
+	color: #39393a !important;
+}
+
 .headerActivities {
 	position: relative;
 	display: flex;
