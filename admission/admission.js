@@ -48,3 +48,26 @@ function fillInAddress() {
 		}
 	}
 }
+
+const label = document.querySelectorAll("label");
+const input = document.querySelectorAll("input");
+const brimage = document.querySelectorAll(".brimage");
+const headone = document.querySelector(".headone");
+const application = document.querySelector(".application");
+const gsapt = gsap.timeline();
+
+gsap.from(headone, {
+	y: -100,
+	duration: 1,
+	ease: "power4",
+});
+
+
+gsap.from(brimage, {
+	y : -100,
+	markers: true,
+	scrollTrigger : {
+		trigger : brimage,
+		duration : 1,
+	}
+});

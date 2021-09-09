@@ -196,6 +196,7 @@ option {
 	align-items: center;
 	padding: 10px;
 	margin-bottom: 1%;
+	transition: all 1s ease-in-out;
 }
 
 .brimage {
