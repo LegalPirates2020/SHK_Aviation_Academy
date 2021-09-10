@@ -17,7 +17,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: url('http://cdn.shopify.com/s/files/1/0510/8560/7099/files/The_Best_Laptop_Choice_for_College_Students-2.jpg?v=1620704757')
+	background: url("http://cdn.shopify.com/s/files/1/0510/8560/7099/files/The_Best_Laptop_Choice_for_College_Students-2.jpg?v=1620704757")
 		top/contain;
 	background-attachment: fixed;
 	width: 100%;
@@ -26,7 +26,7 @@
 }
 
 .headerActivities::after {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -66,17 +66,16 @@
 }
 /* .bg {
 	position: relative;#ffc3c3
-   height: 100%;
-   width: 100%;
-   background: url('https://cdn2.careeraddict.com/uploads/article/58364/illustration-college-campus-students.jpg');
-   
-   z-index: 3;
+   	height: 100%;
+   	width: 100%;
+   	background: url('https://cdn2.careeraddict.com/uploads/article/58364/illustration-college-campus-students.jpg');
+   	z-index: 3;
 } */
 .section3Activities {
 	position: absolute;
 	top: 35%;
 	display: grid;
-	grid-template-areas: 'grid1 grid2 grid3 grid4';
+	grid-template-areas: "grid1 grid2 grid3 grid4";
 	grid-column-gap: 2rem;
 
 	left: 50%;
@@ -161,9 +160,7 @@ h3 {
 }
 .unopen {
 	position: relative;
-
-	margin-top: 6rem;
-
+	margin-top: 10rem;
 	margin-right: auto;
 	margin-left: auto;
 	height: 400px;
@@ -176,20 +173,20 @@ h3 {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background: url('https://cdn2.careeraddict.com/uploads/article/58364/illustration-college-campus-students.jpg')
+	background: url("https://cdn2.careeraddict.com/uploads/article/58364/illustration-college-campus-students.jpg")
 		top/cover;
 	border-radius: 20px;
 }
 .image1 {
-	background: url('https://akm-img-a-in.tosshub.com/indiatoday/images/story/201911/ncc-770x433.jpeg?DcwuTnfzNu27AZAisWdIacVhxH9gdlRE')
+	background: url("https://akm-img-a-in.tosshub.com/indiatoday/images/story/201911/ncc-770x433.jpeg?DcwuTnfzNu27AZAisWdIacVhxH9gdlRE")
 		top/cover;
 }
 .image2 {
-	background: url('https://s3.ap-southeast-1.amazonaws.com/cdn.deccanchronicle.com/sites/default/files/nss%20cadets%20rday%20parade%20pti_0.jpg')
+	background: url("https://s3.ap-southeast-1.amazonaws.com/cdn.deccanchronicle.com/sites/default/files/nss%20cadets%20rday%20parade%20pti_0.jpg")
 		top/cover;
 }
 .image3 {
-	background: url('https://s4.sathyainfo.com/s/2a3e418853024a4/img.jpeg')
+	background: url("https://s4.sathyainfo.com/s/2a3e418853024a4/img.jpeg")
 		center/cover;
 }
 .clubContentCard {
@@ -212,4 +209,57 @@ h3 {
 	line-height: 2rem;
 	color: black;
 	text-align: justify;
+}
+
+@media (max-width : 400px) {
+	.section3
+	{
+		height: auto;
+	}
+	.title3Activities
+	{
+		position: relative;
+	}
+	.grid
+	{
+		width: 290px;
+	}
+	.section3Activities
+	{
+		grid-template-areas : 'grid1'
+							'grid2' 
+							'grid3' 
+							'grid4';
+		position: relative;
+	}
+	.headerActivities
+	{
+		background: url(http://cdn.shopify.com/s/files/1/0510/8560/7099/files/The_Best_Laptop_Choice_for_College_Students-2.jpg?v=1620704757) center/cover;
+	}
+	.titleActivities
+	{
+		padding: 4rem 2rem 4rem 2rem;
+	}
+	.grid
+	{
+		margin: 5% 10%;
+	}
+	.clubContentCard
+	{
+		width: 98%;
+		height: auto;
+		border-radius: 0;
+		left: 2%;
+	}
+	.image
+	{
+		width: 100%;
+		border-radius: 0;
+	}
+	.unopen
+	{
+		border-radius: 0;
+		width: 92%;
+		/* overflow: hidden; */
+	}
 }
