@@ -206,7 +206,7 @@ header {
 	header.side-bar .bottom-nav {
 		transform: translateX(0);
 	}
-	ul
+	.bottom-nav
 	{
 		height: calc(100vh - 4.3rem) !important;
 	}
@@ -214,9 +214,6 @@ header {
 @media (max-width:800px){
 	.bottom-nav {
 		padding: 0;
-	}
-	ul
-	{
 		height: calc(100vh - 4.3rem) !important;
 	}
 }
