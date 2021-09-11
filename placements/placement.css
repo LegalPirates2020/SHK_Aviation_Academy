@@ -19,12 +19,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgb(197, 194, 194);
+  background: rgb(236, 234, 234);
 }
 
 .section0div {
   height: 70%;
-  width: 70%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -34,8 +34,14 @@
 }
 
 .section0div h1 {
-  font-size: 30px;
-  overflow: hidden;
+  /* font-size: 30px; */
+  font-size: 35px;
+}
+
+.section0div p {
+  font-size: 17px;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 
 .section1 {
@@ -78,16 +84,26 @@
   width: 100%;
   height: 50vh;
   position: relative;
-  background: url("https://vitalsmartsindia.com/wp-content/uploads/2020/12/Corporate-Training.jpg");
+  background: url("https://wallpaperaccess.com/full/254431.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.section3 h1 {
+  position: absolute;
+  bottom: 40%;
+  font-size: 45px;
+  z-index: 5;
+  left: 50%;
+  transform: translatex(-50%);
 }
 
 .section3 {
   width: 100%;
   height: 23vh;
   position: relative;
+  background: rgb(236, 234, 234);
 }
 
 .section3 img {
@@ -103,6 +119,7 @@
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
+  background: rgb(236, 234, 234);
 }
 
 #div {
@@ -119,7 +136,7 @@
 }
 
 #div span {
-  height: 70%;
+  height: 85%;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -128,25 +145,152 @@
   text-align: justify;
 }
 
+#div span h1 {
+  font-size: 35px;
+}
+#div span p {
+  font-size: 17px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+
 h1 {
   overflow: hidden;
 }
 
 .placementCell {
-  background: url("http://cmclnmu.ac.in/wp-content/uploads/2018/08/placement-cell-new.jpg");
+  background: url("https://images.unsplash.com/photo-1513922203437-86dc31ea478f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMHBsYW5lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  color: white;
 }
 .Training {
-  background: url("http://cmclnmu.ac.in/wp-content/uploads/2018/08/placement-cell-new.jpg");
+  background: url("https://images.unsplash.com/photo-1513922203437-86dc31ea478f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMHBsYW5lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  color: white;
 }
 .Recruiters {
-  background: url("http://cmclnmu.ac.in/wp-content/uploads/2018/08/placement-cell-new.jpg");
+  background: url("https://images.unsplash.com/photo-1513922203437-86dc31ea478f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMHBsYW5lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  color: white;
 }
 .placementContact {
-  background: url("http://cmclnmu.ac.in/wp-content/uploads/2018/08/placement-cell-new.jpg");
+  background: url("https://images.unsplash.com/photo-1513922203437-86dc31ea478f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMHBsYW5lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  color: white;
 }
 .Internship {
-  background: url("http://cmclnmu.ac.in/wp-content/uploads/2018/08/placement-cell-new.jpg");
+  background: url("https://images.unsplash.com/photo-1513922203437-86dc31ea478f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMHBsYW5lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  color: white;
 }
 .MOU {
-  background: url("http://cmclnmu.ac.in/wp-content/uploads/2018/08/placement-cell-new.jpg");
+  background: url("https://images.unsplash.com/photo-1513922203437-86dc31ea478f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMHBsYW5lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  color: white;
+}
+
+@media (max-width: 950px) {
+  .section3 h1 {
+    font-size: 29px;
+  }
+  .section3 img {
+    transform: translateY(-180px);
+  }
+}
+
+@media (max-width: 760px) {
+  .section3 img {
+    transform: translateY(-100px);
+  }
+  .section0div p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  #div span p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+  }
+}
+
+@media (max-width: 610px) {
+  .section3 h1 {
+    font-size: 25px;
+  }
+  .section3 img {
+    transform: translateY(-100px);
+  }
+}
+
+@media (max-width: 550px) {
+  .section3 h1 {
+    font-size: 20px;
+  }
+  .title {
+    padding: 3rem 4rem 3rem 4rem;
+    font-size: 2rem;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 460px) {
+  .title {
+    padding: 2rem 3rem 2rem 3rem;
+    font-size: 1.5rem;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 432px) {
+  .section3 h1 {
+    font-size: 20px;
+    display: none;
+  }
+
+  .section3 img {
+    transform: translateY(-80px);
+  }
+  .section0div h1 {
+    font-size: 25px;
+  }
+
+  .section0div p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  #div span h1 {
+    font-size: 30px;
+  }
+  #div span p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+  }
+}
+
+@media (max-width: 360px) {
+  .section3 img {
+    transform: translateY(-40px);
+  }
+  .section2 {
+    height: 30vh;
+  }
+  .section0div h1 {
+    font-size: 23px;
+  }
+
+  .section0div p {
+    font-size: 12px;
+    letter-spacing: 0px;
+    font-weight: 600;
+  }
+  #div span h1 {
+    font-size: 30px;
+  }
+  #div span p {
+    font-size: 11px;
+    letter-spacing: 0px;
+    font-weight: 600;
+  }
+  .title {
+    padding: 2rem 3rem 2rem 3rem;
+    font-size: 1rem;
+    z-index: 2;
+  }
 }
