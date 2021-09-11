@@ -223,29 +223,27 @@ clicking.forEach((element) => {
 		switch (element.getAttribute("class")) {
 			case "bba":
 				window.location.href = "./academics.html#course1";
-				again.classList.remove("colorchanging")
-				again.classList.remove("clicking10")
+				again.classList.remove("colorchanging");
+				again.classList.remove("clicking10");
 				break;
 			case "bscaviation":
 				window.location.href = "./academics.html#course2";
-				again.classList.remove("colorchanging")
-				again.classList.remove("clicking10")
+				again.classList.remove("colorchanging");
+				again.classList.remove("clicking10");
 				break;
 			case "mba":
 				window.location.href = "./academics.html#course3";
-				again.classList.remove("colorchanging")
-				again.classList.remove("clicking10")
+				again.classList.remove("colorchanging");
+				again.classList.remove("clicking10");
 				break;
 			case "bscair":
 				window.location.href = "./academics.html#course4";
-				again.classList.remove("colorchanging")
-				again.classList.remove("clicking10")
+				again.classList.remove("colorchanging");
+				again.classList.remove("clicking10");
 				break;
 		}
 	});
 });
-
-
 
 const arrow = document.querySelector(".arrow");
 const arrowl = document.querySelector(".arrowl");
@@ -255,18 +253,41 @@ const mobileclick = document.querySelector(".mobileclick");
 const firstdiv = document.querySelector(".firstdiv");
 const again = document.querySelector(".again");
 
-
-mobileclick.addEventListener("click" , () => {
+mobileclick.addEventListener("click", () => {
 	again.classList.toggle("clicking10");
 	again.classList.toggle("colorchanging");
-})
-mobileclick.addEventListener("click" , () => {
+});
+mobileclick.addEventListener("click", () => {
 	arrowr.classList.toggle("arrowright");
-})
-mobileclick.addEventListener("click" , () => {
+});
+mobileclick.addEventListener("click", () => {
 	arrowr.classList.toggle("arrowright");
-})
-mobileclick.addEventListener("click" , () => {
+});
+mobileclick.addEventListener("click", () => {
 	arrowl.classList.toggle("rotate");
-})
+});
 
+const courseone = document.querySelector(".courseone");
+const coursetwo = document.querySelector(".coursetwo");
+const coursethree = document.querySelector(".coursethree");
+const coursefour = document.querySelector(".coursefour");
+
+gsap.from(courseone, {
+	y: 100,
+	duration: 0.5,
+});
+
+const otherthree = (course) => {
+	gsap.from(course, {
+		duration: 0.3,
+		y: 50,
+		scrollTrigger: {
+			trigger: course,
+			duration: 0.5,
+		},
+	});
+};
+
+otherthree(coursetwo)
+otherthree(coursethree)
+otherthree(coursefour)

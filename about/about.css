@@ -4,6 +4,13 @@
     margin: 0%;
 }
 
+.about {
+	background-color: white !important;
+}
+.about a {
+	color: #39393a !important;
+}
+
 .section1 {
 	position: relative;
 	display: flex;
@@ -13,7 +20,7 @@
 	background-attachment: fixed;
 	width: 100%;
 	height: 65vh;
-	top: var(--nav-height);
+	/* top: var(--nav-height); */
 	min-height: 386px;
 }
 
@@ -30,9 +37,9 @@
 
 .title {
 	margin-top: 6.5rem;
-	outline: 5px solid #2733df;
+	outline: 5px solid #ffffff;
 	padding: 4rem 6rem 4rem 6rem;
-	color: #2733df;
+	color: #ffffff;
     position: absolute;
 	font-size: 2rem;
 	z-index: 2;
@@ -44,91 +51,50 @@
 
 .content-top
 {
-	padding: 9%;
-	font-size: 25px;
-	text-align: justify;
-	top: var(--nav-height);
-	background: url(./img/bg1.jpg) center/cover;
-	position: relative;
+	margin: 5%;
+	font-size: 20px;
+	padding: 30px;
+	border-radius: 8px;
+	background: url(./img/bg3.jpg) center/cover;
+	color: white;
+	box-shadow: 8px 8px 25px black;
+	line-height: 2rem;
 }
-.content-top::after
-{
-	content: " ";
-	position: absolute;
-	top: 0;
-	left: 0;
-	backdrop-filter: blur(10px);
-	background-color: rgba(0, 0, 0, 0.336);
-	height: 100%;
-	width: 100%;
-	z-index: 0;
-}
-.content-top p
-{
-	position: relative;
-	z-index: 1;
-	color: #fff;
-}
-
-.content-middle h2 
-{
-	text-align: center;
-	z-index: 2;
-	margin: 2%;
-}
-
-.content-middle h3
-{
-	text-align: center;
-}
-
-.content-middle p
-{
-	text-indent: 50px;
-	text-align: justify;
-}
-/* chairman */
 
 .chairman , .vice-chairman , .principal
 {
-	position: relative;
-	padding: 9%;
-	height: 100vh;
+	margin: 5%;
 	font-size: 20px;
+	padding: 30px;
+	border-radius: 8px;
+	background-color: #0097fc3f;
+	text-align: justify;
+}
+.chairman h2 , .vice-chairman h2 , .principal h2 , .chairman h3 , .vice-chairman h3 , .principal h3
+{
+	text-align: center;
+	padding: 5px;
+	letter-spacing: 1px;
+}
+.chairman p , .vice-chairman p , .principal p
+{
+	line-height: 2rem;
+	word-spacing: 0.3rem;
+}
+
+.principal ul
+{
+	width: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background: url(./img/bg2.jpg) center/cover;
-	color: #fff;
-	z-index: 2;
-}
-.vice-chairman
-{
-	background: url(./img/bg3.jpg) center/cover;
-}
-.principal
-{
-	background: url(./img/bg4.jpg) center/cover;
+	padding: 0 50px;
+	line-height: 2rem;
+	word-spacing: 0.3rem;
 }
 
-.chairman p , .chairman h2 , .chairman h3 , .vice-chairman p , .vice-chairman h2 , .vice-chairman h3 , .principal p , .principal h2 , .principal h3 , .principal ul
-{
-	z-index: 2;
-	position: relative;
+@media (max-width: 450px) {
+	.principal ul
+	{
+		padding: 0;
+	}
 }
-
-.chairman::after , .vice-chairman::after , .principal::after
-{
-	content: " ";
-	position: absolute;
-	top: 0;
-	left: 0;
-	backdrop-filter: blur(8px);
-	background-color: rgba(0, 0, 0, 0.336);
-	height: 100%;
-	width: 100%;
-	z-index: 0;
-}
-/* chairman-ends */
-
